@@ -1,0 +1,194 @@
+﻿<Window x:Class="Presentation.WpfKSM06"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Nhập thông tin khảo sát tổ" Height="577.497" Width="1038.63" WindowStartupLocation ="CenterScreen" Icon="/Icons/Connected.ico" Loaded="Window_Loaded">
+    <Grid>
+        <Label Canvas.Left="735" Canvas.Top="15" Content="Lấy dữ liệu" Height="27" Name="lblGetData" Width="auto" MouseDown="LblGetData_OnMouseDown"  Margin="375,19,571,502">
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Style.Triggers>
+                        <Trigger Property="UIElement.IsMouseOver" Value="true">
+                            <Setter Property="Control.Foreground" Value="Red" />
+                            <Setter Property="Control.FontWeight" Value="Bold" />
+                        </Trigger>
+                    </Style.Triggers>
+                    <Setter Property="Control.Foreground" Value="Green" />
+                    <Setter Property="Control.FontFamily" Value="Comic Sans MS" />
+                    <Setter Property="Control.FontWeight" Value="Bold" />
+                </Style>
+            </Label.Style>
+        </Label>
+
+        <DatePicker Height="26" HorizontalAlignment="Left" Margin="73,19,0,0" Name="dtpNgay" VerticalAlignment="Top" Width="110" />
+        <Label Content="Ngày" Height="auto" HorizontalAlignment="Left" Margin="23,19,0,0" Name="lblNgay" VerticalAlignment="Top" Width="auto" />
+        <Label Content="POS" Height="auto" HorizontalAlignment="Left" Margin="191,18,0,0" Name="lblPos" VerticalAlignment="Top" Width="auto" />
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="232,19,0,0" Name="CboPos" VerticalAlignment="Top" Width="110" />
+        <Button Content="Close" Height="22" HorizontalAlignment="Left" Margin="869,508,0,0" Name="btnClose" VerticalAlignment="Top" Width="90" Click="btnClose_Click" />
+        <Button Content="Xóa" Height="22" HorizontalAlignment="Left" Margin="657,508,0,0" Name="btnXoa" VerticalAlignment="Top" Width="90" Click="btnXoa_Click" />
+        <Button Content="Lưu" Height="22" HorizontalAlignment="Left" Margin="757,508,0,0" Name="btnOk" VerticalAlignment="Top" Width="90" Click="btnOk_Click" />
+        <DataGrid AutoGenerateColumns="False" Height="422" RowHeight="25" CanUserDeleteRows="False" CanUserAddRows="False" HorizontalAlignment="Left" Margin="23,71,0,0" Name="dgvSource" VerticalAlignment="Top" Width="998" >
+            <DataGrid.Resources>
+                <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" 
+                   Color="#FF0000"/>
+            </DataGrid.Resources>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Xã" Binding="{Binding Path=COT2}" Width="200" IsReadOnly="True">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle >
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextAlignment" Value="Left"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Cột 3" Binding="{Binding Path=COT3}" Width="70" IsReadOnly="False">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle >
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Cột 4" Binding="{Binding Path=COT4}" Width="70" IsReadOnly="False">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle >
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Cột 5" Binding="{Binding Path=COT5}" Width="70" IsReadOnly="False">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle >
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Cột 6" Binding="{Binding Path=COT6}" Width="70" IsReadOnly="False">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle >
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Cột 7" Binding="{Binding Path=COT7}" Width="70" IsReadOnly="False">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle >
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Cột 8" Binding="{Binding Path=COT8}" Width="70" IsReadOnly="False">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle >
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Cột 9" Binding="{Binding Path=COT9}" Width="70" IsReadOnly="False">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle >
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Cột 10" Binding="{Binding Path=COT10}" Width="70" IsReadOnly="False">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle >
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Cột 11" Binding="{Binding Path=COT11}" Width="70" IsReadOnly="False">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle >
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Cột 12" Binding="{Binding Path=COT12}" Width="70" IsReadOnly="False">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle >
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Cột 13" Binding="{Binding Path=COT13}" Width="*" IsReadOnly="False">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle >
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

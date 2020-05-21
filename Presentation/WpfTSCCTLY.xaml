@@ -1,0 +1,198 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" x:Class="Presentation.WpfTSCCTLY"
+        Title="Đề nghị thanh lý" Height="516" Width="1177.839" WindowStartupLocation =" CenterScreen" Icon="Icons/My Video.ico" Loaded="Window_Loaded">
+    <Grid>
+
+        <Button Content="Close" HorizontalAlignment="Left" Height="24" Margin="601,442,0,0" VerticalAlignment="Top" Width="84" x:Name="btnClose" Click="Close_OnClick">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border x:Name="border" BorderThickness="1" Padding="4,2" BorderBrush="DarkGray" CornerRadius="3" Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="content"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="GreenYellow"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+
+            </Button.Style>
+        </Button>
+
+
+        <Button Content="OK" HorizontalAlignment="Left" Height="24" Margin="495,442,0,0" VerticalAlignment="Top" Width="84" x:Name="btnSua" Click="btnSua_Click" >
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border x:Name="border" BorderThickness="1" Padding="4,2" BorderBrush="DarkGray" CornerRadius="3" Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="content"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="GreenYellow"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+
+            </Button.Style>
+        </Button>
+
+
+
+        <DataGrid AutoGenerateColumns="False" CanUserAddRows ="False" CanUserDeleteRows="False"  RowHeight ="30"   Height="356" HorizontalAlignment="Left" Margin="10,67,0,0" x:Name="dgvData" VerticalAlignment="Top" Width="1151" CanUserResizeRows="False" SelectionChanged="dgvData_SelectionChanged" >
+
+            <DataGrid.Columns>
+                <DataGridCheckBoxColumn Binding="{Binding Path=DG_THANHLY}" IsReadOnly="False" CanUserReorder="False" CanUserResize="False" CanUserSort="False" Header="Chọn" Width="auto" >
+                    <DataGridCheckBoxColumn.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridCheckBoxColumn.CellStyle>
+                </DataGridCheckBoxColumn>
+
+                <DataGridTextColumn Header="Mã TS/CC" Binding="{Binding MA_TS}" Width="150" IsReadOnly="True" >
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle >
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Left"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Mã nhản" Binding="{Binding MA_NHANHIEU_TS}" Width="60" IsReadOnly="True">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle >
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Left"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Header="Tên TS/CC" Binding="{Binding TEN_TS}" Width="250" IsReadOnly="True" >
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Left"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Nguyên giá" Binding="{Binding NGUYEN_GIA}" Width="90" IsReadOnly="True" >
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Ngày mua" Binding="{Binding NGAY_MUA,StringFormat='dd/MM/yyyy'}" Width="80" IsReadOnly="True" >
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Header="Cán bộ QL" Binding="{Binding CB_QUANLY}" Width="130" IsReadOnly="True"  >
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Mô tã" Binding="{Binding MOTA}" Width="*" IsReadOnly="True" >
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Phòng/Tổ" x:Name="lblPhong" HorizontalAlignment="Left" Height="auto" Margin="276,14,0,0" VerticalAlignment="Top" Width="auto"/>
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="340,14,0,0" x:Name="CboPhong" VerticalAlignment="Top" Width="98" SelectionChanged="CboPhong_SelectionChanged"/>
+
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="182,15,0,0" x:Name="CboPos" VerticalAlignment="Top" Width="89" SelectionChanged="CboPos_SelectionChanged"  />
+        <telerik:Label Content="POS" Height="21" HorizontalAlignment="Left" Margin="151,15,0,0" x:Name="LblPos" VerticalAlignment="Top" Width="38" />
+        <telerik:Label Content="Ngày" Height="auto" HorizontalAlignment="Left" Margin="7,14,0,0" x:Name="LblNgay" VerticalAlignment="Top" Width="auto"  />
+        <DatePicker Height="21" HorizontalAlignment="Left" Margin="47,15,0,0" x:Name="dtpNgay" VerticalAlignment="Top" Width="102" />
+        <Label Content="Show Grid" HorizontalAlignment="Left" Margin="468,16,0,435.4" x:Name="ShowGrid"  MouseDown="ShowGrid_OnMouseDown"  RenderTransformOrigin="1.342,-2.636" Width="67"  >
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.591"/>
+                    <TranslateTransform X="1.127" Y="0.854"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+            <Label.Style>
+                <Style TargetType="{x:Type Label}">
+                    <Setter Property="Foreground" Value="Green" />
+                    <Setter Property="FontWeight" Value="Bold" />
+                    <Setter Property="FontFamily" Value="Times New Roman" />
+                    <Setter Property="ToolTip" Value="Click vào đây để nhập số liệu"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter Property="Foreground" Value="Green" />
+                            <Setter Property ="FontStyle" Value="Italic"/>
+                            <Setter Property="FontWeight" Value="Bold" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Label.Style>
+        </Label>
+ 
+    </Grid>
+</Window>

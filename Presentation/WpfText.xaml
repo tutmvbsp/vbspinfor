@@ -1,0 +1,73 @@
+﻿<Window x:Class="Presentation.WpfText"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Export PDF to TEXT LEND_30" Height="300" Width="613" WindowStartupLocation="CenterScreen" Icon="Icons/Cryoword.ico" Loaded="WpfPdf_OnLoaded">
+    <Grid>
+        <Label Content="Copy Files" Height="26" HorizontalAlignment="Left" Margin="400,15,0,0" Name="lblCopyFile" MouseDown="LblCopyFile_OnMouseDown"  VerticalAlignment="Top" Width="auto" FontWeight="Bold" IsEnabled="False" >
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Style.Triggers>
+                        <Trigger Property="UIElement.IsMouseOver" Value="true">
+                            <Setter Property="Control.Foreground" Value="Red" />
+                            <Setter Property ="FontStyle" Value="Italic"/>
+                            <Setter Property="Control.FontWeight" Value="Bold" />
+                        </Trigger>
+                    </Style.Triggers>
+                    <Setter Property="Foreground" Value="Green" />
+                    <Setter Property="FontWeight" Value="Bold" />
+                    <Setter Property="FontFamily" Value="Times New Roman" />
+                    <Setter Property="ToolTip" Value="Click vào đây để thống kê số liệu"/>
+                </Style>
+            </Label.Style>
+        </Label>
+        <Label Content="Get Folder" Height="26" HorizontalAlignment="Left" Margin="469,15,0,0" Name="lblGetFolder" MouseDown="LblGetFolder_OnMouseDown"  VerticalAlignment="Top" Width="auto" FontWeight="Bold" RenderTransformOrigin="0.106,0.423" IsEnabled="False" >
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Style.Triggers>
+                        <Trigger Property="UIElement.IsMouseOver" Value="true">
+                            <Setter Property="Control.Foreground" Value="Red" />
+                            <Setter Property ="FontStyle" Value="Italic"/>
+                            <Setter Property="Control.FontWeight" Value="Bold" />
+                        </Trigger>
+                    </Style.Triggers>
+                    <Setter Property="Foreground" Value="Green" />
+                    <Setter Property="FontWeight" Value="Bold" />
+                    <Setter Property="FontFamily" Value="Times New Roman" />
+                    <Setter Property="ToolTip" Value="Click vào đây để thống kê số liệu"/>
+                </Style>
+            </Label.Style>
+        </Label>
+
+        <Label Content="Get Files" Height="26" HorizontalAlignment="Left" Margin="539,15,0,0" Name="lblGetFiles" MouseDown="LblGetFiles_OnMouseDown"  VerticalAlignment="Top" Width="auto" FontWeight="Bold" >
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Style.Triggers>
+                        <Trigger Property="UIElement.IsMouseOver" Value="true">
+                            <Setter Property="Control.Foreground" Value="Red" />
+                            <Setter Property ="FontStyle" Value="Italic"/>
+                            <Setter Property="Control.FontWeight" Value="Bold" />
+                        </Trigger>
+                    </Style.Triggers>
+                    <Setter Property="Foreground" Value="Green" />
+                    <Setter Property="FontWeight" Value="Bold" />
+                    <Setter Property="FontFamily" Value="Times New Roman" />
+                    <Setter Property="ToolTip" Value="Click vào đây để thống kê số liệu"/>
+                </Style>
+            </Label.Style>
+        </Label>
+
+
+        <Label Content="Ngày" HorizontalAlignment="Left" Height="30" Margin="23,33,0,0" VerticalAlignment="Top" Width="42" Name ="LblNgay" Foreground="Black" FontWeight="Bold" FontStyle="Italic"/>
+        <DatePicker Name="dtpNgay" HorizontalAlignment="Left" Height="23" Margin="92,35,0,0" VerticalAlignment="Top" Width="105"/>
+        <Label Content="Ngày KU" HorizontalAlignment="Left" Height="30" Margin="23,5,0,0" VerticalAlignment="Top" Width="auto" Name ="LblNgayKu" Foreground="Black" FontWeight="Bold" FontStyle="Italic"/>
+        <DatePicker Name="dtpNgayKu" HorizontalAlignment="Left" Height="23" Margin="92,5,0,0" VerticalAlignment="Top" Width="105"/>
+        <Button Content="Close" Height="28" HorizontalAlignment="Left" Margin="352,227,0,0" Name="btnClose" VerticalAlignment="Top" Width="81" Click="btnClose_Click" />
+        <Button Content="OK" Height="28" HorizontalAlignment="Left" Margin="152,227,0,0" Name="btnOk" VerticalAlignment="Top" Width="81" Click="BtnOk_OnClick"/>
+        <Button Content="up to PS HSBT" Height="28" HorizontalAlignment="Left" Margin="255,227,0,0" Name="btnUpPsHsbt" VerticalAlignment="Top" Width="81" Click="BtnUpPsHsbt_OnClick"/>
+        <TextBox Height="27" HorizontalAlignment="Left" Margin="217,14,0,0" Name="txtSourcePath" VerticalAlignment="Top" Width="73" Text="C:\TEXT\" />
+        <TextBox Height="27" HorizontalAlignment="Left" Margin="305,14,0,0" Name="txtPath" VerticalAlignment="Top" Width="73" Text="C:\PDF\" />
+        <ListBox Name="ListBox" HorizontalAlignment="Left" Height="126" Margin="66,81,0,0" VerticalAlignment="Top" Width="225"/>
+        <ListBox Name="ListText" HorizontalAlignment="Left" Height="126" Margin="305,81,0,0" VerticalAlignment="Top" Width="225"/>
+
+    </Grid>
+</Window>

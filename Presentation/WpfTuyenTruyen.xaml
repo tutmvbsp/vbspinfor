@@ -1,0 +1,319 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib" 
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" x:Class="Presentation.WpfTuyenTruyen" 
+        Title="Theo dõi tin bài - chuyên đề tuyên truyền" Height="618.818" Width="1170.904" WindowStartupLocation="CenterScreen" Icon="Icons/VBSP.ico" ResizeMode="CanMinimize" WindowStyle="ThreeDBorderWindow" Loaded="WpfTdChamDiem_OnLoaded">
+    <Grid Margin="0,-1,-0.2,11.6">
+
+        <Button Content="Lưu" Height="24" Margin="207,524,0,0" Width="84" x:Name="OK" Click="OK_OnClick" HorizontalAlignment="Left" VerticalAlignment="Top" >
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border x:Name="border" BorderThickness="1" Padding="4,2" BorderBrush="DarkGray" CornerRadius="3" Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="content"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="GreenYellow"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+
+            </Button.Style>
+        </Button>
+
+        <Button Content="Tổng Hợp" Height="24" Margin="582,524,0,0" Width="84" x:Name="btnPrint" Click="BtnPrint_OnClick" HorizontalAlignment="Left" VerticalAlignment="Top" >
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border x:Name="border" BorderThickness="1" Padding="4,2" BorderBrush="DarkGray" CornerRadius="3" Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="content"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="GreenYellow"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+
+            </Button.Style>
+        </Button>
+        <Button Content="Báo Cáo" Height="24" Margin="702,524,0,0" Width="84" x:Name="btnBaoCao" Click="BtnBaoCao_OnClick" HorizontalAlignment="Left" VerticalAlignment="Top" >
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border x:Name="border" BorderThickness="1" Padding="4,2" BorderBrush="DarkGray" CornerRadius="3" Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="content"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="GreenYellow"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+
+            </Button.Style>
+        </Button>
+
+        <Button Content="Đóng" Height="24" Margin="817,524,0,0" Width="84" x:Name="btnClose" Click="BtnClose_OnClick" HorizontalAlignment="Left" VerticalAlignment="Top" >
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border x:Name="border" BorderThickness="1" Padding="4,2" BorderBrush="DarkGray" CornerRadius="3" Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="content"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="GreenYellow"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+
+            </Button.Style>
+        </Button>
+
+        <Label Content="POS" Height="auto" HorizontalAlignment="Left" Margin="179,15,0,0" x:Name="lblPos" VerticalAlignment="Top" Width="auto" />
+        <telerik:RadComboBox x:Name="RadCboPos" HorizontalAlignment="Left" Margin="212,16,0,0" VerticalAlignment="Top" Width="123" SelectionChanged="RadCboPos_SelectionChanged"/>
+        <Label Content="Phòng NV" Height="auto" HorizontalAlignment="Left" Margin="379,15,0,0" x:Name="lblPhong" VerticalAlignment="Top" Width="auto" />
+        <telerik:RadComboBox x:Name="RadCboPhong" HorizontalAlignment="Left" Margin="471,16,0,0" VerticalAlignment="Top" Width="123"/>
+        <Label Content="Thể loại" Height="auto" HorizontalAlignment="Left" Margin="281,85,0,0" x:Name="lblXa" VerticalAlignment="Top" Width="auto" />
+        <Label Content="Loại tin" Height="auto" HorizontalAlignment="Left" Margin="65,85,0,0" x:Name="lblLoaiTin" VerticalAlignment="Top" Width="auto" />
+        <Label Content="Nguồn tin" Height="auto" HorizontalAlignment="Left" Margin="701,85,0,0" x:Name="lblChDe" VerticalAlignment="Top" Width="auto" />
+        <Label Content="Cấp tin, bài" Height="auto" HorizontalAlignment="Left" Margin="488,85,0,0" x:Name="lblCap" VerticalAlignment="Top" Width="auto" />
+        <Label Content="Thời lượng" Height="auto" HorizontalAlignment="Left" Margin="884,84,0,0" x:Name="lblThoiLuong" VerticalAlignment="Top" Width="auto" />
+        <telerik:RadComboBox x:Name="RadCboTheLoai" HorizontalAlignment="Left" Margin="350,86,0,0" VerticalAlignment="Top" Width="110" SelectionChanged="RadCboTheLoai_SelectionChanged"/>
+        <telerik:RadComboBox x:Name="RadCboNguon" HorizontalAlignment="Left" Margin="768,86,0,0" VerticalAlignment="Top" Width="110"/>
+        <telerik:RadComboBox x:Name="RadCboLoaiTin" HorizontalAlignment="Left" Margin="133,86,0,0" VerticalAlignment="Top" Width="110"/>
+        <telerik:RadComboBox x:Name="RadCboCap" HorizontalAlignment="Left" Margin="558,86,0,0" VerticalAlignment="Top" Width="110"/>
+        <telerik:RadComboBox x:Name="RadCboThoiLuong" HorizontalAlignment="Left" Margin="951,85,0,0" VerticalAlignment="Top" Width="110"/>
+        <DatePicker Height="26" HorizontalAlignment="Left" Margin="61,15,0,0" x:Name="dtpNgay" VerticalAlignment="Top" Width="110" />
+        <Label Content="Ngày" Height="30" HorizontalAlignment="Left" Margin="18,15,0,0" x:Name="lblNgay_Copy" VerticalAlignment="Top" Width="46" RenderTransformOrigin="-2.191,-0.167" />
+        <DataGrid AutoGenerateColumns="False"  CanUserAddRows ="False" CanUserDeleteRows="False"   Height="306" HorizontalAlignment="Left" Margin="10,205,0,0" x:Name="dgvTarGet" VerticalAlignment="Top" Width="1145" SelectionChanged="dgvTarGet_SelectionChanged" >
+            <!-- doan nay tu dong do cao cua dong trong datagrid, nho khai bao them cai nay xmlns:sys="clr-namespace:System;assembly=mscorlib" -->
+            <DataGrid.RowStyle>
+                <Style TargetType="{x:Type DataGridRow}">
+                    <Setter Property="Height" Value="{x:Static sys:Double.NaN}"/>
+                </Style>
+            </DataGrid.RowStyle>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Ngày" Binding="{Binding NGAY,StringFormat=\{0:dd/MM/yy\}}" Width="100" IsReadOnly="False"  FontSize="14">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Thể loại" Binding="{Binding TEN_THELOAI}" Width="150" IsReadOnly="False"  FontSize="14">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Nguồn" Binding="{Binding TEN_NGUON}" Width="150" IsReadOnly="False"  FontSize="14">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Tiêu đề" Binding="{Binding TIEUDE}" Width="400" IsReadOnly="False">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle >
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Left"/>
+                            <Setter Property="TextWrapping" Value="Wrap" />
+                            <Setter Property="VerticalAlignment" Value="Center" />
+
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Link" Binding="{Binding LINK}" Width="*" IsReadOnly="False">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle >
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Left"/>
+                            <Setter Property="TextWrapping" Value="Wrap" />
+                            <Setter Property="VerticalAlignment" Value="Center" />
+
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Sửa" Height="24" Margin="337,524,0,0" Width="84" x:Name="btnSua" Click="btnSua_Click" HorizontalAlignment="Left" VerticalAlignment="Top" >
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border x:Name="border" BorderThickness="1" Padding="4,2" BorderBrush="DarkGray" CornerRadius="3" Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="content"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="GreenYellow"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+
+            </Button.Style>
+        </Button>
+        <Button Content="Xóa" Height="24" Margin="460,524,0,0" Width="84" x:Name="btnXoa" Click="btnXoa_Click" HorizontalAlignment="Left" VerticalAlignment="Top" >
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border x:Name="border" BorderThickness="1" Padding="4,2" BorderBrush="DarkGray" CornerRadius="3" Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="content"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="GreenYellow"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+
+            </Button.Style>
+        </Button>
+        <Label Content="Mã tin" Height="auto" HorizontalAlignment="Left" Margin="62,178,0,0" x:Name="lblMatin" VerticalAlignment="Top" Width="auto" />
+        <Label Content="Tiêu đề" Height="auto" HorizontalAlignment="Left" Margin="62,52,0,0" x:Name="lblTieuDe" VerticalAlignment="Top" Width="auto" />
+        <Label Content="Link" Height="auto" HorizontalAlignment="Left" Margin="63,111,0,0" x:Name="lblLink" VerticalAlignment="Top" Width="auto" />
+        <Label Content="Ghi Chú" Height="auto" HorizontalAlignment="Left" Margin="62,143,0,0" x:Name="lblGhiChu"  VerticalAlignment="Top" Width="auto" />
+        <TextBox x:Name="txtMatin" HorizontalAlignment="Left" Height="26" Margin="132,172,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="246" IsEnabled="False"/>
+        <TextBox x:Name="txtTieuDe" HorizontalAlignment="Left" Height="26" Margin="132,52,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="990"/>
+        <TextBox x:Name="txtLink" HorizontalAlignment="Left" Height="26" Margin="132,113,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="990"/>
+        <TextBox x:Name="txtGhiChu" HorizontalAlignment="Left" Height="26" Margin="133,141,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="990"/>
+        <Label Content="Lấy thông tin" HorizontalAlignment="Left" Margin="902,14,0,526.4" x:Name="ShowGrid"  MouseDown="ShowGrid_OnMouseDown"  RenderTransformOrigin="1.342,-2.636" Width="85"  >
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.591"/>
+                    <TranslateTransform X="1.127" Y="0.854"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+            <Label.Style>
+                <Style TargetType="{x:Type Label}">
+                    <Setter Property="Foreground" Value="Green" />
+                    <Setter Property="FontWeight" Value="Bold" />
+                    <Setter Property="FontFamily" Value="Times New Roman" />
+                    <Setter Property="ToolTip" Value="Click vào đây để nhập số liệu"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter Property="Foreground" Value="Green" />
+                            <Setter Property ="FontStyle" Value="Italic"/>
+                            <Setter Property="FontWeight" Value="Bold" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Label.Style>
+        </Label>
+        <Label Content="Nhập văn bản chỉ đạo" HorizontalAlignment="Left" Margin="1001,15,0,530" x:Name="VB"  MouseDown="VBCD_OnMouseDown"  RenderTransformOrigin="1.342,-2.636" Width="123"  >
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.591"/>
+                    <TranslateTransform X="1.127" Y="0.854"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+            <Label.Style>
+                <Style TargetType="{x:Type Label}">
+                    <Setter Property="Foreground" Value="Green" />
+                    <Setter Property="FontWeight" Value="Bold" />
+                    <Setter Property="FontFamily" Value="Times New Roman" />
+                    <Setter Property="ToolTip" Value="Click vào đây để nhập số liệu"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter Property="Foreground" Value="Green" />
+                            <Setter Property ="FontStyle" Value="Italic"/>
+                            <Setter Property="FontWeight" Value="Bold" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Label.Style>
+        </Label>
+        <Label Content="Cài đặt" HorizontalAlignment="Left" Margin="12,521,0,20.4" x:Name="GetForm"  MouseDown="GetForm_OnMouseDown"  RenderTransformOrigin="1.342,-2.636" Width="85"  >
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.591"/>
+                    <TranslateTransform X="1.127" Y="0.854"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+            <Label.Style>
+                <Style TargetType="{x:Type Label}">
+                    <Setter Property="Foreground" Value="Green" />
+                    <Setter Property="FontWeight" Value="Bold" />
+                    <Setter Property="FontFamily" Value="Times New Roman" />
+                    <Setter Property="ToolTip" Value="Click vào đây để nhập số liệu"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter Property="Foreground" Value="Green" />
+                            <Setter Property ="FontStyle" Value="Italic"/>
+                            <Setter Property="FontWeight" Value="Bold" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Label.Style>
+        </Label>
+
+    </Grid>
+</Window>

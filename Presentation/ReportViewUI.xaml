@@ -1,0 +1,8 @@
+﻿<Window x:Class="Presentation.ReportViewUI"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ReportViewUI" Height="469" Width="1014" xmlns:my="clr-namespace:SAPBusinessObjects.WPF.Viewer;assembly=SAPBusinessObjects.WPF.Viewer"  WindowStartupLocation="CenterScreen" WindowState="Maximized">
+    <Grid>
+        <my:CrystalReportsViewer Name="crystalReportsViewer" ShowLogo="False"   ShowToggleSidePanelButton="False" ShowToolbar="True" ShowOpenFileButton="False" ShowStatusbar="True" ToggleSidePanel="None" />
+    </Grid>
+</Window>

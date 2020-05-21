@@ -1,0 +1,15 @@
+﻿<Window x:Class="Presentation.WpfPLN"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Sao kê nợ không có khả năng thu hồi theo nguyên nhân" Height="218" Width="396.24" Icon="Icons/Cryoutlook.ico" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid Margin="0,0,3,0">
+        <Label Content="Ngày" Height="30" HorizontalAlignment="Left" Margin="42,30,0,0" Name="lblNgay" VerticalAlignment="Top" Width="46" />
+        <Button Content="Close" Height="25" HorizontalAlignment="Left" Margin="223,132,0,0" Name="btnClose" VerticalAlignment="Top" Width="74" Click="btnClose_Click" />
+        <Button Content="Ok" Height="25" HorizontalAlignment="Left" Margin="93,132,0,0" Name="btnOk" VerticalAlignment="Top" Width="74" Click="btnOk_Click" />
+        <DatePicker Height="26" HorizontalAlignment="Left" Margin="168,30,0,0" Name="dtpNgay" VerticalAlignment="Top" Width="164" />
+        <ComboBox Height="auto" HorizontalAlignment="Left" Margin="168,61,0,0" Name="cboPos" VerticalAlignment="Top" Width="164"  />
+        <Label Content="POS" Height="23" HorizontalAlignment="Left" Margin="41,61,0,0" Name="lblPos" VerticalAlignment="Top" Width="47" />
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="168,90,0,0" Name="CboNgNhan" VerticalAlignment="Top" Width="164"  IsEnabled="True" />
+        <Label Content="Nguyên nhân" Height="auto" HorizontalAlignment="Left" Margin="41,89,0,0" Name="lbl" VerticalAlignment="Top" Width="auto"  />
+    </Grid>
+</Window>

@@ -1,0 +1,19 @@
+﻿<Window x:Class="Presentation.WpfKt740New"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="KT740" Height="226" Width="461.758" WindowStartupLocation ="CenterScreen" Icon="/Icons/Java.ico" Loaded="Window_Loaded">
+    <Grid>
+
+        <DatePicker Height="26" HorizontalAlignment="Left" Margin="94,28,0,0" Name="dtpNgay" VerticalAlignment="Top" Width="110" />
+        <Label Content="Ngày" Height="30" HorizontalAlignment="Left" Margin="9,27,0,0" Name="lblNgay" VerticalAlignment="Top" Width="65" />
+        <DatePicker Height="26" HorizontalAlignment="Left" Margin="94,57,0,0" Name="dtpDNgay" VerticalAlignment="Top" Width="110" />
+        <Label Content="Đến ngày" Height="30" HorizontalAlignment="Left" Margin="9,52,0,0" Name="lblDNgay" VerticalAlignment="Top" Width="auto" />
+        <Label Content="POS" Height="auto" HorizontalAlignment="Left" Margin="256,39,0,0" Name="lblPos" VerticalAlignment="Top" Width="auto" />
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="307,35,0,0" Name="CboPos" VerticalAlignment="Top" Width="110" SelectionChanged="CboPos_SelectionChanged" />
+        <Button Content="Close" Height="22" HorizontalAlignment="Left" Margin="234,144,0,0" Name="btnClose" VerticalAlignment="Top" Width="90" Click="btnClose_Click" />
+        <Button Content="OK" Height="22" HorizontalAlignment="Left" Margin="114,144,0,0" Name="btnOk" VerticalAlignment="Top" Width="90" Click="btnOk_Click" />
+        <Label Content="Chọn mẩu" Height="auto" HorizontalAlignment="Left" Margin="30,110,0,0" Name="lblMau" VerticalAlignment="Top" Width="auto" />
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="114,110,0,0" Name="CboMau" VerticalAlignment="Top" Width="303" />
+
+    </Grid>
+</Window>

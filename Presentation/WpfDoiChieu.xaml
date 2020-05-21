@@ -1,0 +1,17 @@
+﻿<Window x:Class="Presentation.WpfDoiChieu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Mẩu Đối Chiếu Dư Nợ" Height="256" Width="478" WindowStartupLocation =" CenterScreen" Icon="Icons/My Video.ico" Loaded="Window_Loaded">
+    <Grid>
+        <Button Content="Close" Height="27" HorizontalAlignment="Left" Margin="281,158,0,0" Name="btnClose" VerticalAlignment="Top" Width="75" Click="btnClose_Click" />
+        <Button Content="OK" Height="27" HorizontalAlignment="Left" Margin="155,158,0,0" Name="btnOk" VerticalAlignment="Top" Width="75" Click="btnOk_Click" />
+        <DatePicker Height="24" HorizontalAlignment="Left" Margin="80,73,0,0" Name="dtpNgay" VerticalAlignment="Top" Width="111" />
+        <Label Content="Ngày" Height="26" HorizontalAlignment="Left" Margin="17,74,0,0" Name="lblNgay" VerticalAlignment="Top" Width="42" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="294,35,0,0" Name="CboPos" VerticalAlignment="Top" Width="111" SelectionChanged="CboPos_SelectionChanged" />
+        <Label Content="POS" Height="26" HorizontalAlignment="Left" Margin="233,35,0,0" Name="lblPos" VerticalAlignment="Top" Width="39" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="294,110,0,0" Name="CboTo" VerticalAlignment="Top" Width="111" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="294,73,0,0" Name="CboXa" VerticalAlignment="Top" Width="111" SelectionChanged="CboXa_SelectionChanged" />
+        <Label Content="Tổ" Height="26" HorizontalAlignment="Left" Margin="233,110,0,0" Name="lblTo" VerticalAlignment="Top" Width="39" />
+        <Label Content="Xã" Height="26" HorizontalAlignment="Left" Margin="233,73,0,0" Name="lblXa" VerticalAlignment="Top" Width="39" />
+    </Grid>
+</Window>

@@ -1,0 +1,13 @@
+﻿<Window x:Class="Presentation.WpfHscb"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Điện thoại " Height="354.836" Width="1032.703" WindowStartupLocation ="CenterScreen" Icon="/Icons/Telephone.ico" Loaded="Window_Loaded">
+    <Grid>
+        <Label Content="POS" Height="auto" HorizontalAlignment="Left" Margin="30,10,0,0" Name="lblPos" VerticalAlignment="Top" Width="auto" />
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="94,10,0,0" Name="CboPos" VerticalAlignment="Top" Width="110" />
+        <Button Content="Close" Height="22" HorizontalAlignment="Left" Margin="833,280,0,0" Name="btnClose" VerticalAlignment="Top" Width="90" Click="btnClose_Click" />
+        <Button Content="OK" Height="22" HorizontalAlignment="Left" Margin="713,280,0,0" Name="btnOk" VerticalAlignment="Top" Width="90" Click="btnOk_Click" />
+        <DataGrid AutoGenerateColumns="True" Name="dgvData" HorizontalAlignment="Left" Height="234" Margin="10,41,0,0" VerticalAlignment="Top" Width="1005"/>
+
+    </Grid>
+</Window>

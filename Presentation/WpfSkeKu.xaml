@@ -1,0 +1,28 @@
+﻿<Window x:Class="Presentation.WpfSkeKu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Sao kê khế ước" Height="218" Width="518" Icon="Icons/Cryoutlook.ico" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid>
+        <Button Content="Close" Height="25" HorizontalAlignment="Left" Margin="281,145,0,0" Name="btnClose" VerticalAlignment="Top" Width="74" Click="btnClose_Click" />
+        <Button Content="Ok" Height="25" HorizontalAlignment="Left" Margin="151,145,0,0" Name="btnOk" VerticalAlignment="Top" Width="74" Click="btnOk_Click" />
+        <DatePicker Name="dtpNgay" Margin="132,26,253,130" />
+        <Label Content="Ngày" Name="lblNgay" Margin="32,26,432,124"/>
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="132,68,0,0" Name="cboPos" VerticalAlignment="Top" Width="128"  />
+        <Label Content="POS" Height="23" HorizontalAlignment="Left" Margin="32,71,0,0" Name="lblPos" VerticalAlignment="Top" Width="47" />
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="132,100,0,0" Name="CboChon" VerticalAlignment="Top" Width="128"  IsEnabled="True" />
+        <Label Content="Chọn" Height="23" HorizontalAlignment="Left" Margin="30,100,0,0" Name="lbl" VerticalAlignment="Top" Width="49"  />
+        <GroupBox Header="Chọn" Height="118" HorizontalAlignment="Left" Margin="297,4,0,0" Name="GrpChon" VerticalAlignment="Top" Width="182" Foreground="Green" FontSize="13">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="48*" />
+                    <ColumnDefinition Width="99*" />
+                </Grid.ColumnDefinitions>
+                <RadioButton Content="Tất cả" Height="16" HorizontalAlignment="Left" Margin="15,5,0,0" Name="OptAll" VerticalAlignment="Top" Width="77" Checked="OptAll_Checked" Grid.ColumnSpan="2" />
+                <RadioButton Content="Theo chương trình" Height="16" HorizontalAlignment="Left" Margin="15,22,0,0" Name="OptChtr" VerticalAlignment="Top" Width="auto" Checked="OptChtr_Checked" Grid.ColumnSpan="2" />
+                <RadioButton Content="Đơn vị ủy thác" Height="16" HorizontalAlignment="Left" Margin="15,40,0,0" Name="OptDvut" VerticalAlignment="Top" Width="auto" Checked="OptDvut_Checked" Grid.ColumnSpan="2" />
+                <RadioButton Content="Cho vay trực tiếp" Height="16" HorizontalAlignment="Left" Margin="15,57,0,0" Name="OptTT" VerticalAlignment="Top" Width="118" Checked="OptTT_Checked" Grid.ColumnSpan="2" />
+                <RadioButton Content="Theo Xã" Height="16" HorizontalAlignment="Left" Margin="15,72,0,0" Name="OptXa" VerticalAlignment="Top" Width="118" Checked="OptXa_OnChecked" Grid.ColumnSpan="2" />
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>

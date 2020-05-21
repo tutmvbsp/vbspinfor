@@ -1,0 +1,37 @@
+﻿<Window x:Class="Presentation.WpfLaiThang"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Lãi Tồn " Height="250" Width="483" WindowStartupLocation =" CenterScreen" Loaded="Window_Loaded" Icon="Icons/refresh.gif">
+    <Grid>
+        <Button Content="Close" Height="27" HorizontalAlignment="Left" Margin="267,183,0,0" Name="btnClose" VerticalAlignment="Top" Width="75" Click="btnClose_Click" />
+        <Button Content="OK" Height="27" HorizontalAlignment="Left" Margin="158,183,0,0" Name="btnOk" VerticalAlignment="Top" Width="75" Click="btnOk_Click" />
+        <DatePicker Height="24" HorizontalAlignment="Left" Margin="101,11,0,0" Name="dtpNgay" VerticalAlignment="Top" Width="111" />
+        <Label Content="Ngày" Height="26" HorizontalAlignment="Left" Margin="19,9,0,0" Name="lblNgay" VerticalAlignment="Top" Width="42" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="101,44,0,0" Name="CboPos" VerticalAlignment="Top" Width="111" SelectionChanged="CboPos_SelectionChanged" />
+        <Label Content="POS" Height="26" HorizontalAlignment="Left" Margin="19,43,0,0" Name="lblPos" VerticalAlignment="Top" Width="39" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="101,102,0,0" Name="CboTo" VerticalAlignment="Top" Width="111" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="101,73,0,0" Name="CboXa" VerticalAlignment="Top" Width="111" SelectionChanged="CboXa_SelectionChanged" />
+        <Label Content="Tổ" Height="auto" HorizontalAlignment="Left" Margin="19,102,0,0" Name="lblTo" VerticalAlignment="Top" Width="auto" />
+        <Label Content="Xã" Height="26" HorizontalAlignment="Left" Margin="21,77,0,0" Name="lblXa" VerticalAlignment="Top" Width="39" />
+        <Label Content="Mức tồn" Height="auto" HorizontalAlignment="Left" Margin="19,136,0,0" Name="lblTon" VerticalAlignment="Top" Width="auto" />
+        <GroupBox Header="Chọn" Height="174" HorizontalAlignment="Left" Margin="282,4,0,0" Name="GrpChon" VerticalAlignment="Top" Width="185" >
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="72*" />
+                    <ColumnDefinition Width="18*" />
+                    <ColumnDefinition Width="65*" />
+                </Grid.ColumnDefinitions>
+                <RadioButton GroupName="G1" Content="Giấy báo" Grid.ColumnSpan="3" Height="auto" HorizontalAlignment="Left" Margin="12,-2,0,0" Name="Ration6" VerticalAlignment="Top" Width="103" Checked="Ration6_Checked" />
+                <RadioButton GroupName="G1" Content="Chi tiết" Grid.ColumnSpan="3" Grid.Column="0" Height="auto" HorizontalAlignment="Left" Margin="12,14,0,0" Name="Ration1" VerticalAlignment="Top" Width="103" Checked="Ration1_Checked" />
+                <RadioButton GroupName="G1" Content="Theo Tổ" Grid.ColumnSpan="3" Grid.Column="0" Height="auto" HorizontalAlignment="Left" Margin="12,30,0,0" Name="Ration2" VerticalAlignment="Top" Width="103" Checked="Ration2_Checked" />
+                <RadioButton GroupName="G1" Content="Theo Xã" Grid.ColumnSpan="3" Grid.Column="0" Height="auto" HorizontalAlignment="Left" Margin="12,49,0,0" Name="Ration3" VerticalAlignment="Top" Width="103" Checked="Ration3_Checked" />
+                <RadioButton GroupName="G1" Content="Toàn tỉnh" Grid.ColumnSpan="3" Grid.Column="0" Height="auto" HorizontalAlignment="Left" Margin="12,64,0,0" Name="Ration4" VerticalAlignment="Top" Width="128" Checked="Ration4_Checked" />
+                <RadioButton GroupName="G1" Content="Theo chương trình" Grid.ColumnSpan="3" Grid.Column="0" Height="auto" HorizontalAlignment="Left" Margin="12,80,0,0" Name="Ration5" VerticalAlignment="Top" Width="auto" Checked="Ration5_Checked" />
+                <RadioButton GroupName="G1" Content="Thu lãi tồn" Grid.ColumnSpan="3" Grid.Column="0" Height="auto" HorizontalAlignment="Left" Margin="12,96,0,0" Name="Ration7"  VerticalAlignment="Top" Width="auto"  />
+                <RadioButton GroupName="G1" Content="Mẫu kiểm tra- đối chiếu xã" Grid.ColumnSpan="3" Grid.Column="0" Height="auto" HorizontalAlignment="Left" Margin="12,111,-0.2,-1.4" Name="Ration8"  VerticalAlignment="Top" Width="auto"  />
+            </Grid>
+        </GroupBox>
+        <CheckBox Content="Tất cả" Height="18" HorizontalAlignment="Left" Margin="226,43,0,0" Name="ChkAll" VerticalAlignment="Top" Width="auto" Checked="ChkAll_Checked" />
+        <TextBox Height="25" HorizontalAlignment="Left" Margin="102,132,0,0" Name="txtTon" VerticalAlignment="Top" Width="112" Text="100000" TextAlignment="Right" />
+    </Grid>
+</Window>

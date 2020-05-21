@@ -1,0 +1,24 @@
+﻿<Window x:Class="Presentation.WpfBack"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:cm="clr-namespace:System.ComponentModel;assembly=System"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Backup and Restore database" Height="209.463" Width="376.85" WindowStartupLocation="CenterScreen" Icon="Icons/Cryoword.ico" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="257*"/>
+            <ColumnDefinition Width="43*"/>
+            <ColumnDefinition Width="69*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Close" Height="20" HorizontalAlignment="Left" Margin="193,130,0,0" Name="btnClose" VerticalAlignment="Top" Width="81" Click="btnClose_Click" Grid.ColumnSpan="2" />
+        <Button Content="OK" Height="21" HorizontalAlignment="Left" Margin="96,130,0,0" Name="btnOkNew" VerticalAlignment="Top" Width="81" Click="btnOkNew_Click" />
+        <Button Content="..." Height="24" HorizontalAlignment="Left" Margin="202,72,0,0" Name="btnBrowse" VerticalAlignment="Top" Width="19" RenderTransformOrigin="21.194,-1.633" Click="btnBrowse_Click"  />
+        <DatePicker Height="24" HorizontalAlignment="Left" Margin="75,27,0,0" Name="dtpNgay" VerticalAlignment="Top" Width="100" />
+        <Label Content="Date " Height="auto" HorizontalAlignment="Left" Margin="24,25,0,0" Name="lblNgay" VerticalAlignment="Top" Width="auto" />
+        <Label Content="Target " Height="auto" HorizontalAlignment="Left" Margin="24,70,0,0" Name="lblTarGet" VerticalAlignment="Top" Width="auto" />
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="74,72,0,0" TextWrapping="Wrap" Name="txtPath" Text="C:\Tam\" VerticalAlignment="Top" Width="123"/>
+        <ComboBox HorizontalAlignment="Left" Height="24" Margin="196,27,0,0" VerticalAlignment="Top" Width="133" Name="CboDb" Grid.ColumnSpan="3"/>
+        <Label Content="" HorizontalAlignment="Left" Height="auto" Margin="74,104,0,0" VerticalAlignment="Top" Width="auto" Name="lblMess"/>
+        <RadioButton Grid.ColumnSpan="3" Content="Backup" HorizontalAlignment="Left" Height="auto" Margin="243,67,0,0" VerticalAlignment="Top" Width="75" Name="Option1" IsChecked="True"/>
+        <RadioButton Grid.ColumnSpan="3" Content="Restore" HorizontalAlignment="Left" Height="auto" Margin="243,83,0,0" VerticalAlignment="Top" Width="75" Name="Option2"/>
+    </Grid>
+</Window>

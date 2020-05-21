@@ -1,0 +1,17 @@
+﻿<Window x:Class="Presentation.WpfChamCongChk"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Kiểm tra làm thêm, nghỉ phép, nghỉ bù" Height="207.527" Width="518" Icon="Icons/Cryoutlook.ico" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid>
+        <Button Content="Close" Height="25" HorizontalAlignment="Left" Margin="286,123,0,0" Name="btnClose" VerticalAlignment="Top" Width="74" Click="btnClose_Click" />
+        <Button Content="Ok" Height="25" HorizontalAlignment="Left" Margin="179,123,0,0" Name="btnOk" VerticalAlignment="Top" Width="74" Click="btnOk_Click" />
+        <Label Content="Ngày" Name="lblNgay" Margin="54,41,406,117" Width="auto" Height="auto"/>
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="100,74,0,0" Name="cboPos" VerticalAlignment="Top" Width="114" SelectionChanged="cboPos_SelectionChanged" />
+        <Label Content="POS" Height="auto" HorizontalAlignment="Left" Margin="54,71,0,0" Name="lblPos" VerticalAlignment="Top" Width="auto" />
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="301,38,0,0" Name="CboPhong" VerticalAlignment="Top" Width="161" SelectionChanged="CboPhong_SelectionChanged" />
+        <Label Content="Phòng/Tổ" Height="auto" HorizontalAlignment="Left" Margin="229,35,0,0" Name="lblXa" VerticalAlignment="Top" Width="auto"  />
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="301,71,0,0" Name="CboCanbo" VerticalAlignment="Top" Width="161" />
+        <Label Content="Cán bộ" Height="auto" HorizontalAlignment="Left" Margin="229,71,0,0" Name="lblTo" VerticalAlignment="Top" Width="auto" />
+        <DatePicker Name="dtpNgay" HorizontalAlignment="Left" Margin="100,38,0,0" VerticalAlignment="Top" Width="114"/>
+    </Grid>
+</Window>

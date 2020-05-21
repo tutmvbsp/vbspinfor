@@ -1,0 +1,46 @@
+﻿<Window x:Class="Presentation.WpfKhaoSat"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Chương Trình khảo sát hiệu quả cho vay" Icon="Icons/VBSP.ico" Height="311.8" Width="654" WindowStartupLocation="CenterScreen" xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" Loaded="Window_Loaded">
+    <Grid>
+        <Button Content="Close" Height="28" HorizontalAlignment="Left" Margin="342,231,0,0" Name="BtnClose" VerticalAlignment="Top" Width="96" Click="btnClose_Click" />
+        <Button Content="OK" Height="28" HorizontalAlignment="Left" Margin="224,231,0,0" Name="BtnOk" VerticalAlignment="Top" Width="99" Click="btnOk_Click" />
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="184,15,0,0" Name="CboPos" VerticalAlignment="Top" Width="152"  />
+        <telerik:Label Content="POS" Height="21" HorizontalAlignment="Left" Margin="153,15,0,0" Name="LblPos" VerticalAlignment="Top" Width="38" />
+        <telerik:Label Content="Ngày" Height="25" HorizontalAlignment="Left" Margin="7,14,0,0" Name="LblNgay" VerticalAlignment="Top" Width="58" />
+        <DatePicker Height="21" HorizontalAlignment="Left" Margin="47,15,0,0" Name="dtpNgay" VerticalAlignment="Top" Width="102" />
+        <GroupBox Height="159" HorizontalAlignment="Left" Margin="12,56,0,0" Name="GroupBox" VerticalAlignment="Top" Width="622">
+            <Grid Margin="0,0,-2.8,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="334*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <RadioButton Grid.Column="0" Content="Nhập số liệu khảo sát (M01)" Width="auto" Height="17" HorizontalAlignment="Left" Margin="6,14,0,0" Name="Ration01" VerticalAlignment="Top" Checked="Ration01_Checked"/>
+                <RadioButton Grid.Column="0" Content="Báo cáo kết quả khảo sát (M02)" Width="auto" Height="17" HorizontalAlignment="Left" Margin="6,35,0,0" Name="Ration02" VerticalAlignment="Top" Checked="Ration02_Checked"/>
+                <RadioButton Grid.Column="0" Content="BC khảo sát HQĐT hộ nghèo (M03)" Width="auto" Height="16" HorizontalAlignment="Left" Margin="6,54,0,0" Name="Ration03" VerticalAlignment="Top" Checked="Ration03_Checked"/>
+                <RadioButton Grid.Column="0" Content="BC khảo sát HQĐT hộ cận nghèo (M04)" Width="auto" Height="16" HorizontalAlignment="Left" Margin="6,73,0,0" Name="Ration04" VerticalAlignment="Top" Checked="Ration04_Checked"/>
+                <RadioButton Grid.Column="0" Content="BC khảo sát HQĐT hộ SXKD VKK (M05)" Width="auto" Height="16" HorizontalAlignment="Left" Margin="6,91,0,0" Name="Ration05" VerticalAlignment="Top" Checked="Ration05_Checked"/>
+                <RadioButton Grid.Column="0" Content="BC khảo sát HQĐT cho vay DTTS (M06)" Width="auto" Height="16" HorizontalAlignment="Left" Margin="6,111,0,0" Name="Ration06" VerticalAlignment="Top" Checked="Ration06_Checked"/>
+                <RadioButton Grid.Column="0" Content="BC khảo sát HQĐT Cho vay NSVSMT (M07)" Width="auto" Height="16" HorizontalAlignment="Left" Margin="6,130,0,0" Name="Ration07" VerticalAlignment="Top" Checked="Ration07_Checked"/>
+                <RadioButton Grid.Column="0" Content="BC khảo sát HQĐT Cho vay HSSV (M08)" Width="auto" Height="16" HorizontalAlignment="Left" Margin="295,15,0,0" Name="Ration08" VerticalAlignment="Top" Checked="Ration08_Checked"/>
+                <RadioButton Grid.Column="0" Content="BC khảo sát HQĐT Cho vay XKLĐ (M09)" Width="auto" Height="16" HorizontalAlignment="Left" Margin="295,35,0,0" Name="Ration09" VerticalAlignment="Top" Checked="Ration09_Checked"/>
+                <RadioButton Grid.Column="0" Content="BC khảo sát HQĐT Cho vay GQVL (M10)" Width="auto" Height="16" HorizontalAlignment="Left" Margin="295,56,0,0" Name="Ration10" VerticalAlignment="Top" Checked="Ration10_Checked"/>
+                <RadioButton Grid.Column="0" Content="BC khảo sát HQĐT Cho vay Chòi tránh lũ (M11)" Width="auto" Height="16" HorizontalAlignment="Left" Margin="295,72,0,0" Name="Ration11" VerticalAlignment="Top" Checked="Ration11_Checked"/>
+                <RadioButton Grid.Column="0" Content="BC khảo sát HQĐT Cho vay Thương nhân VKK (M12)" Width="auto" Height="16" HorizontalAlignment="Left" Margin="295,91,0,0" Name="Ration12" VerticalAlignment="Top" Checked="Ration12_Checked"/>
+                <RadioButton Grid.Column="0" Content="BC khảo sát HQĐT Cho vay Nhà ở QĐ 167,QĐ 33 (M13)" Width="auto" Height="16" HorizontalAlignment="Left" Margin="295,112,0,0" Name="Ration13" VerticalAlignment="Top" Checked="Ration13_Checked"/>
+                <RadioButton Grid.Column="0" Content="BC khảo sát HQĐT Cho vay hộ thoát nghèo (M14)" Width="auto" Height="16" HorizontalAlignment="Left" Margin="295,133,0,0" Name="Ration14" VerticalAlignment="Top" Checked="Ration14_Checked"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Export" HorizontalAlignment="Left" Height="46" Margin="371,0,0,0" VerticalAlignment="Top" Width="152">
+            <Grid Margin="0,0,-2,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="9*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <RadioButton Content="In" Name="Opt1" HorizontalAlignment="Left" Height="21" Margin="18,3,0,0" VerticalAlignment="Top" Width="32" />
+                <RadioButton Content="Excel" Name="Opt2" HorizontalAlignment="Left" Height="21" Margin="67,3,0,0" VerticalAlignment="Top" Width="59" Grid.ColumnSpan="2" Grid.Column="0" IsChecked="True" />
+
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>

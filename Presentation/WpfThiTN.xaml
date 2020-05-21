@@ -1,0 +1,180 @@
+﻿<Window x:Class="Presentation.WpfThiTN"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Cập nhật XLN theo mẫu 01/NĐH" Height="500.6" Width="868" xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" SizeToContent="Manual" WindowStyle="None">
+    <Canvas Margin="0,0,0,9.8">
+        <Border BorderBrush="Silver" BorderThickness="2" Canvas.Left="33" Canvas.Top="90" CornerRadius="20" Height="120" Name="border1" Width="810">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0" />
+                    <GradientStop Color="#FFF0F0F0" Offset="1" />
+                    <GradientStop Color="#FFEAF0E5" Offset="0.543" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <Label Canvas.Left="284" Canvas.Top="517" Margin="8.4,9.4,7.2,6.6"  >
+                <Label.Style>
+                    <Style TargetType="Label">
+                        <Style.Triggers>
+                            <Trigger Property="UIElement.IsMouseOver" Value="true">
+                                <Setter Property="Control.Foreground" Value="DarkViolet" />
+                                <Setter Property="Control.FontWeight" Value="Bold" />
+                            </Trigger>
+                        </Style.Triggers>
+                        <Setter Property="Control.Foreground" Value="Black" />
+                        <Setter Property="Control.FontFamily" Value="Time New Roman" />
+                        <Setter Property="Control.FontSize" Value="14" />
+                        <Setter Property="Control.FontWeight" Value="Normal" />
+                    </Style>
+                </Label.Style>
+                <TextBlock Name="txtCauHoi" Text="Long Text . . . ." TextWrapping="Wrap" FontSize="20"/>
+            </Label>
+        </Border>
+        <Border BorderBrush="Silver" BorderThickness="2" Canvas.Left="224" Canvas.Top="23" CornerRadius="20" Height="40" Name="borderVong" Width="442">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0" />
+                    <GradientStop Color="#FFF0F0F0" Offset="1" />
+                    <GradientStop Color="#FFEAF0E5" Offset="0.543" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <Label Canvas.Left="284" Canvas.Top="517" Margin="8.4,3.4,7.2,7.4"  >
+                <Label.Style>
+                    <Style TargetType="Label">
+                        <Style.Triggers>
+                            <Trigger Property="UIElement.IsMouseOver" Value="true">
+                                <Setter Property="Control.Foreground" Value="DarkViolet" />
+                                <Setter Property="Control.FontWeight" Value="Bold" />
+                            </Trigger>
+                        </Style.Triggers>
+                        <Setter Property="Control.Foreground" Value="Green" />
+                        <Setter Property="Control.FontFamily" Value="Time New Roman" />
+                        <Setter Property="Control.FontSize" Value="14" />
+                        <Setter Property="Control.FontWeight" Value="Normal" />
+                    </Style>
+                </Label.Style>
+            </Label>
+        </Border>
+
+
+        <Label Canvas.Left="364" Canvas.Top="26" Content="THI TRẮC NGHIỆM" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Foreground="#FF086908" Height="30" Name="label2" Width="auto" />
+
+        <Label Canvas.Left="402" Canvas.Top="460" Content="Câu tiếp theo &gt;" Height="26" Name="lblNext" Width="105"  MouseDown="lblNext_MouseDown" IsEnabled="False">
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Style.Triggers>
+                        <Trigger Property="UIElement.IsMouseOver" Value="true">
+                            <Setter Property="Control.Foreground" Value="Red" />
+                        </Trigger>
+                    </Style.Triggers>
+                    <Setter Property="Control.Foreground" Value="Black" />
+                    <Setter Property="Control.FontFamily" Value="Time New Roman" />
+                    <Setter Property="Control.FontWeight" Value="Bold" />
+                </Style>
+            </Label.Style>
+        </Label>
+        <Label Canvas.Left="295" Canvas.Top="460" Content="&lt; Câu trước" Height="26" Name="lblPre" Width="84"  MouseDown="lblPre_MouseDown" IsEnabled="False" >
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Style.Triggers>
+                        <Trigger Property="UIElement.IsMouseOver" Value="true">
+                            <Setter Property="Control.Foreground" Value="Red" />
+                        </Trigger>
+                    </Style.Triggers>
+                    <Setter Property="Control.Foreground" Value="Black" />
+                    <Setter Property="Control.FontFamily" Value="Time New Roman" />
+                    <Setter Property="Control.FontWeight" Value="Bold" />
+                </Style>
+            </Label.Style>
+        </Label>
+
+        <Label Canvas.Left="196" Canvas.Top="460" Content="Lấy câu hỏi" Height="26" Name="lblCauHoi" Width="78"  MouseDown="lblCauHoi_MouseDown" >
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Style.Triggers>
+                        <Trigger Property="UIElement.IsMouseOver" Value="true">
+                            <Setter Property="Control.Foreground" Value="MediumVioletRed" />
+                        </Trigger>
+                    </Style.Triggers>
+                    <Setter Property="Control.Foreground" Value="Green" />
+                    <Setter Property="Control.FontFamily" Value="Time New Roman" />
+                    <Setter Property="Control.FontWeight" Value="Bold" />
+                </Style>
+            </Label.Style>
+        </Label>
+
+        <Grid Canvas.Left="18" Canvas.Top="226" Height="197" Width="850">
+            <Border BorderBrush="Silver" BorderThickness="2" Canvas.Left="10" Canvas.Top="135" CornerRadius="20" Name="border2" Margin="9,-14,25,-28">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0" />
+                        <GradientStop Color="#FFF0F0F0" Offset="1" />
+                        <GradientStop Color="#FFEAF0E5" Offset="0.543" />
+                    </LinearGradientBrush>
+                </Border.Background>
+                <StackPanel Margin="10">
+                    <RadioButton Name="Ration1" Canvas.Left="284" Canvas.Top="517" Margin="20.4,8.4,23.6,7.4" Checked="Ration1_Checked"  >
+                        <RadioButton.Style>
+                            <Style TargetType="RadioButton">
+                                <Style.Triggers>
+                                    <Trigger Property="UIElement.IsMouseOver" Value="true">
+                                        <Setter Property="Control.Foreground" Value="Red" />
+                                        <Setter Property="Control.FontWeight" Value="Bold" />
+                                    </Trigger>
+                                </Style.Triggers>
+                                <Setter Property="Control.Foreground" Value="Black" />
+                                <Setter Property="Control.FontFamily" Value="Time New Roman" />
+                                <Setter Property="Control.FontSize" Value="18" />
+                                <Setter Property="Control.FontWeight" Value="Normal" />
+                            </Style>
+                        </RadioButton.Style>
+                        <TextBlock Name="txtA" Text="Tra loi A . . . ." TextWrapping="Wrap" FontSize="18"/>
+                    </RadioButton>
+
+                    <RadioButton Name="Ration2" Canvas.Left="284" Canvas.Top="517" Margin="20.4,8.4,23.6,7.4" Foreground="Black" FontWeight="Normal"  FontSize="14" Checked="Ration2_Checked">
+                        <TextBlock Name="txtB" Text="Tra loi B . . . ." TextWrapping="Wrap" FontSize="18"/>
+                    </RadioButton>
+                    <RadioButton Name="Ration3" Canvas.Left="284" Canvas.Top="517" Margin="20.4,8.4,23.6,7.4" Foreground="Black" FontWeight="Normal" FontSize="14" Checked="Ration3_Checked" >
+                        <TextBlock Name="txtC" Text="Tra loi C . . . ." TextWrapping="Wrap" FontSize="18"/>
+                    </RadioButton>
+                    <RadioButton Name="Ration4" Margin="20,8.4,24,7.4" Foreground="Black" FontWeight="Normal" FontSize="14" Checked="Ration4_Checked" >
+                        <TextBlock x:Name="txtD" Text="Tra loi D . . . ." TextWrapping="Wrap" FontSize="18"/>
+                    </RadioButton>
+
+                </StackPanel>
+            </Border>
+        </Grid>
+        <Label Canvas.Left="603" Canvas.Top="461" Content="Thoát" Height="26" Name="lblClose" Width="45" MouseDown="lblClose_MouseDown">
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Style.Triggers>
+                        <Trigger Property="UIElement.IsMouseOver" Value="true">
+                            <Setter Property="Control.Foreground" Value="Red" />
+                        </Trigger>
+                    </Style.Triggers>
+                    <Setter Property="Control.Foreground" Value="Black" />
+                    <Setter Property="Control.FontFamily" Value="Time New Roman" />
+                    <Setter Property="Control.FontWeight" Value="Bold" />
+                </Style>
+            </Label.Style>
+        </Label>
+
+        <Label Canvas.Left="520" Canvas.Top="460" Content="Kết Thúc" Height="26" Name="lblEnd" Width="62" MouseDown="lblEnd_MouseDown">
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Style.Triggers>
+                        <Trigger Property="UIElement.IsMouseOver" Value="true">
+                            <Setter Property="Control.Foreground" Value="Red" />
+                        </Trigger>
+                    </Style.Triggers>
+                    <Setter Property="Control.Foreground" Value="Black" />
+                    <Setter Property="Control.FontFamily" Value="Time New Roman" />
+                    <Setter Property="Control.FontWeight" Value="Bold" />
+                </Style>
+            </Label.Style>
+        </Label>
+        <Label x:Name="lblThoiGian" Content="Thời gian : " Height="26" Canvas.Left="83" Canvas.Top="21" Width="auto" FontWeight="Bold" Foreground="Green"/>
+        <TextBox x:Name="clocktxt" Height="28" Canvas.Left="69" TextWrapping="Wrap" VerticalAlignment="Center" TextAlignment="Center" Text="" Canvas.Top="51" Width="103" FontSize="20" Foreground="Red"/>
+        <DatePicker Height="24" HorizontalAlignment="Left" x:Name="dtpNgay" VerticalAlignment="Top" Width="100" Canvas.Left="94" Canvas.Top="460" />
+        <Label Content="Ngày Thi" Height="30" HorizontalAlignment="Left" x:Name="lblNgayKu" VerticalAlignment="Top" Width="auto" Canvas.Left="33" Canvas.Top="457" />
+    </Canvas>
+</Window>

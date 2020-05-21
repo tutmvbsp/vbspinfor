@@ -1,0 +1,30 @@
+﻿<Window x:Class="Presentation.WpfChovayNangmuc"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Cho vay theo văn bản 866/NHCS-TDNN" Height="244.843" Width="518" Icon="Icons/Cryoutlook.ico" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid>
+        <Button Content="Close" Height="25" HorizontalAlignment="Left" Margin="281,176,0,0" Name="btnClose" VerticalAlignment="Top" Width="74" Click="btnClose_Click" />
+        <Button Content="Ok" Height="25" HorizontalAlignment="Left" Margin="151,176,0,0" Name="btnOk" VerticalAlignment="Top" Width="74" Click="btnOk_Click" />
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="132,112,0,0" Name="cboPos" VerticalAlignment="Top" Width="128"  />
+        <Label Content="POS" Height="23" HorizontalAlignment="Left" Margin="32,109,0,0" Name="lblPos" VerticalAlignment="Top" Width="47" />
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="132,138,0,0" Name="CboChon" VerticalAlignment="Top" Width="128"  IsEnabled="True" />
+        <Label Content="Chọn" Height="23" HorizontalAlignment="Left" Margin="30,138,0,0" Name="lbl" VerticalAlignment="Top" Width="49"  />
+        <GroupBox Header="Chọn" Height="112" HorizontalAlignment="Left" Margin="305,32,0,0" Name="GrpChon" VerticalAlignment="Top" Width="182" Foreground="Green" FontSize="13">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="48*" />
+                    <ColumnDefinition Width="99*" />
+                </Grid.ColumnDefinitions>
+                <RadioButton Content="Sao kê chi tiết Excel" Height="22" HorizontalAlignment="Left" Margin="15,7,0,0" Name="OptSke" VerticalAlignment="Top" Width="auto"  Grid.ColumnSpan="2" />
+                <RadioButton Content="Theo chương trình" Height="25" HorizontalAlignment="Left" Margin="15,29,0,0" Name="OptChtr" VerticalAlignment="Top" Width="auto"  Grid.ColumnSpan="2" Grid.Column="0" IsChecked="True"/>
+                <RadioButton Content="Mẩu 03/BC" Height="23" HorizontalAlignment="Left" Margin="15,51,0,0" Name="OptM03" VerticalAlignment="Top" Width="auto"  Grid.ColumnSpan="2" Grid.Column="0" />
+            </Grid>
+        </GroupBox>
+        <DatePicker Height="26" HorizontalAlignment="Left" Margin="132,25,0,0" x:Name="dtpNgay" VerticalAlignment="Top" Width="128" />
+        <Label Content="Ngày" Height="auto" HorizontalAlignment="Left" Margin="36,19,0,0" x:Name="lblNgay" VerticalAlignment="Top" Width="auto" />
+        <DatePicker Height="26" HorizontalAlignment="Left" Margin="132,51,0,0" x:Name="dtpTuNgay" VerticalAlignment="Top" Width="128" SelectedDateChanged="DatePicker_SelectedDateChanged"/>
+        <Label Content="Từ Ngày" Height="auto" HorizontalAlignment="Left" Margin="32,45,0,0" x:Name="lblTuNgay" VerticalAlignment="Top" Width="auto" />
+        <DatePicker Height="26" HorizontalAlignment="Left" Margin="132,81,0,0" x:Name="dtpDenNgay" VerticalAlignment="Top" Width="128" />
+        <Label Content="Đến Ngày" Height="auto" HorizontalAlignment="Left" Margin="32,76,0,0" x:Name="lblDenNgay" VerticalAlignment="Top" Width="auto" />
+    </Grid>
+</Window>

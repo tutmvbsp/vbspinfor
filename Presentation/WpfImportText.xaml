@@ -1,0 +1,57 @@
+﻿<Window x:Class="Presentation.WpfImportText"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Import To SQL from Oracle" Height="488" Width="747" WindowStartupLocation="CenterScreen" Icon="Icons/Cryoword.ico" Loaded="Window_Loaded">
+    <Grid>
+        <Button Content="Close" Height="22" HorizontalAlignment="Left" Margin="617,386,0,0" Name="btnClose" VerticalAlignment="Top" Width="81" Click="btnClose_Click" />
+        <Button Content="Export Text" Height="22" HorizontalAlignment="Left" Margin="194,386,0,0" Name="btnReadFile" VerticalAlignment="Top" Width="81" Click="btnReadFile_Click" />
+        <Button Content="Update trả nợ" Height="22" HorizontalAlignment="Left" Margin="27,386,0,0" Name="btnKhtn" VerticalAlignment="Top" Width="81" Click="btnKhtn_Click"/>
+        <Button Content="Up HSTD" Height="22" HorizontalAlignment="Left" Margin="27,420,0,0" Name="btnHstd" VerticalAlignment="Top" Width="81" Click="BtnHstd_OnClick"/>
+        <Button Content="Up HSBT CT" Height="22" HorizontalAlignment="Left" Margin="111,420,0,0" Name="btnHsbt" VerticalAlignment="Top" Width="81" Click="BtnHsbt_OnClick"/>
+        <Button Content="Up PSTD" Height="22" HorizontalAlignment="Left" Margin="194,420,0,0" Name="btnGNGAN" VerticalAlignment="Top" Width="81" Click="btnGNGAN_Click" />
+        <Button Content="Manual" Height="22" HorizontalAlignment="Left" Margin="110,386,0,0" Name="btnManual" VerticalAlignment="Top" Width="81" Click="BtnManual_OnClick" />
+        <Button Content="Insert To SQL" Height="22" HorizontalAlignment="Left" Margin="279,386,0,0" Name="btnInsertSql" VerticalAlignment="Top" Width="81" Click="btnInsertSql_Click" />
+        <Button Content="Update HSKH" Height="22" HorizontalAlignment="Left" Margin="363,386,0,0" Name="btnHskh" VerticalAlignment="Top" Width="81" Click="btnHskh_Click" />
+        <Button Content="Insert Single" Height="22" HorizontalAlignment="Left" Margin="533,386,0,0" Name="btnInsertOne" VerticalAlignment="Top" Width="81" Click="btnInsertOne_Click" />
+        <Button Content="Export Single" Height="22" HorizontalAlignment="Left" Margin="448,385,0,0" Name="btnExporttOne" VerticalAlignment="Top" Width="81" Click="btnExporttOne_Click" />
+        <Button Content="Insert Mẩu 06" Height="22" HorizontalAlignment="Left" Margin="363,420,0,0" Name="btnMau06"  VerticalAlignment="Top" Width="81" Click="btnMau06_Click" />
+        <Button Content="Check ORA" Height="22" HorizontalAlignment="Left" Margin="448,420,0,0" Name="btnCheckSl"  VerticalAlignment="Top" Width="81" Click="btnCheckSl_Click" />
+        <Button Content="Check SQL" Height="22" HorizontalAlignment="Left" Margin="532,420,0,0" Name="btnCheckSl_SQL"  VerticalAlignment="Top" Width="81" Click="btnCheckSlSQL_Click" />
+        <Button Content="Check Table" Height="22" HorizontalAlignment="Left" Margin="618,420,0,0" Name="btnCheckTable"  VerticalAlignment="Top" Width="81" Click="btnCheckTable_Click" />
+        <Button Content="BT PS" Height="22" HorizontalAlignment="Left" Margin="278,420,0,0" Name="btnBTPS"  VerticalAlignment="Top" Width="81" Click="btnBTPS_Click"/>
+        <DataGrid AutoGenerateColumns="True" Height="137" HorizontalAlignment="Left" Margin="24,105,0,0" Name="dgvNguon" VerticalAlignment="Top" Width="679" />
+        <DataGrid AutoGenerateColumns="True" Height="119" HorizontalAlignment="Left" Margin="24,247,0,0" Name="dgvDich" VerticalAlignment="Top" Width="679" />
+        <DatePicker Height="24" HorizontalAlignment="Left" Margin="63,22,0,0" Name="dtpNgayKu" VerticalAlignment="Top" Width="100" />
+        <Label Content="Ngày KU" Height="30" HorizontalAlignment="Left" Margin="7,21,0,0" Name="lblNgayKu" VerticalAlignment="Top" Width="auto" />
+        <DatePicker Height="24" HorizontalAlignment="Left" Margin="63,50,0,0" Name="dtpNgay" VerticalAlignment="Top" Width="100" />
+        <Label Content="Ngày GD" Height="30" HorizontalAlignment="Left" Margin="7,49,0,0" Name="lblNgay" VerticalAlignment="Top" Width="auto" />
+        <ComboBox Height="27" HorizontalAlignment="Left" Margin="220,18,0,0" Name="cboFile" VerticalAlignment="Top" Width="112" />
+        <Label Content="File" Height="27" HorizontalAlignment="Left" Margin="175,22,0,0" Name="lblFile" VerticalAlignment="Top" Width="38" />
+        <Label Content="Path" Height="24" HorizontalAlignment="Left" Margin="471,22,0,0" Name="lblPath" VerticalAlignment="Top" Width="43" />
+        <TextBox Height="17" HorizontalAlignment="Left" Margin="517,24,0,0" Name="txtPath" VerticalAlignment="Top" Width="66" Text="C:\TEXT\" />
+        <GroupBox Header="Điều kiện" Height="77" HorizontalAlignment="Left" Margin="591,1,0,0" Name="grpChon" VerticalAlignment="Top" Width="122">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="64*" />
+                    <ColumnDefinition Width="11*" />
+                </Grid.ColumnDefinitions>
+                <RadioButton Content="=(Bằng)" GroupName= "G1" Height="15" HorizontalAlignment="Left" Margin="4,6,0,0" Name="Ration1" VerticalAlignment="Top" Width="62" Grid.ColumnSpan="2" />
+                <RadioButton Content="&lt;(Nhỏ Hơn)" GroupName= "G1" Height="15" HorizontalAlignment="Left" Margin="4,20,0,0" Name="Ration2" VerticalAlignment="Top" Width="84" />
+                <RadioButton Content="&gt;(Lớn Hơn)" GroupName= "G1" Height="22" HorizontalAlignment="Left" Margin="4,37,0,0" Name="Ration3" VerticalAlignment="Top" Width="84" />
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Chọn Kỳ" Height="98" HorizontalAlignment="Left" Margin="350,1,0,0" Name="grpKy" VerticalAlignment="Top" Width="122">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="64*" />
+                    <ColumnDefinition Width="11*" />
+                </Grid.ColumnDefinitions>
+                <RadioButton Content="Ngày" GroupName= "G2" Height="15" HorizontalAlignment="Left" Margin="4,6,0,0" Name="Ration4" VerticalAlignment="Top" Width="62" Grid.ColumnSpan="2" Checked="Ration4_Checked" IsChecked="True"/>
+                <RadioButton Content="HSTDCT" GroupName= "G2" Height="15" HorizontalAlignment="Left" Margin="4,20,0,0" Name="Ration5" VerticalAlignment="Top" Width="84" Checked="Ration5_Checked" />
+                <RadioButton Content="Single" GroupName= "G2" Height="22" HorizontalAlignment="Left" Margin="4,37,0,0" Name="Ration6" VerticalAlignment="Top" Width="84" Checked="Ration6_Checked" />
+                <RadioButton Content="KHTC" GroupName= "G2" Height="22" HorizontalAlignment="Left" Margin="4,53,0,0" Name="Ration7" VerticalAlignment="Top" Width="84" Checked="Ration7_OnChecked" />
+            </Grid>
+        </GroupBox>
+        <Label Content="" Height="25" HorizontalAlignment="Left" Margin="43,74,0,0" Name="lblMess" VerticalAlignment="Top" Width="277" />
+    </Grid>
+</Window>

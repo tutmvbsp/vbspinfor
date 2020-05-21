@@ -1,0 +1,11 @@
+D:\OneDrive - MS Edu\IMP.VBSP\Public\bin\Debug\Public.dll
+D:\OneDrive - MS Edu\IMP.VBSP\Public\bin\Debug\Public.pdb
+D:\OneDrive - MS Edu\IMP.VBSP\Public\obj\Debug\Public.dll
+D:\OneDrive - MS Edu\IMP.VBSP\Public\obj\Debug\Public.pdb
+D:\OneDrive - MS Edu\IMP.VBSP\Public\obj\Debug\Public.csprojResolveAssemblyReference.cache
+D:\IMP.VBSP\Public\bin\Debug\Public.dll
+D:\IMP.VBSP\Public\bin\Debug\Public.pdb
+D:\IMP.VBSP\Public\bin\Debug\DocumentFormat.OpenXml.dll
+D:\IMP.VBSP\Public\obj\Debug\Public.csproj.ResolveComReference.cache
+D:\IMP.VBSP\Public\obj\Debug\Public.dll
+D:\IMP.VBSP\Public\obj\Debug\Public.pdb

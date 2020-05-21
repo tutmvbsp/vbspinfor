@@ -1,0 +1,16 @@
+﻿<Window x:Class="Presentation.WpfNqh"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Phân tích số liệu nợ quá hạn " Height="190" Width="362.438" WindowStartupLocation =" CenterScreen" Loaded="Window_Loaded" Icon="Icons/Network_b.ico">
+    <Grid>
+        <DatePicker Height="22" HorizontalAlignment="Left" Margin="172,17,0,0" Name="dtpNgayKu" VerticalAlignment="Top" Width="103"  />
+        <Label Content="Ngày KU" Height="29" HorizontalAlignment="Left" Margin="70,17,0,0" Name="lblNgayKu" VerticalAlignment="Top" Width="56" />
+        <Label Content="POS" Height="23" HorizontalAlignment="Left" Margin="70,46,0,0" Name="lblPos" VerticalAlignment="Top" Width="auto" />
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="172,49,0,0" Name="CboPos" VerticalAlignment="Top" Width="103" SelectionChanged="CboPos_SelectionChanged"  />
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="169,76,0,0" Name="CboXa" VerticalAlignment="Top" Width="106" IsEnabled="True"/>
+        <Label Content="Xã" Height="23" HorizontalAlignment="Left" Margin="70,76,0,0" Name="lblXa" VerticalAlignment="Top" Width="36" IsEnabled="True" />
+        <Button Content="Close" Height="22" HorizontalAlignment="Left" Margin="213,119,0,0" Name="btnclose" VerticalAlignment="Top" Width="91" Click="btnclose_Click" />
+        <Button Content="OK" Height="22" HorizontalAlignment="Left" Margin="90,119,0,0" Name="btnOk" VerticalAlignment="Top" Width="91" Click="btnOk_Click" />
+
+    </Grid>
+</Window>

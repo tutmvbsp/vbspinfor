@@ -1,0 +1,60 @@
+﻿<Window x:Class="Presentation.WpfKt740"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Chương Trình Kiểm Tra KT740" Height="431" Width="598" WindowStartupLocation="CenterScreen" xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" Loaded="Window_Loaded">
+    <Grid>
+        <Button Content="Close" Height="28" HorizontalAlignment="Left" Margin="302,364,0,0" Name="BtnClose" VerticalAlignment="Top" Width="96" Click="btnClose_Click" />
+        <Button Content="OK" Height="28" HorizontalAlignment="Left" Margin="184,364,0,0" Name="BtnOk" VerticalAlignment="Top" Width="99" Click="btnOk_Click" />
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="184,15,0,0" Name="CboPos" VerticalAlignment="Top" Width="152"  />
+        <telerik:Label Content="POS" Height="21" HorizontalAlignment="Left" Margin="153,15,0,0" Name="LblPos" VerticalAlignment="Top" Width="38" />
+        <telerik:Label Content="Ngày" Height="25" HorizontalAlignment="Left" Margin="7,14,0,0" Name="LblNgay" VerticalAlignment="Top" Width="58" />
+        <DatePicker Height="21" HorizontalAlignment="Left" Margin="47,15,0,0" Name="DtpNgay" VerticalAlignment="Top" Width="102" />
+        <GroupBox Height="303" HorizontalAlignment="Left" Margin="12,56,0,0" Name="GroupBox" VerticalAlignment="Top" Width="552">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="334*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <RadioButton Content="Kiểm Tra KH nhiều CASA" HorizontalAlignment="Left" Margin="6,6,0,0" Name="Ration01" Width="167" Height="auto" VerticalAlignment="Top" IsChecked="True" />
+                <RadioButton Grid.Column="0" Content="Khách hàng nhiều CIF" Height="auto" HorizontalAlignment="Left" Margin="6,25,0,0" Name="Ration02" VerticalAlignment="Top" Width="146" />
+                <RadioButton Grid.Column="0" Content="KH sai mã tổ CASA 105 &amp; KU" Height="auto" HorizontalAlignment="Left" Margin="6,45,0,0" Name="Ration03" VerticalAlignment="Top" Width="175" />
+                <RadioButton Grid.Column="0" Content="Kiểm tra thu lãi" Height="auto" HorizontalAlignment="Left" Margin="6,64,0,0" Name="Ration04" VerticalAlignment="Top" Width="169" />
+                <RadioButton Grid.Column="0" Content="Kiểm Tra Thu Tiết kiệm" Height="auto" HorizontalAlignment="Left" Margin="6,83,0,0" Name="Ration05" VerticalAlignment="Top" Width="139" />
+                <RadioButton Grid.Column="0" Content="Kiểm Tra vay nhiều tổ" Height="auto" HorizontalAlignment="Left" Margin="6,103,0,0" Name="Ration06" VerticalAlignment="Top" Width="145" />
+                <RadioButton Grid.Column="0" Content="Kiểm Tra Vay Vượt" Height="auto" HorizontalAlignment="Left" Margin="6,122,0,0" Name="Ration07" VerticalAlignment="Top" Width="139" />
+                <RadioButton Grid.Column="0" Content="Tổ Không Đạt Yêu Cầu" HorizontalAlignment="Left" Margin="6,0,0,92.4" Name="Ration08" Width="157" Height="auto" VerticalAlignment="Bottom" />
+                <RadioButton Grid.Column="0" Content="Vay Chồng Chéo" HorizontalAlignment="Left" Margin="6,144,0,0" Name="Ration9" Width="129" Height="auto" VerticalAlignment="Top" />
+                <RadioButton Grid.Column="0" Content="Tổ trưởng có Vợ/Chồng Vay" Height="auto" HorizontalAlignment="Left" Margin="7,180,0,0" Name="Ration10" VerticalAlignment="Top" Width="auto" />
+                <RadioButton Grid.Column="0" Content="Khế ước 3 tháng không hoạt động" Height="auto" HorizontalAlignment="Left" Margin="7,200,0,0" Name="Ration11" VerticalAlignment="Top" Width="215"  />
+                <RadioButton Grid.Column="0" Content="KH hết dư nợ còn CASA 105 " Height="auto" HorizontalAlignment="Left" Margin="7,222,0,0" Name="Ration12" VerticalAlignment="Top" Width="186"  />
+                <RadioButton Grid.Column="0" Content="Kiểm Tra Thiếu CAPQLV" Height="auto" HorizontalAlignment="Left" Margin="266,4,0,0" Name="Ration13" VerticalAlignment="Top" Width="155" />
+                <RadioButton Grid.Column="0" Content="Hộ vay có dư nợ trên 100tr" Height="auto" HorizontalAlignment="Left" Margin="266,21,0,0" Name="Ration14" VerticalAlignment="Top" Width="173" />
+                <RadioButton Grid.Column="0" Content="KU đăng ký quá 3 tháng không giải ngân" Height="auto" HorizontalAlignment="Left" Margin="266,39,0,0" Name="Ration15" VerticalAlignment="Top" Width="237" />
+                <RadioButton Grid.Column="0" Content="Gia hạn trể " Height="auto" HorizontalAlignment="Left" Margin="266,56,0,0" Name="Ration16" VerticalAlignment="Top" Width="237" />
+                <RadioButton Grid.Column="0" Content="Hộ có nhiều KU cùng chương trình vay " Height="auto" HorizontalAlignment="Left" Margin="266,74,0,0" Name="Ration17" VerticalAlignment="Top" Width="237" />
+                <RadioButton Grid.Column="0" Content="Giải ngân và thu TK tổ " Height="auto" HorizontalAlignment="Left" Margin="266,92,0,0" Name="Ration18" VerticalAlignment="Top" Width="237" />
+                <RadioButton Grid.Column="0" Content="Tổ Trưởng vay tổ khác " Height="auto" HorizontalAlignment="Left" Margin="266,110,0,0" Name="Ration19" VerticalAlignment="Top" Width="237" />
+                <RadioButton Grid.Column="0" Content="Gửi TK tổ dưới 10.000đ " Height="auto" HorizontalAlignment="Left" Margin="266,128,0,0" Name="Ration20" VerticalAlignment="Top" Width="237" />
+                <RadioButton Grid.Column="0" Content="KH có dư nợ - không có CASA 105 " Height="auto" HorizontalAlignment="Left" Margin="266,146,0,0" Name="Ration21" VerticalAlignment="Top" Width="237" />
+                <RadioButton Grid.Column="0" Content="HSSV có nhiều khế ước " Height="auto" HorizontalAlignment="Left" Margin="266,163,0,0" Name="Ration22" VerticalAlignment="Top" Width="237" />
+                <RadioButton Grid.Column="0" Content="Thông tin gia hạn " Height="auto" HorizontalAlignment="Left" Margin="266,181,0,0" Name="Ration23" VerticalAlignment="Top" Width="237" />
+                <RadioButton Grid.Column="0" Content="Kiểm tra tăng phiên GDX " Height="auto" HorizontalAlignment="Left" Margin="266,200,0,0" Name="Ration24" VerticalAlignment="Top" Width="237" />
+                <RadioButton Grid.Column="0" Content="Kiểm tra phân kỳ trả nợ HSSV " Height="auto" HorizontalAlignment="Left" Margin="7,242,0,0" Name="Ration25" VerticalAlignment="Top" Width="237" />
+                <RadioButton Grid.Column="0" Content="Kiểm tra thu TG tổ = TM trước Tất toán KU " Height="auto" HorizontalAlignment="Left" Margin="266,220,0,0" Name="Ration26" VerticalAlignment="Top" Width="237" />
+                <RadioButton Grid.Column="0" Content="Chủ hộ và thừa kế cùng vay" Height="auto" HorizontalAlignment="Left" Margin="266,240,0,0" Name="Ration27" VerticalAlignment="Top" Width="237" />
+                <RadioButton Grid.Column="0" Content="Tỷ lệ giao dịch" Height="auto" HorizontalAlignment="Left" Margin="266,258,0,-3" Name="Ration28" VerticalAlignment="Top" Width="237" />
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Export" HorizontalAlignment="Left" Height="46" Margin="371,0,0,0" VerticalAlignment="Top" Width="152">
+            <Grid Margin="0,-6,-2,-11.6">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="9*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <RadioButton Content="In" Name="Opt1" HorizontalAlignment="Left" Height="auto" Margin="18,3,0,0" VerticalAlignment="Top" Width="32" />
+                <RadioButton Content="Excel" Name="Opt2" HorizontalAlignment="Left" Height="auto" Margin="67,3,0,0" VerticalAlignment="Top" Width="59" Grid.ColumnSpan="2" Grid.Column="0" IsChecked="True" />
+
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>

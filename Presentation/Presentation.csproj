@@ -1,0 +1,4083 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4DDB597F-D74C-43DC-B20B-6AF5D011970A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Presentation</RootNamespace>
+    <AssemblyName>Presentation</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\192.168.1.200\imp%24\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Thông Tin Nhanh Intellect</ProductName>
+    <PublisherName>IMPVBSP</PublisherName>
+    <SuiteName>Phòng Tin Hoc</SuiteName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>imp.htm</WebPage>
+    <TrustUrlParameters>true</TrustUrlParameters>
+    <ApplicationRevision>415</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>GICON.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>19323810078B02F84A6E80836AF32268E703E7F5</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Presentation_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportAppServer.Controllers, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Open XML SDK\V2.5\lib\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.WMPLib">
+      <HintPath>..\DLL\Interop.WMPLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="microsoft.windowsapicodepack">
+      <HintPath>..\..\LapTrinh\microsoft.windowsapicodepack.dll</HintPath>
+    </Reference>
+    <Reference Include="MohammadDayyanCalendar, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\MohammadDayyanCalendar.dll</HintPath>
+    </Reference>
+    <Reference Include="PQScan.PDFToText">
+      <HintPath>..\..\LapTrinh\pqScan.PDFToText.Eval\Lib\x86\.net4.5\PQScan.PDFToText.dll</HintPath>
+    </Reference>
+    <Reference Include="SAPBusinessObjects.WPF.Viewer, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\LapTrinh\CRforVS_13_0_1\DLL\dotnet\SAPBusinessObjects.WPF.Viewer.dll</HintPath>
+    </Reference>
+    <Reference Include="SAPBusinessObjects.WPF.ViewerShared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\LapTrinh\CRforVS_13_0_1\DLL\dotnet\SAPBusinessObjects.WPF.ViewerShared.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Telerik.Windows.Controls, Version=2012.3.1017.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7" />
+    <Reference Include="Telerik.Windows.Controls.FixedDocumentViewers, Version=2018.2.620.45, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Windows.Controls.GridView, Version=2012.3.1017.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7" />
+    <Reference Include="Telerik.Windows.Controls.Input, Version=2012.3.1017.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7" />
+    <Reference Include="Telerik.Windows.Controls.Navigation, Version=2018.2.620.45, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Windows.Controls.RibbonView, Version=2018.2.620.45, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Windows.Data, Version=2012.3.1017.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7" />
+    <Reference Include="Telerik.Windows.Documents.Core, Version=2018.2.619.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Windows.Documents.Fixed, Version=2018.2.619.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.xaml.cs">
+      <DependentUpon>LogIn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDanhsachXLNto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportDanhsachXLNto.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportViewUI.xaml.cs">
+      <DependentUpon>ReportViewUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="rpt_BaoCaoTN.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_BaoCaoTN.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_Camera.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Camera.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_Camera01.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Camera01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_CanDoi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_CanDoi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_ChamCong.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ChamCong.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_ChamCong01.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ChamCong01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_ChamCong02.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ChamCong02.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_ChamCong03.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ChamCong03.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_ChamCong04.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ChamCong04.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_ChamCong05.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ChamCong05.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_ChamCong06.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ChamCong06.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_ChamCong07.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ChamCong07.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_ChamCong08.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ChamCong08.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_ChamCong09.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ChamCong09.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_ChamDiemGDX.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ChamDiemGDX.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_ChamDiemGDX_TH.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ChamDiemGDX_TH.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_ChkDoituong.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ChkDoituong.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_ChkDoituong01.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ChkDoituong01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_ChovayNangmuc01.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ChovayNangmuc01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_ChovayNangmuc01a.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ChovayNangmuc01a.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_ChovayNangmuc02.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ChovayNangmuc02.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_ChovayNangmuc03.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ChovayNangmuc03.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_CLT01.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_CLT01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_CtCanDoi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_CtCanDoi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_D15NHNN.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_D15NHNN.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_D20NHNN.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_D20NHNN.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_DanhGiaGV.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_DanhGiaGV.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_DCPTNO.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_DCPTNO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_DCPTNO_DC.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_DCPTNO_DC.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_DCPTNO_PT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_DCPTNO_PT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_Dienbao.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Dienbao.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_DienbaoH.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_DienbaoH.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_DinhSv.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_DinhSv.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_DinhSv1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_DinhSv1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_DKNOPLAI.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_DKNOPLAI.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_DoanhSo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_DoanhSo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_DoiChieu.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_DoiChieu.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_DongCasa.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_DongCasa.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_DonGia.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_DonGia.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_DonGiaHuyen.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_DonGiaHuyen.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_DvutM01.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_DvutM01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_DvutM02.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_DvutM02.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_DvutM03.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_DvutM03.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_DvutM04.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_DvutM04.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_DvutM04_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_DvutM04_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_DvutM05.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_DvutM05.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_DvutM06.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_DvutM06.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_GiaoNhanTVM01.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_GiaoNhanTVM01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_GiaoNhanTVM02.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_GiaoNhanTVM02.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_khb3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_khb3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_khb4.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_khb4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_khtc07.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_khtc07.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_KHTD.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_KHTD.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_KH_THUNO.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_KH_THUNO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_KiemtraDoichieu.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_KiemtraDoichieu.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_ksVay01.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ksVay01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_ksVay02.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ksVay02.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_KT3502.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_KT3502.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_KTNB01.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_KTNB01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_KTNB02.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_KTNB02.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_KTNB_01.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_KTNB_01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_KTNB_02.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_KTNB_02.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_KTNB_03.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_KTNB_03.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_KTNB_04.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_KTNB_04.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_KTNB_05.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_KTNB_05.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_KTNB_06.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_KTNB_06.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_KTNB_07.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_KTNB_07.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_KTNB_08.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_KTNB_08.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_LAIDT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_LAIDT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_khb.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_khb.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_khb1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_khb1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_khb2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_khb2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_khtc02_CTTW.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_khtc02_CTTW.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_khtc06.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_khtc06.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_KH_CBKT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_KH_CBKT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_KH_CBTD.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_KH_CBTD.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_KH_CBTD_MOI.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_KH_CBTD_MOI.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_KH_TH.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_KH_TH.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_KH_XA.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_KH_XA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_KH_XA_MOI.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_KH_XA_MOI.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_KTHDT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_KTHDT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_KTSDVV.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_KTSDVV.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_01TG.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_01TG.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_DanhSach.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_DanhSach.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_Dvut.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Dvut.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_HeSo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_HeSo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_KhGnTn.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_KhGnTn.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_KhGnTn01.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_KhGnTn01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_KhGnTn02.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_KhGnTn02.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_Khtc01.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Khtc01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_khtc02.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_khtc02.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_khtc02_CT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_khtc02_CT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_khtc03.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_khtc03.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_khtc04.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_khtc04.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_kt74003.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_kt74003.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_kt74008.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_kt74008.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_kt74010.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_kt74010.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_kt74011.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_kt74011.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_kt74012.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_kt74012.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_kt74013.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_kt74013.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_kt74014.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_kt74014.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_kt74015.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_kt74015.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_kt74017.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_kt74017.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_kt74018.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_kt74018.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_kt74019.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_kt74019.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_kt74020.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_kt74020.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_kt74022.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_kt74022.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_kt740_01.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_kt740_01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_kt740_02.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_kt740_02.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_kt740_04.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_kt740_04.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_kt740_05.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_kt740_05.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_kt740_06.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_kt740_06.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_kt740_07.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_kt740_07.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_kt740_09.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_kt740_09.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_kt740_12.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_kt740_12.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_LaiTonCt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_LaiTonCt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_LaiTonCTXa.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_LaiTonCTXa.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_LaiTonGB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_LaiTonGB.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_LaiTonGBao.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_LaiTonGBao.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_LaiTonPos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_LaiTonPos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_LaiTonTo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_LaiTonTo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_LaiTonXa.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_LaiTonXa.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_Mau06.cs">
+      <DependentUpon>rpt_Mau06.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rpt_Mau06_01.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Mau06_01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_NdhCtNew.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_NdhCtNew.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_NdhCtNewKHB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_NdhCtNewKHB.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_NguonCqlvTinh.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_NguonCqlvTinh.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_NguonCqlvTinh1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_NguonCqlvTinh1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_Nguon_Cqlv.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Nguon_Cqlv.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_Nguon_UT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Nguon_UT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_Nguon_UT_KHB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Nguon_UT_KHB.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_NOXH.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_NOXH.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_Nqh.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Nqh.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_NVBQ.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_NVBQ.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_NVKHB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_NVKHB.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_PhanTichSL.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_PhanTichSL.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_PhanTichSL_CT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_PhanTichSL_CT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_Pstk.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Pstk.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_Ptsl.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Ptsl.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_QlyGqvl.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_QlyGqvl.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_QlyGqvlNew.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_QlyGqvlNew.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_QlyNguon.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_QlyNguon.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_QlyNguonB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_QlyNguonB.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_QlyNguonC.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_QlyNguonC.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_QlyNguonKHB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_QlyNguonKHB.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_QT14.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_QT14.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_QT14A.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_QT14A.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_QT14_CD.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_QT14_CD.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_QtKhGnTn.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_QtKhGnTn.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_QtKhGnTn01.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_QtKhGnTn01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_QT_KHTC.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_QT_KHTC.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_QT_KHTCHuyen.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_QT_KHTCHuyen.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_QT_KHTCHuyen_NEW.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_QT_KHTCHuyen_NEW.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_QT_KHTC_NEW.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_QT_KHTC_NEW.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_RoiTo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_RoiTo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_RsGqvl.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_RsGqvl.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_SkeBsungTT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_SkeBsungTT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_SkeKhoanh.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_SkeKhoanh.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_SkeNdhCt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_SkeNdhCt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_SkePnkt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_SkePnkt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_SkeSv.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_SkeSv.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_SkeTo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_SkeTo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_SkeTo1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_SkeTo1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_SlDaily.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_SlDaily.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_SlDailyCt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_SlDailyCt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_SlVungBien.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_SlVungBien.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_SlVungBienCt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_SlVungBienCt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_SoLuuToRoi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_SoLuuToRoi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_SvCt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_SvCt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_SvPos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_SvPos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_SvTo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_SvTo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_SvXa.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_SvXa.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_TBNDH.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_TBNDH.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_TBNDH1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_TBNDH1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_TBNDH2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_TBNDH2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_TGTKTO01.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_TGTKTO01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_ThiDua.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ThiDua.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_ThiDua01.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ThiDua01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_ThiDua02.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ThiDua02.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_ThiDua03.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ThiDua03.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_ThiDua04.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ThiDua04.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_ThuLaiTon.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ThuLaiTon.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_TkXa.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_TkXa.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_TLGD.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_TLGD.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_TLGDXA.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_TLGDXA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_TLGDXA_TH.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_TLGDXA_TH.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_TSCC_BaoTri.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_TSCC_BaoTri.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_TSCC_BC.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_TSCC_BC.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_TSCC_GDX.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_TSCC_GDX.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_TSCC_GDX01.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_TSCC_GDX01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_TSCC_Hist.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_TSCC_Hist.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_TSCC_KiemKe.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_TSCC_KiemKe.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_TSCC_SaoKe.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_TSCC_SaoKe.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_TSCC_TH.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_TSCC_TH.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_TSCC_Tr.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_TSCC_Tr.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_TTKH.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_TTKH.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_TuyenTruyen.cs">
+      <DependentUpon>rpt_TuyenTruyen.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rpt_TuyenTruyen01.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_TuyenTruyen01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_TyLeNQH.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_TyLeNQH.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_Vpp02.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Vpp02.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_Vpp03.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Vpp03.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_Vpp04.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Vpp04.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_Vpp05.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Vpp05.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_XaTo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_XaTo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_XLN_M1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_XLN_M1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_XLN_M4.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_XLN_M4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPUtility.cs" />
+    <Compile Include="rpt_Vpp01.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Vpp01.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ViewModel.cs" />
+    <Compile Include="Wpf01TG.xaml.cs">
+      <DependentUpon>Wpf01TG.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfAdd_KHB.xaml.cs">
+      <DependentUpon>WpfAdd_KHB.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfBack.xaml.cs">
+      <DependentUpon>WpfBack.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfBaoCao.xaml.cs">
+      <DependentUpon>WpfBaoCao.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfCamera.xaml.cs">
+      <DependentUpon>WpfCamera.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfCamera01.xaml.cs">
+      <DependentUpon>WpfCamera01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfCanDoi.xaml.cs">
+      <DependentUpon>WpfCanDoi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfCauHoi.xaml.cs">
+      <DependentUpon>WpfCauHoi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfCBTD.xaml.cs">
+      <DependentUpon>WpfCBTD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfChamCong.xaml.cs">
+      <DependentUpon>WpfChamCong.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfChamCongChk.xaml.cs">
+      <DependentUpon>WpfChamCongChk.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfChamCongSet.xaml.cs">
+      <DependentUpon>WpfChamCongSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfChamCongTK.xaml.cs">
+      <DependentUpon>WpfChamCongTK.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfChamDiemGDX.xaml.cs">
+      <DependentUpon>WpfChamDiemGDX.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfChangePass.xaml.cs">
+      <DependentUpon>WpfChangePass.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfChkDoiTuong.xaml.cs">
+      <DependentUpon>WpfChkDoiTuong.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfChkDoiTuongTH.xaml.cs">
+      <DependentUpon>WpfChkDoiTuongTH.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfChkDoiTuongThke.xaml.cs">
+      <DependentUpon>WpfChkDoiTuongThke.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfChkUpOffline.xaml.cs">
+      <DependentUpon>WpfChkUpOffline.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfChotNguon.xaml.cs">
+      <DependentUpon>WpfChotNguon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfChovayNangmuc.xaml.cs">
+      <DependentUpon>WpfChovayNangmuc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfChovayNangmuc01.xaml.cs">
+      <DependentUpon>WpfChovayNangmuc01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfDoanhSo.xaml.cs">
+      <DependentUpon>WpfDoanhSo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfCtCanDoi.xaml.cs">
+      <DependentUpon>WpfCtCanDoi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfCutFile.xaml.cs">
+      <DependentUpon>WpfCutFile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfD15NHNN.xaml.cs">
+      <DependentUpon>WpfD15NHNN.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfDanhGiaGV.xaml.cs">
+      <DependentUpon>WpfDanhGiaGV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfDanhSach.xaml.cs">
+      <DependentUpon>WpfDanhSach.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfDbf.xaml.cs">
+      <DependentUpon>WpfDbf.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfDCPTNO.xaml.cs">
+      <DependentUpon>WpfDCPTNO.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfDelete.xaml.cs">
+      <DependentUpon>WpfDelete.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfDienbao.xaml.cs">
+      <DependentUpon>WpfDienbao.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfDinhSv.xaml.cs">
+      <DependentUpon>WpfDinhSv.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKt3502.xaml.cs">
+      <DependentUpon>WpfKt3502.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKt740New.xaml.cs">
+      <DependentUpon>WpfKt740New.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKTNB01.xaml.cs">
+      <DependentUpon>WpfKTNB01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKTNB02.xaml.cs">
+      <DependentUpon>WpfKTNB02.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKTNB03.xaml.cs">
+      <DependentUpon>WpfKTNB03.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKTNB_01.xaml.cs">
+      <DependentUpon>WpfKTNB_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKTNB_02.xaml.cs">
+      <DependentUpon>WpfKTNB_02.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKTNB_03.xaml.cs">
+      <DependentUpon>WpfKTNB_03.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKTNB_04.xaml.cs">
+      <DependentUpon>WpfKTNB_04.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKTNB_05.xaml.cs">
+      <DependentUpon>WpfKTNB_05.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKTNB_06.xaml.cs">
+      <DependentUpon>WpfKTNB_06.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKTNB_07.xaml.cs">
+      <DependentUpon>WpfKTNB_07.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKTNB_08.xaml.cs">
+      <DependentUpon>WpfKTNB_08.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKTNB_Set.xaml.cs">
+      <DependentUpon>WpfKTNB_Set.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfLeThuy.xaml.cs">
+      <DependentUpon>WpfLeThuy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfNOXH.xaml.cs">
+      <DependentUpon>WpfNOXH.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfRsGqvl.xaml.cs">
+      <DependentUpon>WpfRsGqvl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfSvSaoKe.xaml.cs">
+      <DependentUpon>WpfSvSaoKe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfDinhSv_ThuCong.xaml.cs">
+      <DependentUpon>WpfDinhSv_ThuCong.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfDKNOPLAI.xaml.cs">
+      <DependentUpon>WpfDKNOPLAI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfCLT.xaml.cs">
+      <DependentUpon>WpfCLT.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfDoiChieu.xaml.cs">
+      <DependentUpon>WpfDoiChieu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfDongCasa.xaml.cs">
+      <DependentUpon>WpfDongCasa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfDonGia.xaml.cs">
+      <DependentUpon>WpfDonGia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfDonGiaNhapTay.xaml.cs">
+      <DependentUpon>WpfDonGiaNhapTay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfDvut.xaml.cs">
+      <DependentUpon>WpfDvut.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfDvutMoi.xaml.cs">
+      <DependentUpon>WpfDvutMoi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfExcel.xaml.cs">
+      <DependentUpon>WpfExcel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfGiaoNhanTV.xaml.cs">
+      <DependentUpon>WpfGiaoNhanTV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfGqvlTinh.xaml.cs">
+      <DependentUpon>WpfGqvlTinh.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfHscb.xaml.cs">
+      <DependentUpon>WpfHscb.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfImportText.xaml.cs">
+      <DependentUpon>WpfImportText.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfImpPortDS.xaml.cs">
+      <DependentUpon>WpfImpPortDS.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfInKhGnTn.xaml.cs">
+      <DependentUpon>WpfInKhGnTn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKhaoSat.xaml.cs">
+      <DependentUpon>WpfKhaoSat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKhaoSatVay.xaml.cs">
+      <DependentUpon>WpfKhaoSatVay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKhb.xaml.cs">
+      <DependentUpon>WpfKhb.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKhGnTn.xaml.cs">
+      <DependentUpon>WpfKhGnTn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKHTC.xaml.cs">
+      <DependentUpon>WpfKHTC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKhtc01.xaml.cs">
+      <DependentUpon>WpfKhtc01.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WpfKhtc02.xaml.cs">
+      <DependentUpon>WpfKhtc02.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKhtc03.xaml.cs">
+      <DependentUpon>WpfKhtc03.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKhtc04.xaml.cs">
+      <DependentUpon>WpfKhtc04.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKhtc06.xaml.cs">
+      <DependentUpon>WpfKhtc06.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKhtc07.xaml.cs">
+      <DependentUpon>WpfKhtc07.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKHTD.xaml.cs">
+      <DependentUpon>WpfKHTD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKHTN.xaml.cs">
+      <DependentUpon>WpfKHTN.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKH_CBTD.xaml.cs">
+      <DependentUpon>WpfKH_CBTD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKH_CBTD_MOI.xaml.cs">
+      <DependentUpon>WpfKH_CBTD_MOI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKSM01.xaml.cs">
+      <DependentUpon>WpfKSM01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKSM03.xaml.cs">
+      <DependentUpon>WpfKSM03.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKSM04.xaml.cs">
+      <DependentUpon>WpfKSM04.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKSM05.xaml.cs">
+      <DependentUpon>WpfKSM05.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKSM06.xaml.cs">
+      <DependentUpon>WpfKSM06.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKSM07.xaml.cs">
+      <DependentUpon>WpfKSM07.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKSM08.xaml.cs">
+      <DependentUpon>WpfKSM08.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKTHDT.xaml.cs">
+      <DependentUpon>WpfKTHDT.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKTNN.xaml.cs">
+      <DependentUpon>WpfKTNN.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfKTSDVV.xaml.cs">
+      <DependentUpon>WpfKTSDVV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfLaiThang.xaml.cs">
+      <DependentUpon>WpfLaiThang.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfLaiTon.xaml.cs">
+      <DependentUpon>WpfLaiTon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfLuong01.xaml.cs">
+      <DependentUpon>WpfLuong01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfLuong02.xaml.cs">
+      <DependentUpon>WpfLuong02.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfLuuOffline.xaml.cs">
+      <DependentUpon>WpfLuuOffline.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfMau06.xaml.cs">
+      <DependentUpon>WpfMau06.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfNguonCqlv.xaml.cs">
+      <DependentUpon>WpfNguonCqlv.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfNguonCqlvTinh.xaml.cs">
+      <DependentUpon>WpfNguonCqlvTinh.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfNguonDB.xaml.cs">
+      <DependentUpon>WpfNguonDB.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfNhapCauHoi.xaml.cs">
+      <DependentUpon>WpfNhapCauHoi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfNhapNguon.xaml.cs">
+      <DependentUpon>WpfNhapNguon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfNhapNguonTK.xaml.cs">
+      <DependentUpon>WpfNhapNguonTK.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfNhapNguonTT.xaml.cs">
+      <DependentUpon>WpfNhapNguonTT.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfNhapPhep.xaml.cs">
+      <DependentUpon>WpfNhapPhep.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfNhapTGDC.xaml.cs">
+      <DependentUpon>WpfNhapTGDC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfNhatKy.xaml.cs">
+      <DependentUpon>WpfNhatKy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfNHNN.xaml.cs">
+      <DependentUpon>WpfNHNN.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfNqh.xaml.cs">
+      <DependentUpon>WpfNqh.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfNdhCt.xaml.cs">
+      <DependentUpon>WpfNdhCt.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfNVBQ.xaml.cs">
+      <DependentUpon>WpfNVBQ.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfNVKHB.xaml.cs">
+      <DependentUpon>WpfNVKHB.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfPdf.xaml.cs">
+      <DependentUpon>WpfPdf.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfPhanLoaiKH.xaml.cs">
+      <DependentUpon>WpfPhanLoaiKH.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfPhanTichSL.xaml.cs">
+      <DependentUpon>WpfPhanTichSL.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfPhanTichSL_CT.xaml.cs">
+      <DependentUpon>WpfPhanTichSL_CT.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfPLN.xaml.cs">
+      <DependentUpon>WpfPLN.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfPnkt.xaml.cs">
+      <DependentUpon>WpfPnkt.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfPstk.xaml.cs">
+      <DependentUpon>WpfPstk.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfPtsl.xaml.cs">
+      <DependentUpon>WpfPtsl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfQlyGqvl.xaml.cs">
+      <DependentUpon>WpfQlyGqvl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfQlyNguon.xaml.cs">
+      <DependentUpon>WpfQlyNguon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfQt14.xaml.cs">
+      <DependentUpon>WpfQt14.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfQtKhGnTn.xaml.cs">
+      <DependentUpon>WpfQtKhGnTn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfQttcNhapKH.xaml.cs">
+      <DependentUpon>WpfQttcNhapKH.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfQttcNhapTay.xaml.cs">
+      <DependentUpon>WpfQttcNhapTay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfQt_Khtc.xaml.cs">
+      <DependentUpon>WpfQt_Khtc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfSkeKhoanh.xaml.cs">
+      <DependentUpon>WpfSkeKhoanh.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfSkeKu.xaml.cs">
+      <DependentUpon>WpfSkeKu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfSkeKuCt.xaml.cs">
+      <DependentUpon>WpfSkeKuCt.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfSkeNdh.xaml.cs">
+      <DependentUpon>WpfSkeNdh.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfSkeNqh.xaml.cs">
+      <DependentUpon>WpfSkeNqh.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfSkePnkt.xaml.cs">
+      <DependentUpon>WpfSkePnkt.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfSkeTo.xaml.cs">
+      <DependentUpon>WpfSkeTo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfSlDaily.xaml.cs">
+      <DependentUpon>WpfSlDaily.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfSlVungBien.xaml.cs">
+      <DependentUpon>WpfSlVungBien.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfSvRaTruong.xaml.cs">
+      <DependentUpon>WpfSvRaTruong.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WpfTbGhn.xaml.cs">
+      <DependentUpon>WpfTbGhn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfTest.xaml.cs">
+      <DependentUpon>WpfTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfLuyenThiNV.xaml.cs">
+      <DependentUpon>WpfLuyenThiNV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfText.xaml.cs">
+      <DependentUpon>WpfText.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfTGTKTO.xaml.cs">
+      <DependentUpon>WpfTGTKTO.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfThiDuaCapNhat.xaml.cs">
+      <DependentUpon>WpfThiDuaCapNhat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfThiDuaChamPGD.xaml.cs">
+      <DependentUpon>WpfThiDuaChamPGD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfThiDuaTH.xaml.cs">
+      <DependentUpon>WpfThiDuaTH.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfThiDuaThem.xaml.cs">
+      <DependentUpon>WpfThiDuaThem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfThiTN.xaml.cs">
+      <DependentUpon>WpfThiTN.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfTienIch.xaml.cs">
+      <DependentUpon>WpfTienIch.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfTimKiem.xaml.cs">
+      <DependentUpon>WpfTimKiem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfTkXa.xaml.cs">
+      <DependentUpon>WpfTkXa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfTLGDXA.xaml.cs">
+      <DependentUpon>WpfTLGDXA.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfTSCC01.xaml.cs">
+      <DependentUpon>WpfTSCC01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfTSCC02.xaml.cs">
+      <DependentUpon>WpfTSCC02.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfTSCC03.xaml.cs">
+      <DependentUpon>WpfTSCC03.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfTSCCBaoTri.xaml.cs">
+      <DependentUpon>WpfTSCCBaoTri.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfTSCCBC.xaml.cs">
+      <DependentUpon>WpfTSCCBC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfTSCCGDX.xaml.cs">
+      <DependentUpon>WpfTSCCGDX.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfTSCCKiemKe.xaml.cs">
+      <DependentUpon>WpfTSCCKiemKe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfTSCCNhap.xaml.cs">
+      <DependentUpon>WpfTSCCNhap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfTSCCTLY.xaml.cs">
+      <DependentUpon>WpfTSCCTLY.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfTTKH.xaml.cs">
+      <DependentUpon>WpfTTKH.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfTTKU.xaml.cs">
+      <DependentUpon>WpfTTKU.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfTTTO.xaml.cs">
+      <DependentUpon>WpfTTTO.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfTuyenTruyen.xaml.cs">
+      <DependentUpon>WpfTuyenTruyen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfTuyenTruyenSet.xaml.cs">
+      <DependentUpon>WpfTuyenTruyenSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfTuyenTruyenVB.xaml.cs">
+      <DependentUpon>WpfTuyenTruyenVB.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfTyLeNQH.xaml.cs">
+      <DependentUpon>WpfTyLeNQH.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfUpdateOFN.xaml.cs">
+      <DependentUpon>WpfUpdateOFN.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfUpdateSL.xaml.cs">
+      <DependentUpon>WpfUpdateSL.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfUser.xaml.cs">
+      <DependentUpon>WpfUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfVpp.xaml.cs">
+      <DependentUpon>WpfVpp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfVppBC.xaml.cs">
+      <DependentUpon>WpfVppBC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfVppCapNhat.xaml.cs">
+      <DependentUpon>WpfVppCapNhat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfWord.xaml.cs">
+      <DependentUpon>WpfWord.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfXaTo.xaml.cs">
+      <DependentUpon>WpfXaTo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wpfkt740.xaml.cs">
+      <DependentUpon>Wpfkt740.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfXLN_M1.xaml.cs">
+      <DependentUpon>WpfXLN_M1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfXLN_M3.xaml.cs">
+      <DependentUpon>WpfXLN_M3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfXLN_M4.xaml.cs">
+      <DependentUpon>WpfXLN_M4.xaml</DependentUpon>
+    </Compile>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="LogIn.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="ReportViewUI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wpf01TG.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfAdd_KHB.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfBack.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfBaoCao.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfCamera.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfCamera01.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfCanDoi.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfCauHoi.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfCBTD.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfChamCong.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfChamCongChk.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfChamCongSet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfChamCongTK.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfChamDiemGDX.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfChangePass.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfChkDoiTuong.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfChkDoiTuongTH.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfChkDoiTuongThke.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfChkUpOffline.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfChotNguon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfChovayNangmuc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfChovayNangmuc01.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfDoanhSo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfCtCanDoi.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfCutFile.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfD15NHNN.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfDanhGiaGV.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfDanhSach.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfDbf.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfDCPTNO.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfDelete.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WpfDienbao.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WpfDinhSv.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKt3502.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKt740New.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKTNB01.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKTNB02.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKTNB03.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKTNB_01.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKTNB_02.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKTNB_03.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKTNB_04.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKTNB_05.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKTNB_06.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKTNB_07.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKTNB_08.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKTNB_Set.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfLeThuy.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfNOXH.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfRsGqvl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfSvSaoKe.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfDinhSv_ThuCong.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WpfDKNOPLAI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfCLT.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfDoiChieu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfDongCasa.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfDonGia.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfDonGiaNhapTay.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfDvut.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WpfDvutMoi.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfExcel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfGiaoNhanTV.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfGqvlTinh.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfHscb.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfImportText.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WpfImpPortDS.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfInKhGnTn.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WpfKhaoSat.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKhaoSatVay.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKhb.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKhGnTn.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WpfKHTC.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKhtc01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WpfKhtc02.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WpfKhtc03.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKhtc04.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKhtc06.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKhtc07.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKHTD.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKHTN.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKH_CBTD.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKH_CBTD_MOI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKSM01.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKSM03.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKSM04.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKSM05.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKSM06.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKSM07.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKSM08.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKTHDT.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKTNN.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfKTSDVV.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfLaiThang.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfLaiTon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfLuong01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WpfLuong02.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WpfLuuOffline.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfMau06.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfNguonCqlv.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfNguonCqlvTinh.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfNguonDB.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfNhapCauHoi.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfNhapNguon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfNhapNguonTK.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfNhapNguonTT.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfNhapPhep.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfNhapTGDC.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfNhatKy.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfNHNN.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfNqh.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfNdhCt.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfNVBQ.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfNVKHB.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfPdf.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfPhanLoaiKH.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfPhanTichSL.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfPhanTichSL_CT.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfPLN.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfPnkt.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfPstk.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WpfPtsl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfQlyGqvl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfQlyNguon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfQt14.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfQtKhGnTn.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfQttcNhapKH.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfQttcNhapTay.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfQt_Khtc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfSkeKhoanh.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfSkeKu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfSkeKuCt.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfSkeNdh.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfSkeNqh.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfSkePnkt.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfSkeTo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WpfSlDaily.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfSlVungBien.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfSvRaTruong.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WpfTbGhn.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WpfLuyenThiNV.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfText.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfTGTKTO.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfThiDuaCapNhat.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfThiDuaChamPGD.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfThiDuaTH.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfThiDuaThem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfThiTN.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfTienIch.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfTimKiem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfTkXa.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfTLGDXA.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfTSCC01.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfTSCC02.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfTSCC03.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfTSCCBaoTri.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfTSCCBC.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfTSCCGDX.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfTSCCKiemKe.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfTSCCNhap.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfTSCCTLY.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfTTKH.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfTTKU.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfTTTO.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfTuyenTruyen.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfTuyenTruyenSet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfTuyenTruyenVB.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfTyLeNQH.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfUpdateOFN.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfUpdateSL.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfUser.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfVpp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfVppBC.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfVppCapNhat.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfWord.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfXaTo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Wpfkt740.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfXLN_M1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfXLN_M3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WpfXLN_M4.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Licenses.licx" />
+    <EmbeddedResource Include="rpt_ChamCong06.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ChamCong06.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_ChamCong07.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ChamCong07.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_ChamCong08.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ChamCong08.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_ChamCong09.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ChamCong09.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_DvutM04_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_DvutM04_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_KT3502.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_KT3502.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_KTNB_01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_KTNB_01.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_KTNB_02.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_KTNB_02.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_KTNB_03.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_KTNB_03.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_KTNB_04.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_KTNB_04.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_KTNB_05.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_KTNB_05.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_KTNB_06.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_KTNB_06.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_KTNB_07.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_KTNB_07.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_KTNB_08.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_KTNB_08.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_Mau06.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Mau06.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_Mau06_01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Mau06_01.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_NOXH.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_NOXH.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_QlyGqvlNew.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_QlyGqvlNew.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_RoiTo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_RoiTo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_RsGqvl.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_RsGqvl.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_TSCC_BaoTri.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_TSCC_BaoTri.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_TSCC_BC.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_TSCC_BC.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_TSCC_GDX.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_TSCC_GDX.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_TSCC_GDX01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_TSCC_GDX01.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_TSCC_Hist.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_TSCC_Hist.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_TSCC_KiemKe.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_TSCC_KiemKe.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_TSCC_SaoKe.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_TSCC_SaoKe.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_TSCC_TH.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_TSCC_TH.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_TSCC_Tr.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_TSCC_Tr.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Resource Include="Icons\Excel-icon.png" />
+    <Content Include="Sound\Dung.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound\Sai.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="ReportDanhsachXLNto.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportDanhsachXLNto.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_BaoCaoTN.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_BaoCaoTN.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_Camera.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Camera.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_Camera01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Camera01.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_ChamCong.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ChamCong.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_ChamCong01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ChamCong01.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_ChamCong02.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ChamCong02.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_ChamCong03.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ChamCong03.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_ChamCong04.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ChamCong04.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_ChamCong05.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ChamCong05.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_ChkDoituong.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ChkDoituong.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_ChkDoituong01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ChkDoituong01.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_ChovayNangmuc01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ChovayNangmuc01.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_ChovayNangmuc01a.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ChovayNangmuc01a.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_ChovayNangmuc02.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ChovayNangmuc02.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_ChovayNangmuc03.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ChovayNangmuc03.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_CLT01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_CLT01.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_DanhGiaGV.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_DanhGiaGV.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_khb3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_khb3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_khb4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_khb4.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_khtc07.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_khtc07.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_KHTD.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_KHTD.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_KH_THUNO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_KH_THUNO.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_KiemtraDoichieu.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_KiemtraDoichieu.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_ksVay01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ksVay01.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_ksVay02.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ksVay02.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_KTNB01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_KTNB01.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_KTNB02.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_KTNB02.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_LAIDT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_LAIDT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_NVBQ.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_NVBQ.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_NVKHB.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_NVKHB.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_Ptsl.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Ptsl.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_QT_KHTCHuyen_NEW.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_QT_KHTCHuyen_NEW.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_QT_KHTC_NEW.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_QT_KHTC_NEW.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_TGTKTO01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_TGTKTO01.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_ThiDua.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ThiDua.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_ThiDua01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ThiDua01.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_ThiDua02.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ThiDua02.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_ThiDua03.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ThiDua03.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_ThiDua04.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ThiDua04.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_TTKH.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_TTKH.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_TuyenTruyen.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_TuyenTruyen.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_TuyenTruyen01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_TuyenTruyen01.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_Vpp02.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Vpp02.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_Vpp03.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Vpp03.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_Vpp04.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Vpp04.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_Vpp05.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Vpp05.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_XLN_M1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_XLN_M1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_XLN_M4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_XLN_M4.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_Vpp01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Vpp01.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Resource Include="Images\NetWork.jpg" />
+    <Resource Include="Images\KeyLogin.jpg" />
+    <Resource Include="Icons\1977-10164.png" />
+    <Resource Include="Icons\Telephone.ico" />
+    <Resource Include="Icons\ChangePass.ico" />
+    <EmbeddedResource Include="rpt_CanDoi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_CanDoi.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_CtCanDoi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_CtCanDoi.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_Dienbao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Dienbao.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_DienbaoH.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_DienbaoH.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_DoanhSo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_DoanhSo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_DongCasa.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_DongCasa.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_DvutM01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_DvutM01.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_DvutM02.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_DvutM02.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_DvutM03.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_DvutM03.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_DvutM04.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_DvutM04.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_DvutM05.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_DvutM05.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_DvutM06.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_DvutM06.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_GiaoNhanTVM01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_GiaoNhanTVM01.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_GiaoNhanTVM02.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_GiaoNhanTVM02.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_khtc02_CTTW.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_khtc02_CTTW.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_KH_CBKT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_KH_CBKT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_KH_CBTD.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_KH_CBTD.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_KH_CBTD_MOI.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_KH_CBTD_MOI.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_KH_TH.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_KH_TH.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_KH_XA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_KH_XA.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_KH_XA_MOI.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_KH_XA_MOI.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_KTHDT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_KTHDT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_NdhCtNew.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_NdhCtNew.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_NdhCtNewKHB.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_NdhCtNewKHB.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_NguonCqlvTinh.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_NguonCqlvTinh.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_NguonCqlvTinh1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_NguonCqlvTinh1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_Nguon_Cqlv.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Nguon_Cqlv.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_Nguon_UT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Nguon_UT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_Nguon_UT_KHB.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Nguon_UT_KHB.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_Nqh.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Nqh.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_QlyGqvl.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_QlyGqvl.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_QlyNguon.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_QlyNguon.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_QlyNguonB.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_QlyNguonB.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_QlyNguonC.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_QlyNguonC.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_QlyNguonKHB.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_QlyNguonKHB.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_QT_KHTCHuyen.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_QT_KHTCHuyen.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_SkeBsungTT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_SkeBsungTT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_SkeNdhCt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_SkeNdhCt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_SkePnkt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_SkePnkt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_SkeSv.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_SkeSv.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_SlDaily.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_SlDaily.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_SlDailyCt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_SlDailyCt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_SlVungBien.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_SlVungBien.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_SlVungBienCt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_SlVungBienCt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_TBNDH.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_TBNDH.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_TBNDH1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_TBNDH1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_TBNDH2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_TBNDH2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_ThuLaiTon.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ThuLaiTon.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_TkXa.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_TkXa.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_TLGD.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_TLGD.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_TLGDXA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_TLGDXA.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_TLGDXA_TH.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_TLGDXA_TH.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_TyLeNQH.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_TyLeNQH.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_XaTo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_XaTo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Resource Include="Icons\Msn.png" />
+    <Resource Include="Icons\User Computer.png" />
+    <Resource Include="Icons\OK.ico" />
+    <Resource Include="Icons\UBND.ico" />
+    <Resource Include="Icons\Risk.ico" />
+    <Resource Include="Icons\foxpro.png" />
+    <Resource Include="Icons\LogOut.jpg" />
+    <Resource Include="Icons\VBSP.ico" />
+    <Resource Include="Icons\LOGO.bmp" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_ChamDiemGDX.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ChamDiemGDX.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_ChamDiemGDX_TH.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ChamDiemGDX_TH.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_D15NHNN.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_D15NHNN.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_D20NHNN.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_D20NHNN.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_DCPTNO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_DCPTNO.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_DCPTNO_DC.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_DCPTNO_DC.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_DCPTNO_PT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_DCPTNO_PT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_DinhSv.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_DinhSv.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_DinhSv1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_DinhSv1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_DKNOPLAI.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_DKNOPLAI.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_DoiChieu.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_DoiChieu.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_DonGia.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_DonGia.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_DonGiaHuyen.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_DonGiaHuyen.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_khb.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_khb.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_khb1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_khb1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_khb2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_khb2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_khtc06.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_khtc06.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_KTSDVV.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_KTSDVV.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_01TG.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_01TG.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_DanhSach.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_DanhSach.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_Dvut.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Dvut.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_HeSo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_HeSo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_KhGnTn.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_KhGnTn.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_KhGnTn01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_KhGnTn01.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_KhGnTn02.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_KhGnTn02.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_Khtc01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Khtc01.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_khtc02.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_khtc02.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_khtc02_CT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_khtc02_CT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_khtc03.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_khtc03.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_khtc04.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_khtc04.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_kt74003.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_kt74003.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_kt74008.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_kt74008.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_kt74010.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_kt74010.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_kt74011.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_kt74011.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_kt74012.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_kt74012.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_kt74013.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_kt74013.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_kt74014.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_kt74014.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_kt74015.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_kt74015.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_kt74017.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_kt74017.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_kt74018.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_kt74018.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_kt74019.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_kt74019.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_kt74020.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_kt74020.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_kt74022.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_kt74022.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_kt740_01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_kt740_01.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_kt740_02.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_kt740_02.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_kt740_04.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_kt740_04.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_kt740_05.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_kt740_05.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_kt740_06.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_kt740_06.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_kt740_07.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_kt740_07.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_kt740_09.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_kt740_09.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_kt740_12.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_kt740_12.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_LaiTonCt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_LaiTonCt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_LaiTonCTXa.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_LaiTonCTXa.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_LaiTonGB.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_LaiTonGB.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_LaiTonGBao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_LaiTonGBao.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_LaiTonPos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_LaiTonPos.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_LaiTonTo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_LaiTonTo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_LaiTonXa.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_LaiTonXa.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_PhanTichSL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_PhanTichSL.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_PhanTichSL_CT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_PhanTichSL_CT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_Pstk.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Pstk.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_QT14.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_QT14.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_QT14A.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_QT14A.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_QT14_CD.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_QT14_CD.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_QtKhGnTn.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_QtKhGnTn.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_QtKhGnTn01.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_QtKhGnTn01.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_QT_KHTC.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_QT_KHTC.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_SkeKhoanh.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_SkeKhoanh.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_SkeTo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_SkeTo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_SkeTo1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_SkeTo1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_SoLuuToRoi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_SoLuuToRoi.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_SvCt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_SvCt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_SvPos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_SvPos.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_SvTo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_SvTo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_SvXa.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_SvXa.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Content Include="Help\VBSP_Helper.chm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{7C1A3C78-2ECF-48E7-8C27-21A5DCE8DFAC}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{F215C2B6-1076-4278-815B-A41B48D77598}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Public\Public.csproj">
+      <Project>{0B19B72A-B859-4586-BF4A-1CB8476849C0}</Project>
+      <Name>Public</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Adminstrative-Tools.ico" />
+    <Resource Include="Icons\Audio-CDs.ico" />
+    <Resource Include="Icons\Audio_CD.ico" />
+    <Resource Include="Icons\BMP-Image.ico" />
+    <Resource Include="Icons\CD-Drive.ico" />
+    <Resource Include="Icons\CD.ico" />
+    <Resource Include="Icons\Clock.ico" />
+    <Resource Include="Icons\Close Folder.ico" />
+    <Resource Include="Icons\Closed-Folder.ico" />
+    <Resource Include="Icons\Command.ico" />
+    <Resource Include="Icons\config.ico" />
+    <Resource Include="Icons\Control-Panel.ico" />
+    <Resource Include="Icons\CppAddIn.ico" />
+    <Resource Include="Icons\Cryoaccess.ico" />
+    <Resource Include="Icons\Cryoexcel.ico" />
+    <Resource Include="Icons\Cryofrontpage.ico" />
+    <Resource Include="Icons\cryoppoint.ico" />
+    <Resource Include="Icons\Cryoutlook.ico" />
+    <Resource Include="Icons\Cryovisio.ico" />
+    <Resource Include="Icons\Cryoword.ico" />
+    <Resource Include="Icons\cryo_acrobat.ico" />
+    <Resource Include="Icons\cryo_adobesuite.ico" />
+    <Resource Include="Icons\cryo_golive.ico" />
+    <Resource Include="Icons\cryo_illustrator.ico" />
+    <Resource Include="Icons\cryo_indesign.ico" />
+    <Resource Include="Icons\CSharpAddIn.ico" />
+    <Resource Include="Icons\Default.ico" />
+    <Resource Include="Icons\Default_b.ico" />
+    <Resource Include="Icons\delete.ico" />
+    <Resource Include="Icons\Desktop.ico" />
+    <Resource Include="Icons\Desktop1.ico" />
+    <Resource Include="Icons\Desktop_b.ico" />
+    <Resource Include="Icons\Dial-Up.ico" />
+    <Resource Include="Icons\DialUp.ico" />
+    <Resource Include="Icons\Drive.ico" />
+    <Resource Include="Icons\E-Mail.ico" />
+    <Resource Include="Icons\email.ico" />
+    <Resource Include="Icons\Favourites.ico" />
+    <Resource Include="Icons\Floppy-Drive.ico" />
+    <Resource Include="Icons\Floppy.ico" />
+    <Resource Include="Icons\GIF-Image.ico" />
+    <Resource Include="Icons\Globe.ico" />
+    <Resource Include="Icons\HD-Partitions.ico" />
+    <Resource Include="Icons\Help.ico" />
+    <Resource Include="Icons\HTML.ico" />
+    <Resource Include="Icons\IE.ico" />
+    <Resource Include="Icons\Java.ico" />
+    <Resource Include="Icons\JPG-Image.ico" />
+    <Resource Include="Icons\Media-Player.ico" />
+    <Resource Include="Icons\movie-clip.ico" />
+    <Resource Include="Icons\MP3-File.ico" />
+    <Resource Include="Icons\My Computer.ico" />
+    <Resource Include="Icons\My Documents1.ico" />
+    <Resource Include="Icons\My Documents2.ico" />
+    <Resource Include="Icons\My Music.ico" />
+    <Resource Include="Icons\My Pictures.ico" />
+    <Resource Include="Icons\My Video.ico" />
+    <Resource Include="Icons\My-Computer.ico" />
+    <Resource Include="Icons\My-Documents.ico" />
+    <Resource Include="Icons\My-Documents1.ico" />
+    <Resource Include="Icons\My-Music.ico" />
+    <Resource Include="Icons\My-Network-Places.ico" />
+    <Resource Include="Icons\My-Pictures.ico" />
+    <Resource Include="Icons\My-Videos.ico" />
+    <Resource Include="Icons\my_pics.ico" />
+    <Resource Include="Icons\Network.ico" />
+    <Resource Include="Icons\Network_b.ico" />
+    <Resource Include="Icons\Nt-Services.ico" />
+    <Resource Include="Icons\NTDDiscon.ico" />
+    <Resource Include="Icons\NTDEn.ico" />
+    <Resource Include="Icons\office01.ico" />
+    <Resource Include="Icons\office02.ico" />
+    <Resource Include="Icons\officemac01.ico" />
+    <Resource Include="Icons\officemac02.ico" />
+    <Resource Include="Icons\office_access.ico" />
+    <Resource Include="Icons\office_doc.ico" />
+    <Resource Include="Icons\office_dot.ico" />
+    <Resource Include="Icons\office_mdb.ico" />
+    <Resource Include="Icons\office_ppt.ico" />
+    <Resource Include="Icons\office_vsd.ico" />
+    <Resource Include="Icons\office_xls.ico" />
+    <Resource Include="Icons\Open Folder.ico" />
+    <Resource Include="Icons\Open-Folder.ico" />
+    <Resource Include="Icons\photoshopcs.ico" />
+    <Resource Include="Icons\Play-List.ico" />
+    <Resource Include="Icons\png-image.ico" />
+    <Resource Include="Icons\Printer.ico" />
+    <Resource Include="Icons\Program-2.ico" />
+    <Resource Include="Icons\Recent-Docs.ico" />
+    <Resource Include="Icons\Recycle Bin%28Empty%29.ico" />
+    <Resource Include="Icons\Recycle Bin%28Full%29.ico" />
+    <Resource Include="Icons\RecycleBin-Empty.ico" />
+    <Resource Include="Icons\RecycleBin-Full.ico" />
+    <Resource Include="Icons\refresh.gif" />
+    <Resource Include="Icons\Removable-Drive.ico" />
+    <Resource Include="Icons\Run.ico" />
+    <Resource Include="Icons\Run_b.ico" />
+    <Resource Include="Icons\save.ICO" />
+    <Resource Include="Icons\Search.ico" />
+    <Resource Include="Icons\SET-File.ico" />
+    <Resource Include="Icons\Shortcut-Arrow.ico" />
+    <Resource Include="Icons\Text-Document.ico" />
+    <Resource Include="Icons\Text.ico" />
+    <Resource Include="Icons\workgroup.ico" />
+    <Resource Include="Icons\ZIP-File.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\ketoan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Exit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\LOGO.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\logIn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="GICON.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="CrystalDecisions.CrystalReports.Design">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.CrystalReports.Engine">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ClientDoc">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommLayer">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonControls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Controllers">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CubeDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataSetConversion">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ObjectFactory">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Prompting">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ReportDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.XmlSerialize">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportSource">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Shared">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Web">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="FlashControlV71">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.WindowsAPICodePack">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="SAPBusinessObjects.WPF.Viewer">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="SAPBusinessObjects.WPF.ViewerShared">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="ShockwaveFlashObjects">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Alarm.ico" />
+    <Resource Include="Icons\Alert.ico" />
+    <Resource Include="Icons\Anouncement.ico" />
+    <Resource Include="Icons\Arrow-Down.ico" />
+    <Resource Include="Icons\Arrow-Left.ico" />
+    <Resource Include="Icons\Arrow-Right.ico" />
+    <Resource Include="Icons\Arrow-Up.ico" />
+    <Resource Include="Icons\Calendar.ico" />
+    <Resource Include="Icons\Chat.ico" />
+    <Resource Include="Icons\Config-Tools.ico" />
+    <Resource Include="Icons\Connected.ico" />
+    <Resource Include="Icons\Copy.ico" />
+    <Resource Include="Icons\Cut.ico" />
+    <Resource Include="Icons\Defragmentation.ico" />
+    <Resource Include="Icons\Document.ico" />
+    <Resource Include="Icons\Download.ico" />
+    <Resource Include="Icons\Edit.ico" />
+    <Resource Include="Icons\Find.ico" />
+    <Resource Include="Icons\Folder-Secure.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\README.TXT" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\3d bar chart.ico" />
+    <Resource Include="Icons\Abort.ico" />
+    <Resource Include="Icons\About.ico" />
+    <Resource Include="Icons\Accounting.ico" />
+    <Resource Include="Icons\Add.ico" />
+    <Resource Include="Icons\Address book.ico" />
+    <Resource Include="Icons\Alarm clock.ico" />
+    <Resource Include="Icons\Alien.ico" />
+    <Resource Include="Icons\Anchor.ico" />
+    <Resource Include="Icons\Application.ico" />
+    <Resource Include="Icons\Apply.ico" />
+    <Resource Include="Icons\Back.ico" />
+    <Resource Include="Icons\Bad mark.ico" />
+    <Resource Include="Icons\Bee.ico" />
+    <Resource Include="Icons\Black bookmark.ico" />
+    <Resource Include="Icons\Black pin.ico" />
+    <Resource Include="Icons\Black tag.ico" />
+    <Resource Include="Icons\Blog.ico" />
+    <Resource Include="Icons\Blue bookmark.ico" />
+    <Resource Include="Icons\Blue key.ico" />
+    <Resource Include="Icons\Blue pin.ico" />
+    <Resource Include="Icons\Blue tag.ico" />
+    <Resource Include="Icons\Bomb.ico" />
+    <Resource Include="Icons\Bookmark.ico" />
+    <Resource Include="Icons\Boss.ico" />
+    <Resource Include="Icons\Bottom.ico" />
+    <Resource Include="Icons\Briefcase.ico" />
+    <Resource Include="Icons\Brush.ico" />
+    <Resource Include="Icons\Bubble.ico" />
+    <Resource Include="Icons\Buy.ico" />
+    <Resource Include="Icons\Calculator.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MSXML2">
+      <Guid>{F5078F18-C551-11D3-89B9-0000F81FE221}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="XTraReport\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

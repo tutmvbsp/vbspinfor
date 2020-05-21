@@ -1,0 +1,30 @@
+﻿<Window x:Class="Presentation.WpfDonGia"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Xác định đơn giá tiền lương" Height="196" Width="435" Icon="Icons/Favourites.ico" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid>
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="208,33,0,0" Name="CboPos" VerticalAlignment="Top" Width="111" />
+        <Label Content="POS" Height="21" HorizontalAlignment="Left" Margin="171,34,0,0" Name="lblPos" VerticalAlignment="Top" Width="39" />
+        <Label Content="Ngày" Height="23" HorizontalAlignment="Left" Margin="15,32,0,0" Name="lblNgay" VerticalAlignment="Top" Width="auto" />
+        <Button Content="CLose" Height="23" HorizontalAlignment="Right" Margin="0,99,108,0" Name="btnClose" VerticalAlignment="Top" Width="80" Click="btnClose_Click" />
+        <Button Content="OK" Height="23" HorizontalAlignment="Left" Margin="105,99,0,0" Name="btnOk" VerticalAlignment="Top" Width="80" Click="btnOk_Click" />
+        <DatePicker Height="27" HorizontalAlignment="Left" Margin="56,32,0,0" Name="dtpNgay" VerticalAlignment="Top" Width="104" />
+        <Label Content="Nhập Tay" HorizontalAlignment="Left" Margin="334,34,0,98" MouseDown="btnManual_Click"  >
+            <Label.Style>
+
+                <Style TargetType="Label">
+                    <Style.Triggers>
+                        <Trigger Property="UIElement.IsMouseOver" Value="true">
+                            <Setter Property="Control.Foreground" Value="ForestGreen" />
+                            <Setter Property ="FontStyle" Value="Italic"/>
+                            <Setter Property="Control.FontWeight" Value="Bold" />
+                        </Trigger>
+                    </Style.Triggers>
+                    <Setter Property="Control.Foreground" Value="MediumBlue" />
+                    <Setter Property="Control.FontFamily" Value="Times New Roman" />
+                    <Setter Property="ToolTip" Value="Click vào đây để nhập số liệu"/>
+                </Style>
+            </Label.Style>
+        </Label>
+    </Grid>
+</Window>

@@ -1,0 +1,38 @@
+﻿<Window x:Class="Presentation.WpfQttcNhapKH"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Nhập một số chỉ tiêu" Height="648" Width="881.6" WindowStartupLocation =" CenterScreen" Loaded="Window_Loaded">
+    <Grid>
+        <Button Content="Thoát" Height="27" HorizontalAlignment="Left" Margin="689,574,0,0" Name="btnClose" VerticalAlignment="Top" Width="98" Click="btnClose_Click" />
+        <Button Content="Lưu" Height="27" HorizontalAlignment="Left" Margin="562,574,0,0" Name="btnUpdate" VerticalAlignment="Top" Width="98" Click="btnUpdate_Click" />
+        <Button Content="Thay đổi" Height="27" HorizontalAlignment="Left" Margin="442,574,0,0" Name="btnLoad" VerticalAlignment="Top" Width="98" Click="btnLoad_Click" />
+        <DataGrid AutoGenerateColumns="False" Height="231" HorizontalAlignment="Left" Margin="12,53,0,0" Name="dgvData" VerticalAlignment="Top" Width="854" CanUserAddRows="False" CanUserDeleteRows="False" AlternatingRowBackground="White" RowBackground="AliceBlue" RowHeight="24" HorizontalGridLinesBrush="WhiteSmoke" VerticalGridLinesBrush="WhiteSmoke" ColumnHeaderHeight="24" >
+            <DataGrid.Resources>
+                <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="GhostWhite"/>
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="STT" Binding="{Binding STT}"  Width="20" FontSize ="13" IsReadOnly="True" />
+                <DataGridTextColumn Header="Chỉ Tiêu" Binding="{Binding CHITIEU}"  Width="700" FontSize ="13" IsReadOnly="True" />
+                <DataGridTextColumn Header="Kế hoạch" Binding="{Binding KH}"  Width="90" FontSize ="13"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid AutoGenerateColumns="False" Height="179" HorizontalAlignment="Left" Margin="12,371,0,0" Name="dgvTarGet" VerticalAlignment="Top" Width="854" CanUserAddRows="False" CanUserDeleteRows="False" AlternatingRowBackground="White" RowBackground="AliceBlue" RowHeight="24" HorizontalGridLinesBrush="WhiteSmoke" VerticalGridLinesBrush="WhiteSmoke" ColumnHeaderHeight="24" >
+            <DataGrid.Resources>
+                <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="GhostWhite"/>
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="STT" Binding="{Binding STT}"  Width="20" FontSize ="13"  />
+                <DataGridTextColumn Header="Chỉ Tiêu" Binding="{Binding CHITIEU}"  Width="700" FontSize ="13"  />
+                <DataGridTextColumn Header="Kế hoạch" Binding="{Binding KH}"  Width="90" FontSize ="13"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Gia trị ban đầu" Height="39" HorizontalAlignment="Left" Margin="263,9,0,0" Name="label1" VerticalAlignment="Top" Width="322" FontSize ="16" FontWeight="Bold" Foreground ="ForestGreen" HorizontalContentAlignment="Center"/>
+        <Label Content="Gia trị thay đổi" Height="34" HorizontalAlignment="Left" Margin="263,308,0,0" Name="label2" VerticalAlignment="Top" Width="322" FontSize ="16" FontWeight="Bold" Foreground ="ForestGreen" HorizontalContentAlignment="Center"/>
+    </Grid>
+</Window>

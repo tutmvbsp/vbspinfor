@@ -1,0 +1,59 @@
+﻿<Window x:Class="Presentation.WpfChangePass"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Đổi mật khẩu USER" Height="253.313" Width="628.12" WindowStartupLocation =" CenterScreen" Icon="Icons/ChangePass.ico">
+    <Grid>
+
+        <Button Content="Close" HorizontalAlignment="Left" Height="24" Margin="352,147,0,0" VerticalAlignment="Top" Width="84" Name="btnClose" Click="BtnClose_OnClick">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Name="border" BorderThickness="1" Padding="4,2" BorderBrush="DarkGray" CornerRadius="3" Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Name="content"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="GreenYellow"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+
+            </Button.Style>
+        </Button>
+        <Button Content="OK" HorizontalAlignment="Left" Height="24" Margin="207,147,0,0" VerticalAlignment="Top" Width="84" Name="btnOK"  Click="BtnOK_OnClick">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Name="border" BorderThickness="1" Padding="4,2" BorderBrush="DarkGray" CornerRadius="3" Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Name="content"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="GreenYellow"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+
+            </Button.Style>
+        </Button>
+        <Image Name="ImgImage" HorizontalAlignment="Left" Height="102" Margin="10,4,0,0" VerticalAlignment="Top" Width="90" Source="/Presentation;component/Images/LOGO.bmp" />
+        <Label Content="Mật khẩu hiện tại" Height="26" HorizontalAlignment="Left" Margin="174,21,0,0" Name="lblCurPass" VerticalAlignment="Top" Width="auto" />
+        <PasswordBox Name="CurPasswordBox" HorizontalAlignment="Left" Height="25" Margin="310,21,0,0" VerticalAlignment="Top" Width="174"/>
+        <Label Content="Nhập mật khẩu mới" Height="26" HorizontalAlignment="Left" Margin="174,51,0,0" Name="lblPass" VerticalAlignment="Top" Width="auto" />
+        <PasswordBox Name="PasswordBox" HorizontalAlignment="Left" Height="25" Margin="310,51,0,0" VerticalAlignment="Top" Width="174"/>
+        <Label Content="Nhập lại mật khẩu mới" Height="26" HorizontalAlignment="Left" Margin="174,81,0,0" Name="lblRePass" VerticalAlignment="Top" Width="auto" />
+        <PasswordBox Name="RePasswordBox" HorizontalAlignment="Left" Height="25" Margin="310,81,0,0" VerticalAlignment="Top" Width="174"/>
+
+
+    </Grid>
+</Window>

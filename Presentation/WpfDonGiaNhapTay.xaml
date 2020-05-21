@@ -1,0 +1,58 @@
+﻿<Window x:Class="Presentation.WpfDonGiaNhapTay"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Nhập một số chỉ tiêu để tính đơn giá tiền lương" Height="648" Width="1160" WindowStartupLocation =" CenterScreen" Loaded="Window_Loaded">
+    <Grid>
+        <Button Content="Thoát" Height="27" HorizontalAlignment="Left" Margin="859,574,0,0" Name="btnClose" VerticalAlignment="Top" Width="98" Click="btnClose_Click" />
+        <Button Content="Lưu" Height="27" HorizontalAlignment="Left" Margin="732,574,0,0" Name="btnUpdate" VerticalAlignment="Top" Width="98" Click="btnUpdate_Click" />
+        <Button Content="Thay đổi" Height="27" HorizontalAlignment="Left" Margin="612,574,0,0" Name="btnLoad" VerticalAlignment="Top" Width="98" Click="btnLoad_Click" />
+        <DataGrid AutoGenerateColumns="False" Height="231" HorizontalAlignment="Left" Margin="12,53,0,0" Name="dgvData" VerticalAlignment="Top" Width="1114" CanUserAddRows="True" CanUserDeleteRows="True" AlternatingRowBackground="White" RowBackground="AliceBlue" RowHeight="24" HorizontalGridLinesBrush="WhiteSmoke" VerticalGridLinesBrush="WhiteSmoke" ColumnHeaderHeight="24" >
+            <DataGrid.Resources>
+                <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="GhostWhite"/>
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                </Style>
+            </DataGrid.Resources>
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="STT" Binding="{Binding STT}"  Width="10" FontSize ="13"  />
+                <DataGridTextColumn Header="Tên Biến" Binding="{Binding TENBIEN}"  Width="250" FontSize ="13"  />
+                <DataGridTextColumn Header="Toàn Tỉnh" Binding="{Binding GIATRI}"  Width="90" FontSize ="13"/>
+                <DataGridTextColumn Header="Hội Sở" Binding="{Binding CN05}"  Width="90" FontSize ="13"/>
+                <DataGridTextColumn Header="Minh Hóa" Binding="{Binding CN07}"  Width="90" FontSize ="13" />
+                <DataGridTextColumn Header="Tuyên Hóa" Binding="{Binding CN08}"  Width="90" FontSize ="13" />
+                <DataGridTextColumn Header="TX Ba Đồn" Binding="{Binding CN02}"  Width="90" FontSize ="13"/>
+                <DataGridTextColumn Header="Quảng Trạch" Binding="{Binding CN01}"  Width="90" FontSize ="13"/>
+                <DataGridTextColumn Header="Bố Trạch" Binding="{Binding CN03}"  Width="90" FontSize ="13"/>
+                <DataGridTextColumn Header="Quảng Ninh" Binding="{Binding CN06}"  Width="90" FontSize ="13"/>
+                <DataGridTextColumn Header="Lệ Thủy" Binding="{Binding CN04}"  Width="90" FontSize ="13"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+
+        <DataGrid AutoGenerateColumns="False" Height="202" HorizontalAlignment="Left" Margin="12,357,0,0" Name="dgvTarGet" VerticalAlignment="Top" Width="1114" CanUserAddRows="True" CanUserDeleteRows="True" AlternatingRowBackground="White" RowBackground="Bisque" RowHeight="24" HorizontalGridLinesBrush="WhiteSmoke" VerticalGridLinesBrush="WhiteSmoke" ColumnHeaderHeight="24" >
+            <DataGrid.Resources>
+                <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="GhostWhite"/>
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                </Style>
+            </DataGrid.Resources>
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="STT" Binding="{Binding STT}"  Width="10" FontSize ="13"  />
+                <DataGridTextColumn Header="Tên Biến" Binding="{Binding TENBIEN}"  Width="250" FontSize ="13"  />
+                <DataGridTextColumn Header="Toàn Tỉnh" Binding="{Binding GIATRI}"  Width="90" FontSize ="13"/>
+                <DataGridTextColumn Header="Hội Sở" Binding="{Binding CN05}"  Width="90" FontSize ="13"/>
+                <DataGridTextColumn Header="Minh Hóa" Binding="{Binding CN07}"  Width="90" FontSize ="13" />
+                <DataGridTextColumn Header="Tuyên Hóa" Binding="{Binding CN08}"  Width="90" FontSize ="13" />
+                <DataGridTextColumn Header="TX Ba Đồn" Binding="{Binding CN02}"  Width="90" FontSize ="13"/>
+                <DataGridTextColumn Header="Quảng Trạch" Binding="{Binding CN01}"  Width="90" FontSize ="13"/>
+                <DataGridTextColumn Header="Bố Trạch" Binding="{Binding CN03}"  Width="90" FontSize ="13"/>
+                <DataGridTextColumn Header="Quảng Ninh" Binding="{Binding CN06}"  Width="90" FontSize ="13"/>
+                <DataGridTextColumn Header="Lệ Thủy" Binding="{Binding CN04}"  Width="90" FontSize ="13"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Gia trị ban đầu" Height="26" HorizontalAlignment="Left" Margin="437,15,0,0" Name="label1" VerticalAlignment="Top" Width="322" FontSize ="16" FontWeight="Bold" Foreground ="ForestGreen" HorizontalContentAlignment="Center"/>
+        <Label Content="Gia trị thay đổi" Height="26" HorizontalAlignment="Left" Margin="437,308,0,0" Name="label2" VerticalAlignment="Top" Width="322" FontSize ="16" FontWeight="Bold" Foreground ="ForestGreen" HorizontalContentAlignment="Center"/>
+    </Grid>
+</Window>

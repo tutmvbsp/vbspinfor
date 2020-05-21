@@ -1,0 +1,15 @@
+D:\OneDrive - MS Edu\IMP.VBSP\BLL\bin\Debug\BLL.dll
+D:\OneDrive - MS Edu\IMP.VBSP\BLL\bin\Debug\BLL.pdb
+D:\OneDrive - MS Edu\IMP.VBSP\BLL\bin\Debug\DAL.dll
+D:\OneDrive - MS Edu\IMP.VBSP\BLL\bin\Debug\Oracle.DataAccess.dll
+D:\OneDrive - MS Edu\IMP.VBSP\BLL\bin\Debug\DAL.pdb
+D:\OneDrive - MS Edu\IMP.VBSP\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\OneDrive - MS Edu\IMP.VBSP\BLL\obj\Debug\BLL.dll
+D:\OneDrive - MS Edu\IMP.VBSP\BLL\obj\Debug\BLL.pdb
+D:\IMP.VBSP\BLL\bin\Debug\BLL.dll
+D:\IMP.VBSP\BLL\bin\Debug\BLL.pdb
+D:\IMP.VBSP\BLL\bin\Debug\DAL.dll
+D:\IMP.VBSP\BLL\bin\Debug\DAL.pdb
+D:\IMP.VBSP\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\IMP.VBSP\BLL\obj\Debug\BLL.dll
+D:\IMP.VBSP\BLL\obj\Debug\BLL.pdb

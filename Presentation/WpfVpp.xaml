@@ -1,0 +1,44 @@
+﻿<Window x:Class="Presentation.WpfVpp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Giấy xin nhận văn phòng phẩm" Height="577.497" Width="846.63" WindowStartupLocation ="CenterScreen" Icon="/Icons/Connected.ico" Loaded="Window_Loaded">
+    <Grid>
+        <Label Content="Tháng" Height="auto" HorizontalAlignment="Left" Margin="23,18,0,0" Name="lblNgay" VerticalAlignment="Top" Width="auto" />
+        <Label Content="POS" Height="auto" HorizontalAlignment="Left" Margin="360,18,0,0" Name="lblPos" VerticalAlignment="Top" Width="auto" />
+        <Label Content="Năm" Height="auto" HorizontalAlignment="Left" Margin="197,18,0,0" Name="lblNam" VerticalAlignment="Top" Width="auto" />
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="402,19,0,0" Name="CboPos" VerticalAlignment="Top" Width="88"  />
+        <Label Content="Phòng/Tổ" Height="auto" HorizontalAlignment="Left" Margin="494,18,0,0" Name="lblXa" VerticalAlignment="Top" Width="auto" />
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="563,19,0,0" Name="CboPB" VerticalAlignment="Top" Width="110"/>
+        <Button Content="Close" Height="22" HorizontalAlignment="Left" Margin="729,508,0,0" Name="btnClose" VerticalAlignment="Top" Width="90" Click="btnClose_Click" />
+        <Button Content="Sửa" Height="22" HorizontalAlignment="Left" Margin="321,508,0,0" Name="btnSua" VerticalAlignment="Top" Width="90" Click="btnSua_Click" />
+        <Button Content="Xóa" Height="22" HorizontalAlignment="Left" Margin="427,508,0,0" Name="btnXoa" VerticalAlignment="Top" Width="90" Click="btnXoa_Click" />
+        <Button Content="Lưu" Height="22" HorizontalAlignment="Left" Margin="529,508,0,0" Name="btnLuu" VerticalAlignment="Top" Width="90" Click="btnLuu_Click" />
+        <Button Content="In" Height="22" HorizontalAlignment="Left" Margin="627,508,0,0" Name="btnIn" VerticalAlignment="Top" Width="90" Click="btnIn_Click" />
+        <Label Canvas.Left="735" Canvas.Top="15" Content="Lấy dữ liệu" Name="lblGetData" Width="auto" MouseDown="LblGetData_OnMouseDown"  Margin="681,20,62,482">
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Style.Triggers>
+                        <Trigger Property="UIElement.IsMouseOver" Value="true">
+                            <Setter Property="Control.Foreground" Value="Red" />
+                            <Setter Property="Control.FontWeight" Value="Bold" />
+                        </Trigger>
+                    </Style.Triggers>
+                    <Setter Property="Control.Foreground" Value="Green" />
+                    <Setter Property="Control.FontFamily" Value="Comic Sans MS" />
+                    <Setter Property="Control.FontWeight" Value="Bold" />
+                </Style>
+            </Label.Style>
+        </Label>
+        <DataGrid AutoGenerateColumns="False" Height="422" CanUserDeleteRows="False" CanUserAddRows="False" HorizontalAlignment="Left" Margin="23,71,0,0" Name="dgvSource" VerticalAlignment="Top" Width="806" >
+            <DataGrid.Columns>
+                <DataGridCheckBoxColumn Binding="{Binding Path=CHON}" CanUserReorder="False" CanUserResize="False" CanUserSort="False" Header="Chọn" Width="45" />
+                <DataGridTextColumn Binding="{Binding Path=MA}" Header="MA" Width="50" />
+                <DataGridTextColumn Binding="{Binding Path=TEN}" Header="Tên hàng" Width="500" />
+                <DataGridTextColumn Binding="{Binding Path=DONVI}" Header="Đơn Vị" Width="100" />
+                <DataGridTextColumn Binding="{Binding Path=SOLUONG}" Header="Số lượng" Width="100" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="77,19,0,0" x:Name="comboBoxMonth" VerticalAlignment="Top" Width="110"  />
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="245,19,0,0" x:Name="comboBoxYear" VerticalAlignment="Top" Width="110"  />
+    </Grid>
+</Window>

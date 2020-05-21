@@ -1,0 +1,22 @@
+﻿<Window x:Class="Presentation.WpfLeThuy"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Import LT" Height="450" Width="880" WindowStartupLocation="CenterScreen">
+    <Grid>
+
+        <TextBlock Text="Chọn hồ sơ cần chuyển đổi:" Margin="0,0,0,0" Width="260" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" TextAlignment="Center"></TextBlock>
+        <TextBlock Text="Từ ngày:" Margin="261,0,0,0" Width="160" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" TextAlignment="Center"></TextBlock>
+        <TextBlock Text="Đến ngày:" Margin="422,0,0,0" Width="160" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" TextAlignment="Center" Grid.ColumnSpan="3"></TextBlock>
+        <TextBlock Text="Chọn phòng giao dịch:" Margin="584,0,0,0" Width="160" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" TextAlignment="Center" Grid.Column="2"></TextBlock>
+
+        <ComboBox Name="cboNameHoso" Margin="0,20,0,0" Height="30" Width="260" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Times New Roman" VerticalContentAlignment="Center" DropDownClosed="cboNameHoso_DropDownClosed"/>
+        <DatePicker Name="dateTuNgay" Margin="261,20,0,0" Height="30" Width="160" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center"></DatePicker>
+        <DatePicker Name="dateDenNgay" Margin="422,20,0,0" Height="30" Width="160" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center" Grid.ColumnSpan="3"></DatePicker>
+        <ComboBox Name="cboMaPos" Margin="584,20,0,0" Height="30" Width="160" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center" Grid.Column="2"></ComboBox>
+        <Button Name="btnAccept" Content="Chấp nhận" Foreground="Red" FontSize="16" FontFamily="Times New Roman" Margin="748,0,0,0" Height="50" Width="100" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="2" Click="btnAccept_Click"></Button>
+        <DataGrid Name="dgView" Margin="0,55,0,0" Height="Auto" Width="860"></DataGrid>
+    </Grid>
+</Window>

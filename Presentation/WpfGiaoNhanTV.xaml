@@ -1,0 +1,44 @@
+﻿<Window x:Class="Presentation.WpfGiaoNhanTV"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Chia tách, sáp nhập tổ" Height="577.497" Width="1038.63" WindowStartupLocation ="CenterScreen" Icon="/Icons/Connected.ico" Loaded="Window_Loaded">
+    <Grid>
+        <DatePicker Height="26" HorizontalAlignment="Left" Margin="73,19,0,0" Name="dtpNgay" VerticalAlignment="Top" Width="110" />
+        <Label Content="Ngày" Height="auto" HorizontalAlignment="Left" Margin="23,19,0,0" Name="lblNgay" VerticalAlignment="Top" Width="auto" />
+        <Label Content="POS" Height="auto" HorizontalAlignment="Left" Margin="191,18,0,0" Name="lblPos" VerticalAlignment="Top" Width="auto" />
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="232,19,0,0" Name="CboPos" VerticalAlignment="Top" Width="110" SelectionChanged="CboPos_SelectionChanged" />
+        <Label Content="Xã" Height="auto" HorizontalAlignment="Left" Margin="348,18,0,0" Name="lblXa" VerticalAlignment="Top" Width="auto" />
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="393,19,0,0" Name="CboXa" VerticalAlignment="Top" Width="110" SelectionChanged="CboXa_SelectionChanged" />
+        <Button Content="Close" Height="22" HorizontalAlignment="Left" Margin="931,508,0,0" Name="btnClose" VerticalAlignment="Top" Width="90" Click="btnClose_Click" />
+        <Button Content="OK" Height="22" HorizontalAlignment="Left" Margin="811,508,0,0" Name="btnOk" VerticalAlignment="Top" Width="90" Click="btnOk_Click" />
+        <Label Content="Tổ Giao" Height="auto" HorizontalAlignment="Left" Margin="524,18,0,0" Name="lblToGiao" VerticalAlignment="Top" Width="auto" />
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="585,19,0,0" Name="CboToGiao" VerticalAlignment="Top" Width="110" />
+        <Label Content="Tổ Nhận" Height="auto" HorizontalAlignment="Left" Margin="712,18,0,0" Name="lblToNhan" VerticalAlignment="Top" Width="auto" />
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="778,19,0,0" Name="CboToNhan" VerticalAlignment="Top" Width="110" />
+        <Label Canvas.Left="735" Canvas.Top="15" Content="Lấy dữ liệu" Height="27" Name="lblGetData" Width="auto" MouseDown="LblGetData_OnMouseDown"  Margin="914,19,32,501">
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Style.Triggers>
+                        <Trigger Property="UIElement.IsMouseOver" Value="true">
+                            <Setter Property="Control.Foreground" Value="Red" />
+                            <Setter Property="Control.FontWeight" Value="Bold" />
+                        </Trigger>
+                    </Style.Triggers>
+                    <Setter Property="Control.Foreground" Value="Green" />
+                    <Setter Property="Control.FontFamily" Value="Comic Sans MS" />
+                    <Setter Property="Control.FontWeight" Value="Bold" />
+                </Style>
+            </Label.Style>
+        </Label>
+        <DataGrid AutoGenerateColumns="False" Height="422" HorizontalAlignment="Left" Margin="23,71,0,0" Name="dgvSource" VerticalAlignment="Top" Width="998" >
+            <DataGrid.Columns>
+                <DataGridCheckBoxColumn Binding="{Binding Path=CHON}" CanUserReorder="False" CanUserResize="False" CanUserSort="False" Header="Chọn" Width="45" />
+                <DataGridTextColumn Binding="{Binding Path=KH_TENKH}" Header="Tên khách hàng" Width="200" />
+                <DataGridTextColumn Binding="{Binding Path=KH_MAKH}" Header="Mã khách hàng" Width="200" />
+                <DataGridTextColumn Binding="{Binding Path=SC_TENVT}" Header="Chương trình" Width="200" />
+                <DataGridTextColumn Binding="{Binding Path=DUNO}" Header="Dư nợ" Width="200" />
+                <DataGridTextColumn Binding="{Binding Path=DUTK}" Header="Dư tiết kiệm" Width="200" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

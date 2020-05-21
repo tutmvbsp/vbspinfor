@@ -1,0 +1,17 @@
+D:\OneDrive - MS Edu\IMP.VBSP\DAL\bin\Debug\DAL.dll.config
+D:\OneDrive - MS Edu\IMP.VBSP\DAL\bin\Debug\DAL.dll
+D:\OneDrive - MS Edu\IMP.VBSP\DAL\bin\Debug\DAL.pdb
+D:\OneDrive - MS Edu\IMP.VBSP\DAL\bin\Debug\Oracle.DataAccess.dll
+D:\OneDrive - MS Edu\IMP.VBSP\DAL\bin\Debug\Public.dll
+D:\OneDrive - MS Edu\IMP.VBSP\DAL\bin\Debug\Public.pdb
+D:\OneDrive - MS Edu\IMP.VBSP\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\OneDrive - MS Edu\IMP.VBSP\DAL\obj\Debug\DAL.dll
+D:\OneDrive - MS Edu\IMP.VBSP\DAL\obj\Debug\DAL.pdb
+D:\IMP.VBSP\DAL\bin\Debug\DAL.dll.config
+D:\IMP.VBSP\DAL\bin\Debug\DAL.dll
+D:\IMP.VBSP\DAL\bin\Debug\DAL.pdb
+D:\IMP.VBSP\DAL\bin\Debug\Public.dll
+D:\IMP.VBSP\DAL\bin\Debug\Public.pdb
+D:\IMP.VBSP\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\IMP.VBSP\DAL\obj\Debug\DAL.dll
+D:\IMP.VBSP\DAL\obj\Debug\DAL.pdb

@@ -1,0 +1,13 @@
+﻿<Window x:Class="Presentation.WpfKhtc06"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Tính trích lâp dự phòng rủi ro" Height="214" Width="403.236" WindowStartupLocation ="CenterScreen" Icon="Icons/VBSP.ico" Loaded="Window_Loaded">
+    <Grid>
+        <DatePicker Height="25" HorizontalAlignment="Left" Margin="193,33,0,0" Name="dtpNgay" VerticalAlignment="Top" Width="114" />
+        <Label Content="Đến Ngày" Height="24" HorizontalAlignment="Left" Margin="110,33,0,0" Name="label2" VerticalAlignment="Top" Width="78" />
+        <ComboBox Height="26" HorizontalAlignment="Left" Margin="193,81,0,0" Name="cboPos" VerticalAlignment="Top" Width="114" />
+        <Label Content="POS" Height="24" HorizontalAlignment="Left" Margin="110,83,0,0" Name="label3" VerticalAlignment="Top" Width="78" />
+        <Button Content="Close" Height="27" HorizontalAlignment="Left" Margin="220,129,0,0" Name="btnClose" VerticalAlignment="Top" Width="95" Click="btnClose_Click" />
+        <Button Content="OK" Height="27" HorizontalAlignment="Left" Margin="100,129,0,0" Name="btnOk" VerticalAlignment="Top" Width="95" Click="btnOk_Click" />
+    </Grid>
+</Window>

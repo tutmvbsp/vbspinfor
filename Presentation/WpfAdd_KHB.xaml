@@ -1,0 +1,89 @@
+﻿<Window x:Class="Presentation.WpfAdd_KHB"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Nhập số dư" Height="352.418" Width="512.104" Name="AddKHB" WindowStartupLocation="CenterScreen" Icon="Icons/VBSP.ico" ResizeMode="CanMinimize" WindowStyle="ThreeDBorderWindow" Loaded="WpfAdd_KHB_OnLoaded">
+    <Grid Margin="0,0,0,11">
+        <Label Content="Lấy dữ liệu" HorizontalAlignment="Left" Margin="363,25,0,248.2" Name="lblManual" MouseDown="LblManual_OnMouseDown"  RenderTransformOrigin="0.5,0.5" Width="131"  >
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.591"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Style.Triggers>
+                        <Trigger Property="UIElement.IsMouseOver" Value="true">
+                            <Setter Property="Control.Foreground" Value="Red" />
+                            <Setter Property ="FontStyle" Value="Italic"/>
+                            <Setter Property="Control.FontWeight" Value="Bold" />
+                        </Trigger>
+                    </Style.Triggers>
+                    <Setter Property="Control.Foreground" Value="Green" />
+                    <Setter Property="Control.FontFamily" Value="Times New Roman" />
+                    <Setter Property="ToolTip" Value="Click vào đây để nhập số liệu"/>
+                </Style>
+            </Label.Style>
+        </Label>
+
+        <Button Content="Save" HorizontalAlignment="Left" Height="24" Margin="168,272,0,0" VerticalAlignment="Top" Width="84" Name="OK" Click="OK_OnClick" >
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Name="border" BorderThickness="1" Padding="4,2" BorderBrush="DarkGray" CornerRadius="3" Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Name="content"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="GreenYellow"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+
+            </Button.Style>
+        </Button>
+        <Button Content="Close" HorizontalAlignment="Left" Height="24" Margin="280,272,0,0" VerticalAlignment="Top" Width="84" Name="Exit" Click="Exit_OnClick" >
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Name="border" BorderThickness="1" Padding="4,2" BorderBrush="DarkGray" CornerRadius="3" Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Name="content"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="GreenYellow"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+
+            </Button.Style>
+        </Button>
+
+
+        <DatePicker Name="dtpNgay" HorizontalAlignment="Left" Height="23" Margin="60,28,0,0" VerticalAlignment="Top" Width="104"/>
+        <Label Content="Ngày" Height="26" HorizontalAlignment="Left" Margin="10,27,0,0" x:Name="lblNgay" VerticalAlignment="Top" Width="42" RenderTransformOrigin="-0.071,0.423" />
+        <DataGrid AutoGenerateColumns="False" Height="193" CanUserDeleteRows="False" CanUserAddRows="False" HorizontalAlignment="Left" Margin="3,71,0,0" Name="dgvTarGet" VerticalAlignment="Top" Width="493" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Path=DT_CAPDT}" Header="Cấp" Width="30" IsReadOnly="True"/>
+                <DataGridTextColumn Binding="{Binding Path=DT_MAPGD}" Header="Mã PGD" Width="100" IsReadOnly="True"/>
+                <DataGridTextColumn Binding="{Binding Path=TEN_CHTR}" Header="Chương trình" Width="250" IsReadOnly="True"/>
+                <DataGridTextColumn Binding="{Binding Path=DUCUOI}" Header="Số dư cuối" Width="*" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="212,27,0,0" x:Name="cboPos" VerticalAlignment="Top" Width="139" />
+        <Label Content="POS" Height="27" HorizontalAlignment="Left" Margin="169,26,0,0" x:Name="lblPos" VerticalAlignment="Top" Width="43" Foreground="#FF139313"/>
+
+    </Grid>
+</Window>

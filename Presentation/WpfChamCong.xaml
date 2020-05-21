@@ -1,0 +1,615 @@
+﻿<Window x:Class="Presentation.WpfChamCong"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Chấm công - phép - nghỉ bù" Height="590.497" Width="1163.43" WindowStartupLocation ="CenterScreen" Icon="/Icons/Connected.ico" Loaded="Window_Loaded">
+    <Grid Margin="0,0,-6.2,0">
+        <Canvas Margin="370,527,437.2,9" HorizontalAlignment="Left">
+            <Button Content="Lưu" HorizontalAlignment="Left" x:Name="btnOk" Click="btnOK_Click" Width="84" Height="22" />
+            <Button Content="In" Height="22" HorizontalAlignment="Left" x:Name="btnIn" Width="90" Click="BtnIn_OnClick" Canvas.Left="84" />
+            <Button Content="Xóa" Height="22" HorizontalAlignment="Left" x:Name="btnXoa" Width="90" Click="btnXoa_Click" IsEnabled="False" Canvas.Left="174"/>
+            <Button Content="Đóng" Height="22" HorizontalAlignment="Left" x:Name="btnClose" Width="90" Click="btnClose_Click" Canvas.Left="264" />
+        </Canvas>
+        <DataGrid AutoGenerateColumns="False" Height="296" CanUserDeleteRows="False" CanUserAddRows="False" HorizontalAlignment="Left" Margin="10,85,0,0" x:Name="dgvSource" VerticalAlignment="Top" Width="1133" RenderTransformOrigin="0.5,0.5">
+            <DataGrid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.214"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="1.996"/>
+                </TransformGroup>
+            </DataGrid.RenderTransform>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Tên cán bộ" Binding="{Binding ND_TEN}" Width="*" IsReadOnly="True" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Left"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="1" Binding="{Binding 1}" Width="30" IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="2" Binding="{Binding 2}" Width="30" IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Header="3" Binding="{Binding 3}" Width="30" IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="4" Binding="{Binding 4}" Width="30" IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Header="5" Binding="{Binding 5}" Width="30" IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="6" Binding="{Binding 6}" Width="30" IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="7" Binding="{Binding 7}" Width="30" IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Header="8" Binding="{Binding 8}" Width="30" IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="9" Binding="{Binding 9}" Width="30" IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Header="10" Binding="{Binding 10}" Width="30" IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="11" Binding="{Binding 11}" Width="30" IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Header="12" Binding="{Binding 12}" Width="30" IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="13" Binding="{Binding 13}" Width="30" IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="14" Binding="{Binding 14}" Width="30" IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Header="15" Binding="{Binding 15}" Width="30" IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="16" Binding="{Binding 16}" Width="30" IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Header="17" Binding="{Binding 17}" Width="30" IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="18" Binding="{Binding 18}" Width="30" IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Header="19" Binding="{Binding 19}" Width="30" IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="20" Binding="{Binding 20}" Width="30" IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="21" Binding="{Binding 21}" Width="30" IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="22" Binding="{Binding 22}" Width="30" IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="23" Binding="{Binding 23}" Width="30" IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Header="24" Binding="{Binding 24}" Width="30" IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="25" Binding="{Binding 25}" Width="30" IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Header="26" Binding="{Binding 26}" Width="30" IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="27" Binding="{Binding 27}" Width="30" IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="28" Binding="{Binding 28}" Width="30" IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="29" Binding="{Binding 29}" Width="30" IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="30" Binding="{Binding 30}" Width="30" IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="31" Binding="{Binding 31}" Width="30" IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="CadetBlue"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="POS" Height="auto" HorizontalAlignment="Left" Margin="370,18,0,0" x:Name="lblPos" VerticalAlignment="Top" Width="auto" />
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="412,19,0,0" x:Name="CboPos" VerticalAlignment="Top" Width="88" SelectionChanged="CboPos_SelectionChanged"  />
+        <Label Content="Phòng/Tổ" Height="auto" HorizontalAlignment="Left" Margin="504,18,0,0" x:Name="lblXa" VerticalAlignment="Top" Width="auto" />
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="573,19,0,0" x:Name="CboPB" VerticalAlignment="Top" Width="110" />
+        <DatePicker Height="26" HorizontalAlignment="Left" Margin="202,15,0,0" x:Name="dtpNgay" VerticalAlignment="Top" Width="110" />
+        <Label Content="Ngày" Height="30" HorizontalAlignment="Left" Margin="159,15,0,0" x:Name="lblNgay_Copy" VerticalAlignment="Top" Width="46" RenderTransformOrigin="-2.191,-0.167" />
+        <GroupBox Header="Chọn mẫu" HorizontalAlignment="Left" Margin="699,10,0,0" x:Name="grpChon" VerticalAlignment="Top">
+            <Grid Margin="0,0,-2.6,-0.2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="64*" />
+                    <ColumnDefinition Width="11*" />
+                </Grid.ColumnDefinitions>
+                <RadioButton Content="Chấm công" GroupName= "G1" HorizontalAlignment="Left" Margin="9,6,0,0" x:Name="Ration1" Height="auto" Width="auto" IsChecked="True" Checked="Ration1_Checked" />
+                <RadioButton Content="làm thêm" GroupName= "G1" Height="auto" HorizontalAlignment="Left" Margin="102,6,0,0" x:Name="Ration2" VerticalAlignment="Top" Width="auto" Grid.ColumnSpan="2" Checked="Ration2_Checked" />
+            </Grid>
+        </GroupBox>
+        <Label Content="Lấy thông tin" Height="auto" x:Name="lblGetData" Width="auto" MouseDown="LblGetData_OnMouseDown"  Margin="930,0,0,495" RenderTransformOrigin="1.246,-3.578" Background="{x:Null}" Cursor="Wait" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+            <Label.ContextMenu>
+                <ContextMenu/>
+            </Label.ContextMenu>
+            <Label.Style>
+                <Style TargetType="{x:Type Label}">
+                    <Setter Property="Foreground" Value="Green" />
+                    <Setter Property="FontFamily" Value="Comic Sans MS" />
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter Property="Foreground" Value="Red" />
+                            <Setter Property="FontWeight" Value="Bold" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Label.Style>
+        </Label>
+        <Label x:Name="label" Content="Lưu ý : Chấm công kí hiệu theo quy đinh (x : lv; p: phép; nb: nghỉ bù, vr : nghỉ việc riêng...)  -  Làm thêm : kiểu số" HorizontalAlignment="Left" Height="26" Margin="12,57,0,0" VerticalAlignment="Top" Width="856" FontWeight="Bold" Foreground="Red"/>
+        <TextBox x:Name="txtGhiChu" HorizontalAlignment="Left" Height="100" Margin="10,411,0,0" TextWrapping="Wrap" AcceptsReturn="True" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Text="Ghi Chú: " VerticalAlignment="Top" Width="1133" IsEnabled="true"/>
+        <Label x:Name="label1" Content="Thuyết Minh" HorizontalAlignment="Left" Height="auto" Margin="33,383,0,0" VerticalAlignment="Top" Width="auto" FontWeight="Bold" FontStyle="Italic"/>
+    </Grid>
+</Window>

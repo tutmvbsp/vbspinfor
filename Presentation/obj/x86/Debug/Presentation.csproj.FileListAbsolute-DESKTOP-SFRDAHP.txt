@@ -1,0 +1,602 @@
+D:\IMP.VBSP\Presentation\bin\Debug\Sound\Dung.mp3
+D:\IMP.VBSP\Presentation\bin\Debug\Sound\Sai.mp3
+D:\IMP.VBSP\Presentation\bin\Debug\Help\VBSP_Helper.chm
+D:\IMP.VBSP\Presentation\bin\Debug\Presentation.exe.config
+D:\IMP.VBSP\Presentation\bin\Debug\Presentation.exe.manifest
+D:\IMP.VBSP\Presentation\bin\Debug\Presentation.application
+D:\IMP.VBSP\Presentation\bin\Debug\Presentation.exe
+D:\IMP.VBSP\Presentation\bin\Debug\Presentation.pdb
+D:\IMP.VBSP\Presentation\bin\Debug\BLL.dll
+D:\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.CrystalReports.Design.dll
+D:\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.Shared.dll
+D:\IMP.VBSP\Presentation\bin\Debug\DAL.dll
+D:\IMP.VBSP\Presentation\bin\Debug\Public.dll
+D:\IMP.VBSP\Presentation\bin\Debug\SAPBusinessObjects.WPF.Viewer.dll
+D:\IMP.VBSP\Presentation\bin\Debug\SAPBusinessObjects.WPF.ViewerShared.dll
+D:\IMP.VBSP\Presentation\bin\Debug\itextsharp.dll
+D:\IMP.VBSP\Presentation\bin\Debug\Oracle.DataAccess.dll
+D:\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.Web.dll
+D:\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\IMP.VBSP\Presentation\bin\Debug\FlashControlV71.dll
+D:\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\IMP.VBSP\Presentation\bin\Debug\stdole.dll
+D:\IMP.VBSP\Presentation\bin\Debug\ShockwaveFlashObjects.dll
+D:\IMP.VBSP\Presentation\bin\Debug\BLL.pdb
+D:\IMP.VBSP\Presentation\bin\Debug\DAL.pdb
+D:\IMP.VBSP\Presentation\bin\Debug\Public.pdb
+D:\IMP.VBSP\Presentation\obj\x86\Debug\Presentation.csprojResolveAssemblyReference.cache
+D:\IMP.VBSP\Presentation\obj\x86\Debug\Interop.MSXML2.dll
+D:\IMP.VBSP\Presentation\obj\x86\Debug\Interop.WMPLib.dll
+D:\IMP.VBSP\Presentation\obj\x86\Debug\Presentation.csproj.ResolveComReference.cache
+D:\IMP.VBSP\Presentation\obj\x86\Debug\LogIn.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\NegatingConverter.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\ReportViewUI.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\Wpf01TG.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfAdd_KHB.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfBack.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfBaoCao.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfCanDoi.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfCauHoi.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfCBTD.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfChamDiemGDX.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfChangePass.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfChkUpOffline.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfChotNguon.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfCtCanDoi.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfCutFile.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfD15NHNN.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDanhGiaGV.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDanhSach.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDbf.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDCPTNO.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDelete.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDienbao.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDinhSv.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDinhSvMoi.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDinhSv_ThuCong.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDKNOPLAI.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDoanhSo.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDoiChieu.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDongCasa.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDonGia.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDonGiaNhapTay.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDvut.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDvutMoi.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfExcel.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfGiaoNhanTV.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfGqvlTinh.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfHscb.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfImportText.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfInKhGnTn.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhaoSat.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhb.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhGnTn.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKHTC.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhtc01.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhtc02.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhtc03.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhtc04.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhtc06.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKHTD.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKH_CBTD.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKSM01.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKSM03.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKSM04.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKSM05.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKSM06.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKSM07.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKSM08.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKTHDT.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKTNN.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKTSDVV.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfLaiTon.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfLuong01.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfLuong02.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfMau06.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfNguonCqlv.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfNguonCqlvTinh.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfNguonDB.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfNhapCauHoi.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfNhapNguon.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfNhapNguonTK.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfNhapNguonTT.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfNhatKy.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfNHNN.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfNqh.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfNdhCt.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfNVBQ.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfNVKHB.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfPdf.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfPhanTichSL.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfPhanTichSL_CT.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfPnkt.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfPstk.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfQlyGqvl.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfQlyNguon.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfQt14.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfQtKhGnTn.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfQttcNhapKH.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfQttcNhapTay.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfQt_Khtc.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfSkeKhoanh.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfSkeKu.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfSkeKuCt.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfSkeNdh.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfSkeNqh.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfSkePnkt.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfSkeTo.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfSlDaily.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfSlVungBien.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfSvRaTruong.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfTbGhn.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfTest.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfLuyenThiNV.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfThiTN.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfTienIch.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfTimKiem.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfTkXa.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfTLGDXA.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfTTKH.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfTTKU.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfTyLeNQH.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfUpdateOFN.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfUpdateSL.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfUser.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfVpp.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfVppBC.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfVppCapNhat.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfWord.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfXaTo.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\Wpfkt740.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfXLN_M1.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfXLN_M3.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfXLN_M4.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\LogIn.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\MainWindow.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\NegatingConverter.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\ReportViewUI.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\Wpf01TG.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfAdd_KHB.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfBack.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfBaoCao.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfCanDoi.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfCauHoi.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfCBTD.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfChamDiemGDX.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfChangePass.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfChkUpOffline.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfChotNguon.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfCtCanDoi.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfCutFile.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfD15NHNN.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDanhGiaGV.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDanhSach.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDbf.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDCPTNO.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDelete.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDienbao.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDinhSv.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDinhSvMoi.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDinhSv_ThuCong.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDKNOPLAI.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDoanhSo.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDoiChieu.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDongCasa.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDonGia.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDonGiaNhapTay.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDvut.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfDvutMoi.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfExcel.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfGiaoNhanTV.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfGqvlTinh.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfHscb.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfImportText.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfInKhGnTn.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhaoSat.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhb.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhGnTn.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKHTC.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhtc01.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhtc02.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhtc03.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhtc04.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhtc06.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKHTD.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKH_CBTD.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKSM01.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKSM03.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKSM04.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKSM05.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKSM06.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKSM07.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKSM08.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKTHDT.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKTNN.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfKTSDVV.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfLaiTon.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfLuong01.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfLuong02.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfMau06.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfNguonCqlv.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfNguonCqlvTinh.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfNguonDB.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfNhapCauHoi.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfNhapNguon.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfNhapNguonTK.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfNhapNguonTT.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfNhatKy.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfNHNN.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfNqh.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfNdhCt.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfNVBQ.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfNVKHB.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfPdf.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfPhanTichSL.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfPhanTichSL_CT.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfPnkt.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfPstk.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfQlyGqvl.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfQlyNguon.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfQt14.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfQtKhGnTn.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfQttcNhapKH.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfQttcNhapTay.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfQt_Khtc.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfSkeKhoanh.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfSkeKu.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfSkeKuCt.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfSkeNdh.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfSkeNqh.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfSkePnkt.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfSkeTo.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfSlDaily.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfSlVungBien.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfSvRaTruong.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfTbGhn.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfTest.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfLuyenThiNV.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfThiTN.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfTienIch.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfTimKiem.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfTkXa.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfTLGDXA.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfTTKH.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfTTKU.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfTyLeNQH.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfUpdateOFN.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfUpdateSL.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfUser.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfVpp.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfVppBC.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfVppCapNhat.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfWord.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfXaTo.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\Wpfkt740.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfXLN_M1.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfXLN_M3.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\WpfXLN_M4.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\App.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\Presentation_Content.g.cs
+D:\IMP.VBSP\Presentation\obj\x86\Debug\Presentation_MarkupCompile.cache
+D:\IMP.VBSP\Presentation\obj\x86\Debug\Presentation_MarkupCompile.lref
+D:\IMP.VBSP\Presentation\obj\x86\Debug\MainWindow.baml
+D:\IMP.VBSP\Presentation\obj\x86\Debug\Presentation.g.resources
+D:\IMP.VBSP\Presentation\obj\x86\Debug\Presentation.Properties.Resources.resources
+D:\IMP.VBSP\Presentation\obj\x86\Debug\Presentation.csproj.GenerateResource.Cache
+D:\IMP.VBSP\Presentation\obj\x86\Debug\Presentation.exe.manifest
+D:\IMP.VBSP\Presentation\obj\x86\Debug\Presentation.application
+D:\IMP.VBSP\Presentation\obj\x86\Debug\Presentation.exe
+D:\IMP.VBSP\Presentation\obj\x86\Debug\Presentation.pdb
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\Presentation.exe.config
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\Interop.MSXML2.dll
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\Interop.WMPLib.dll
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\Presentation.csproj.ResolveComReference.cache
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\Presentation.exe
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\Presentation.pdb
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\Sound\Dung.mp3
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\Sound\Sai.mp3
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\Help\VBSP_Helper.chm
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\Presentation.exe.manifest
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\Presentation.application
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\Presentation.exe
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\Presentation.pdb
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\BLL.dll
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.CrystalReports.Design.dll
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.Shared.dll
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\DAL.dll
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\Public.dll
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\SAPBusinessObjects.WPF.Viewer.dll
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\SAPBusinessObjects.WPF.ViewerShared.dll
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\itextsharp.dll
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\Oracle.DataAccess.dll
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.Web.dll
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\FlashControlV71.dll
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\stdole.dll
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\ShockwaveFlashObjects.dll
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\BLL.pdb
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\DAL.pdb
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\bin\Debug\Public.pdb
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\Presentation.csprojResolveAssemblyReference.cache
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\LogIn.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\NegatingConverter.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\ReportViewUI.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\Wpf01TG.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfAdd_KHB.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfBack.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfBaoCao.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfCanDoi.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfCauHoi.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfCBTD.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfChamDiemGDX.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfChangePass.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfChkUpOffline.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfChotNguon.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfCtCanDoi.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfCutFile.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfD15NHNN.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDanhGiaGV.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDanhSach.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDbf.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDCPTNO.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDelete.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDienbao.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDinhSv.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDinhSvMoi.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDinhSv_ThuCong.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDKNOPLAI.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDoanhSo.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDoiChieu.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDongCasa.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDonGia.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDonGiaNhapTay.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDvut.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDvutMoi.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfExcel.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfGiaoNhanTV.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfGqvlTinh.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfHscb.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfImportText.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfInKhGnTn.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhaoSat.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhb.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhGnTn.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKHTC.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhtc01.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhtc02.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhtc03.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhtc04.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhtc06.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKHTD.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKH_CBTD.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKSM01.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKSM03.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKSM04.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKSM05.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKSM06.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKSM07.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKSM08.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKTHDT.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKTNN.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKTSDVV.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfLaiTon.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfLuong01.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfLuong02.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfMau06.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfNguonCqlv.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfNguonCqlvTinh.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfNguonDB.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfNhapCauHoi.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfNhapNguon.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfNhapNguonTK.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfNhapNguonTT.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfNhatKy.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfNHNN.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfNqh.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfNdhCt.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfNVBQ.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfNVKHB.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfPdf.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfPhanTichSL.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfPhanTichSL_CT.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfPnkt.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfPstk.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfQlyGqvl.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfQlyNguon.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfQt14.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfQtKhGnTn.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfQttcNhapKH.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfQttcNhapTay.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfQt_Khtc.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfSkeKhoanh.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfSkeKu.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfSkeKuCt.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfSkeNdh.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfSkeNqh.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfSkePnkt.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfSkeTo.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfSlDaily.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfSlVungBien.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfSvRaTruong.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfTbGhn.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfTest.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfLuyenThiNV.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfThiTN.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfTienIch.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfTimKiem.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfTkXa.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfTLGDXA.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfTTKH.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfTTKU.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfTyLeNQH.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfUpdateOFN.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfUpdateSL.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfUser.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfVpp.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfVppBC.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfVppCapNhat.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfWord.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfXaTo.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\Wpfkt740.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfXLN_M1.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfXLN_M3.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfXLN_M4.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\LogIn.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\MainWindow.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\NegatingConverter.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\ReportViewUI.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\Wpf01TG.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfAdd_KHB.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfBack.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfBaoCao.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfCanDoi.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfCauHoi.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfCBTD.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfChamDiemGDX.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfChangePass.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfChkUpOffline.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfChotNguon.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfCtCanDoi.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfCutFile.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfD15NHNN.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDanhGiaGV.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDanhSach.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDbf.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDCPTNO.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDelete.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDienbao.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDinhSv.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDinhSvMoi.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDinhSv_ThuCong.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDKNOPLAI.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDoanhSo.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDoiChieu.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDongCasa.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDonGia.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDonGiaNhapTay.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDvut.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfDvutMoi.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfExcel.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfGiaoNhanTV.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfGqvlTinh.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfHscb.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfImportText.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfInKhGnTn.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhaoSat.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhb.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhGnTn.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKHTC.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhtc01.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhtc02.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhtc03.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhtc04.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKhtc06.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKHTD.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKH_CBTD.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKSM01.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKSM03.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKSM04.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKSM05.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKSM06.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKSM07.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKSM08.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKTHDT.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKTNN.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfKTSDVV.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfLaiTon.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfLuong01.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfLuong02.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfMau06.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfNguonCqlv.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfNguonCqlvTinh.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfNguonDB.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfNhapCauHoi.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfNhapNguon.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfNhapNguonTK.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfNhapNguonTT.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfNhatKy.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfNHNN.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfNqh.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfNdhCt.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfNVBQ.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfNVKHB.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfPdf.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfPhanTichSL.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfPhanTichSL_CT.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfPnkt.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfPstk.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfQlyGqvl.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfQlyNguon.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfQt14.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfQtKhGnTn.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfQttcNhapKH.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfQttcNhapTay.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfQt_Khtc.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfSkeKhoanh.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfSkeKu.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfSkeKuCt.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfSkeNdh.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfSkeNqh.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfSkePnkt.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfSkeTo.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfSlDaily.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfSlVungBien.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfSvRaTruong.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfTbGhn.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfTest.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfLuyenThiNV.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfThiTN.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfTienIch.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfTimKiem.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfTkXa.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfTLGDXA.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfTTKH.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfTTKU.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfTyLeNQH.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfUpdateOFN.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfUpdateSL.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfUser.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfVpp.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfVppBC.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfVppCapNhat.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfWord.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfXaTo.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\Wpfkt740.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfXLN_M1.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfXLN_M3.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\WpfXLN_M4.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\App.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\Presentation_Content.g.cs
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\Presentation_MarkupCompile.cache
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\Presentation_MarkupCompile.lref
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\MainWindow.baml
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\Presentation.g.resources
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\Presentation.Properties.Resources.resources
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\Presentation.csproj.GenerateResource.Cache
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\Presentation.exe.manifest
+D:\OneDrive - MS Edu\IMP.VBSP\Presentation\obj\x86\Debug\Presentation.application

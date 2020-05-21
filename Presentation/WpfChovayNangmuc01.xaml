@@ -1,0 +1,292 @@
+﻿<Window x:Class="Presentation.WpfChovayNangmuc01"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Nhập thông tin kiểm tra cho vay nâng mức" Height="577.497" Width="1317.83" WindowStartupLocation ="CenterScreen" Icon="/Icons/Connected.ico" Loaded="Window_Loaded">
+    <Grid>
+        <CheckBox Content="Tất cả" Height="auto" HorizontalAlignment="Left" Name="ChkAll" VerticalAlignment="Top" Width="auto" Checked="ChkAll_Checked" Unchecked="ChkAll_Unchecked" Foreground="Green" FontWeight="Bold" Canvas.Top="82" Canvas.Left="-9" Margin="11,52,0,0"/>
+        <DatePicker Height="26" HorizontalAlignment="Left" Margin="73,19,0,0" Name="dtpNgay" VerticalAlignment="Top" Width="110" />
+        <Label Content="Ngày" Height="auto" HorizontalAlignment="Left" Margin="23,19,0,0" Name="lblNgay" VerticalAlignment="Top" Width="auto" />
+        <Label Content="POS" Height="auto" HorizontalAlignment="Left" Margin="562,18,0,0" Name="lblPos" VerticalAlignment="Top" Width="auto" />
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="603,19,0,0" Name="CboPos" VerticalAlignment="Top" Width="110" SelectionChanged="CboPos_SelectionChanged" />
+        <Label Content="Xã" Height="auto" HorizontalAlignment="Left" Margin="719,18,0,0" Name="lblXa" VerticalAlignment="Top" Width="auto" />
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="764,19,0,0" Name="CboXa" VerticalAlignment="Top" Width="110" />
+        <Button Content="Đóng" Height="22" HorizontalAlignment="Left" Margin="607,506,0,0" Name="btnClose" VerticalAlignment="Top" Width="90" Click="btnClose_Click">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Name="border" BorderThickness="1" Padding="4,2" BorderBrush="DarkGray" CornerRadius="3" Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Name="content"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="GreenYellow"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button Content="Cập Nhật" Height="22" HorizontalAlignment="Left" Margin="476,506,0,0" Name="btnOk" VerticalAlignment="Top" Width="90" Click="btnOk_Click">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Name="border" BorderThickness="1" Padding="4,2" BorderBrush="DarkGray" CornerRadius="3" Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Name="content"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="GreenYellow"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+
+        <Label Canvas.Left="735" Canvas.Top="15" Content="Nhập mới" Height="27" Name="lblGetData" Width="auto" MouseDown="LblGetData_OnMouseDown"  Margin="916,19,309.2,502">
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Style.Triggers>
+                        <Trigger Property="UIElement.IsMouseOver" Value="true">
+                            <Setter Property="Control.Foreground" Value="Red" />
+                            <Setter Property="Control.FontWeight" Value="Bold" />
+                        </Trigger>
+                    </Style.Triggers>
+                    <Setter Property="Control.Foreground" Value="Green" />
+                    <Setter Property="Control.FontFamily" Value="Comic Sans MS" />
+                    <Setter Property="Control.FontWeight" Value="Bold" />
+                    <Setter Property="HorizontalAlignment" Value="Center" />
+                </Style>
+            </Label.Style>
+        </Label>
+        <Label Canvas.Left="735" Canvas.Top="15" Content="Sửa" Height="27" Name="lblGetSua" Width="auto" MouseDown="LblGetSua_OnMouseDown"  Margin="996,19,229.2,502">
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Style.Triggers>
+                        <Trigger Property="UIElement.IsMouseOver" Value="true">
+                            <Setter Property="Control.Foreground" Value="Red" />
+                            <Setter Property="Control.FontWeight" Value="Bold" />
+                            <Setter Property="HorizontalAlignment" Value="Center" />
+                        </Trigger>
+                    </Style.Triggers>
+                    <Setter Property="Control.Foreground" Value="Green" />
+                    <Setter Property="Control.FontFamily" Value="Comic Sans MS" />
+                    <Setter Property="Control.FontWeight" Value="Bold" />
+                    <Setter Property="HorizontalAlignment" Value="Center" />
+                </Style>
+            </Label.Style>
+        </Label>
+
+        <Label Canvas.Left="735" Canvas.Top="15" Content="in Mẫu 01/KT" Height="27" Name="lblIn01kt" Width="auto" MouseDown="Lblin01kt_OnMouseDown"  Margin="736,507,480.2,14">
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Style.Triggers>
+                        <Trigger Property="UIElement.IsMouseOver" Value="true">
+                            <Setter Property="Control.Foreground" Value="Red" />
+                            <Setter Property="Control.FontWeight" Value="Bold" />
+                        </Trigger>
+                    </Style.Triggers>
+                    <Setter Property="Control.Foreground" Value="Green" />
+                    <Setter Property="Control.FontFamily" Value="Time New Roman" />
+                    <Setter Property="Control.FontWeight" Value="Bold" />
+                </Style>
+            </Label.Style>
+        </Label>
+        <Label Canvas.Left="735" Canvas.Top="15" Content="in Mẫu 02/KT" Height="27" Name="lblIn02kt" Width="auto" MouseDown="Lblin02kt_OnMouseDown"  Margin="831,507,394.2,14">
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Style.Triggers>
+                        <Trigger Property="UIElement.IsMouseOver" Value="true">
+                            <Setter Property="Control.Foreground" Value="Red" />
+                            <Setter Property="Control.FontWeight" Value="Bold" />
+                        </Trigger>
+                    </Style.Triggers>
+                    <Setter Property="Control.Foreground" Value="Green" />
+                    <Setter Property="Control.FontFamily" Value="Time New Roman" />
+                    <Setter Property="Control.FontWeight" Value="Bold" />
+                </Style>
+            </Label.Style>
+        </Label>
+
+        <DataGrid AutoGenerateColumns="False" Height="422" CanUserAddRows="False" CanUserDeleteRows="False" HorizontalAlignment="Left" Margin="10,71,0,0" Name="dgvSource" VerticalAlignment="Top" Width="1291" >
+            <DataGrid.Columns>
+                <DataGridCheckBoxColumn Binding="{Binding Path=CHON}" CanUserReorder="False" CanUserResize="False" CanUserSort="False" Header="Chọn" Width="45" />
+                <DataGridTextColumn Header="Tổ Trưởng" Binding="{Binding Path=TENTT}" Width="150" IsReadOnly="True" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextAlignment" Value="Left"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Hộ vay vốn" Binding="{Binding Path=KH_TENKH}" Width="150" IsReadOnly="True" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextAlignment" Value="Left"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Chương trình" Binding="{Binding Path=COT3}" Width="80" IsReadOnly="True" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Header="Ngày vay" Binding="{Binding Path=COT4,StringFormat='{}{0:dd/MM/yyyy}'}" Width="80" IsReadOnly="True" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Hạn Trả" Binding="{Binding Path=COT5,StringFormat='{}{0:dd/MM/yyyy}'}" Width="80" IsReadOnly="True" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Số tiền vay" Binding="{Binding Path=COT6, StringFormat={}{0:#}}" Width="70" IsReadOnly="True" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Mục đích sử dụng vốn vay"  Binding="{Binding Path=COT7}" Width="200"  IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="VerticalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextAlignment" Value="Left"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="  Đúng &#x0a;mục đích"  Binding="{Binding Path=COT8, StringFormat={}{0:#}}" Width="70"  IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="VerticalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header=" Sử dụng&#x0a;sang mục&#x0a;đích SXKD&#x0a;    khác"  Binding="{Binding Path=COT9, StringFormat={}{0:#}}" Width="70"  IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="VerticalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Sai mục&#x0a;  đích"  Binding="{Binding Path=COT11, StringFormat={}{0:#}}" Width="70"  IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="VerticalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Ghi chú"  Binding="{Binding Path=GHICHU}" Width="*"  IsReadOnly="False" FontWeight="Normal" Foreground="Black">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="VerticalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="TextAlignment" Value="Center"/>
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                            <Setter Property="IsEnabled" Value="True" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <DatePicker Height="26" HorizontalAlignment="Left" Margin="261,19,0,0" x:Name="dtpTuNgay" VerticalAlignment="Top" Width="110"  SelectedDateChanged="DatePicker_SelectedDateChanged" />
+        <Label Content="Từ Ngày" Height="auto" HorizontalAlignment="Left" Margin="193,19,0,0" x:Name="lblTuNgay" VerticalAlignment="Top" Width="auto" />
+        <DatePicker Height="26" HorizontalAlignment="Left" Margin="441,19,0,0" x:Name="dtpDenNgay" VerticalAlignment="Top" Width="110" />
+        <Label Content="Đến Ngày" Height="auto" HorizontalAlignment="Left" Margin="373,19,0,0" x:Name="lblDenNgay" VerticalAlignment="Top" Width="auto" />
+    </Grid>
+</Window>

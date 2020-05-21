@@ -1,0 +1,97 @@
+﻿<Window x:Class="Presentation.WpfLuong01"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Nhập hệ số lương và hệ số ABC hàng tháng" Height="648" Width="1160" WindowStartupLocation =" CenterScreen" Loaded="Window_Loaded">
+    <Grid>
+        <Button Content="Close" Height="27" HorizontalAlignment="Left" Margin="859,574,0,0" Name="btnClose" VerticalAlignment="Top" Width="98" Click="btnClose_Click" />
+        <Button Content="In" Height="27" HorizontalAlignment="Left" Margin="738,574,0,0" Name="btnIn" VerticalAlignment="Top" Width="98" Click="btnIn_Click" />
+        <Button Content="Save" Height="27" HorizontalAlignment="Left" Margin="604,574,0,0" Name="btnUpdate" VerticalAlignment="Top" Width="98" Click="btnUpdate_Click" />
+        <Button Content="Load" Height="27" HorizontalAlignment="Left" Margin="461,574,0,0" Name="btnLoad" VerticalAlignment="Top" Width="98" Click="btnLoad_Click" />
+        <DataGrid AutoGenerateColumns="False" Height="309" HorizontalAlignment="Left" Margin="12,41,0,0" Name="dgvData" VerticalAlignment="Top" Width="1114" CanUserAddRows="True" CanUserDeleteRows="True" AlternatingRowBackground="White" RowBackground="AliceBlue" RowHeight="24" HorizontalGridLinesBrush="WhiteSmoke" VerticalGridLinesBrush="WhiteSmoke" ColumnHeaderHeight="24" >
+            <DataGrid.Resources>
+                <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="GhostWhite"/>
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                </Style>
+            </DataGrid.Resources>
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Tên" Binding="{Binding ten}"  Width="auto" FontSize ="13"  />
+                <DataGridTextColumn Header="Phòng/Tổ" Binding="{Binding phongto}"  Width="auto" FontSize ="13"  />
+                <DataGridTextColumn Header="Lương C" Binding="{Binding qlc}"  Width="60" FontSize ="13"/>
+                <DataGridTextColumn Header="STLV" Binding="{Binding stlv}"  Width="40" FontSize ="13" />
+                <DataGridTextColumn Header="L1" Binding="{Binding l1}"  Width="30" FontSize ="13" />
+                <DataGridTextColumn Header="L2" Binding="{Binding l2}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="L3" Binding="{Binding l3}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="L4" Binding="{Binding l4}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="L5" Binding="{Binding l5}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="L6" Binding="{Binding l6}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="L7" Binding="{Binding l7}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="L8" Binding="{Binding l8}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="L9" Binding="{Binding l9}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="L10" Binding="{Binding l10}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="L11" Binding="{Binding l11}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="L12" Binding="{Binding l12}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="A1" Binding="{Binding a1}"  Width="30" FontSize ="13" />
+                <DataGridTextColumn Header="A2" Binding="{Binding a2}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="A3" Binding="{Binding a3}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="A4" Binding="{Binding a4}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="A5" Binding="{Binding a5}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="A6" Binding="{Binding a6}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="A7" Binding="{Binding a7}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="A8" Binding="{Binding a8}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="A9" Binding="{Binding a9}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="A10" Binding="{Binding a10}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="A11" Binding="{Binding a11}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="A12" Binding="{Binding a12}"  Width="*" FontSize ="13"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+
+        <DataGrid AutoGenerateColumns="False" Height="202" HorizontalAlignment="Left" Margin="12,357,0,0" Name="dgvTarGet" VerticalAlignment="Top" Width="1114" CanUserAddRows="True" CanUserDeleteRows="True" AlternatingRowBackground="White" RowBackground="Bisque" RowHeight="24" HorizontalGridLinesBrush="WhiteSmoke" VerticalGridLinesBrush="WhiteSmoke" ColumnHeaderHeight="24" >
+            <DataGrid.Resources>
+                <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="GhostWhite"/>
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                </Style>
+            </DataGrid.Resources>
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Tên" Binding="{Binding ten}"  Width="auto" FontSize ="13"  />
+                <DataGridTextColumn Header="Phòng/Tổ" Binding="{Binding phongto}"  Width="auto" FontSize ="13"  />
+                <DataGridTextColumn Header="Lương C" Binding="{Binding qlc}"  Width="60" FontSize ="13"/>
+                <DataGridTextColumn Header="STLV" Binding="{Binding stlv}"  Width="40" FontSize ="13" />
+                <DataGridTextColumn Header="L1" Binding="{Binding l1}"  Width="30" FontSize ="13" />
+                <DataGridTextColumn Header="L2" Binding="{Binding l2}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="L3" Binding="{Binding l3}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="L4" Binding="{Binding l4}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="L5" Binding="{Binding l5}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="L6" Binding="{Binding l6}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="L7" Binding="{Binding l7}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="L8" Binding="{Binding l8}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="L9" Binding="{Binding l9}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="L10" Binding="{Binding l10}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="L11" Binding="{Binding l11}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="L12" Binding="{Binding l12}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="A1" Binding="{Binding a1}"  Width="30" FontSize ="13" />
+                <DataGridTextColumn Header="A2" Binding="{Binding a2}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="A3" Binding="{Binding a3}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="A4" Binding="{Binding a4}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="A5" Binding="{Binding a5}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="A6" Binding="{Binding a6}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="A7" Binding="{Binding a7}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="A8" Binding="{Binding a8}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="A9" Binding="{Binding a9}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="A10" Binding="{Binding a10}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="A11" Binding="{Binding a11}"  Width="30" FontSize ="13"/>
+                <DataGridTextColumn Header="A12" Binding="{Binding a12}"  Width="*" FontSize ="13"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+
+        <DatePicker Height="25" HorizontalAlignment="Left" Margin="144,7,0,0" Name="dtpNgay" VerticalAlignment="Top" Width="127" />
+        <Label Content="Ngày" Height="25" HorizontalAlignment="Left" Margin="34,7,0,0" Name="lblNgay" VerticalAlignment="Top" Width="96" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="422,9,0,0" Name="CboPos" VerticalAlignment="Top" Width="197" />
+        <Label Content="POS" Height="25" HorizontalAlignment="Left" Margin="296,9,0,0" Name="lblPos" VerticalAlignment="Top" Width="96" />
+    </Grid>
+</Window>

@@ -1,0 +1,62 @@
+﻿<Window x:Class="Presentation.WpfXLN_M4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="In kế hoạch XLN đến hạn Mẩu 02/KHXLN" Height="200" Width="388.028" Name="SkeXLN_M1" WindowStartupLocation="CenterScreen" Icon="Icons/VBSP.ico" ResizeMode="CanMinimize" WindowStyle="ThreeDBorderWindow" Loaded="WpfXLN_M1_OnLoaded" >
+    <Grid>
+        <Button Content="OK" HorizontalAlignment="Left" Height="24" Margin="79,114,0,0" VerticalAlignment="Top" Width="84" Name="Ok" Click="OK_OnClick" >
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Name="border" BorderThickness="1" Padding="4,2" BorderBrush="DarkGray" CornerRadius="3" Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Name="content"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="GreenYellow"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button Content="Close" HorizontalAlignment="Left" Height="24" Margin="202,114,0,0" VerticalAlignment="Top" Width="84" Name="btnClose" Click="BtnClose_OnClick" >
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Name="border" BorderThickness="1" Padding="4,2" BorderBrush="DarkGray" CornerRadius="3" Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Name="content"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="GreenYellow"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="132,45,0,0" Name="CboPos" VerticalAlignment="Top" Width="104" SelectionChanged="CboPos_SelectionChanged" />
+        <ComboBox Height="22" HorizontalAlignment="Left" Margin="133,73,0,0" Name="CboXa" VerticalAlignment="Top" Width="103" />
+        <Label Content="POS" Height="25" HorizontalAlignment="Left" Margin="33,43,0,0" Name="LblPos" VerticalAlignment="Top" Width="39" Foreground="Green" FontWeight="Bold" />
+        <Label Content="Xã" Height="25" HorizontalAlignment="Left" Margin="33,73,0,0" Name="LblXa" VerticalAlignment="Top" Width="39" Foreground="Green" FontWeight="Bold" />
+        <DatePicker Name="dtpNgay" HorizontalAlignment="Left" Height="23" Margin="132,15,0,0" VerticalAlignment="Top" Width="105"/>
+        <Label Content="Ngày số liệu" Name ="NgayHoso"  HorizontalAlignment="Left" Height="auto" Margin="33,13,0,0" VerticalAlignment="Top" Width="auto" Foreground="Green" FontWeight="Bold"/>
+        <Grid/>
+        <GroupBox Header="Mẩu" Height="85" HorizontalAlignment="Left" Margin="258,10,0,0" x:Name="GrpKy" VerticalAlignment="Top" Width="110">
+            <Grid Height="70">
+                <RadioButton GroupName="KY" Content="Tổ (02/XLN)" Height="18" HorizontalAlignment="Left" Margin="9,5,0,0" x:Name="Ration1" VerticalAlignment="Top" Width="auto" IsChecked="True" Checked="Ration1_Checked" />
+                <RadioButton GroupName="KY" Content="Xã (03/XLN)" Height="18" HorizontalAlignment="Left" Margin="9,23,0,0" x:Name="Ration2" VerticalAlignment="Top" Width="auto" Checked="Ration2_Checked" />
+                <RadioButton GroupName="KY" Content="huyện (04/XLN)" Height="18" HorizontalAlignment="Left" Margin="9,43,0,0" x:Name="Ration3" VerticalAlignment="Top" Width="auto" Checked="Ration3_Checked" />
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>
